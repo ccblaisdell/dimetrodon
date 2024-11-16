@@ -1,0 +1,64 @@
+units:
+  # Proxy spacing variables, choc spacing
+  kx: cx
+  ky: cy
+  # For the preview at https://ergogen.ceoloide.com/
+  $default_width: cx
+  $default_height: cy
+  # Padding (integers are mm)
+  px: kx + 2
+  py: ky + 2
+points:
+  zones:
+    matrix:
+      key:
+        padding: ky
+        spread: kx
+      columns:
+        pinky:
+          key:
+            # TODO: find a better way to do this. The other columns
+            # should add up to cancel out this splay so that the 
+            # inner columns are straight up and down.
+            splay: 13
+        ring:
+          key:
+            spread: kx + 2
+            splay: -5
+            stagger: ky
+        middle:
+          key:
+            spread: kx + 2
+            splay: -5
+            stagger: 3
+        pointer:
+          key:
+            spread: kx + 1
+            splay: -3
+            stagger: -6
+        inner:
+          key:
+            stagger: -2
+      rows:
+        bottom:
+        middle:
+        top:
+    thumbs:
+      anchor:
+        ref: matrix_pointer_bottom
+        shift: [0, -24]
+      key:
+        padding: 1ky
+        spread: 1kx
+      columns:
+        tucky:
+        middle:
+          key:
+            shift: [2, -1.5]
+            splay: -10
+        reachy:
+          key:
+            shift: [4.25, -2.5]
+            splay: -10
+      rows:
+        cluster:
