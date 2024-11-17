@@ -49,7 +49,7 @@ points:
     thumbs:
       anchor:
         ref: matrix_pointer_bottom
-        shift: [0, -24]
+        shift: [4, -22]
       key:
         padding: 1ky
         spread: 1kx
@@ -132,7 +132,7 @@ pcbs:
         where:
           ref: matrix_inner_top
           shift: [1kx,0]
-          rotate: 0
+          rotate: 90
       # TODO: reset button
       # TODO: power switch
       # TODO: JST plug
@@ -140,3 +140,4 @@ pcbs:
       # TODO: speaker?
       # TODO: haptic?
       # TODO: LED?
+
