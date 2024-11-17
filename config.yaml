@@ -5,9 +5,12 @@ units:
   # For the preview at https://ergogen.ceoloide.com/
   $default_width: cx
   $default_height: cy
-  # Padding (integers are mm)
-  px: kx + 2
-  py: ky + 2
+  # keywell padding
+  kpx: kx + 0.5
+  kpy: ky + 0.5
+  # Board padding, i.e. space between keycap and edge of board
+  cpx: 2 + kx / 2
+  cpy: 2 + ky / 2
 points:
   zones:
     matrix:
@@ -62,3 +65,47 @@ points:
             splay: -10
       rows:
         cluster:
+outlines:
+  # Shows the keycaps
+  keycaps:
+    - what: rectangle
+      where: true
+      size: [kx, ky]
+  # Shows keycaps with a tiny bit of spacing around them
+  keywells:
+    - what: rectangle
+      where: true
+      size: [kpx, kpy]
+  # Just the outline of the PCB
+  board:
+    - what: polygon
+      fillet: 2
+      points:
+        - ref: matrix_pinky_top
+          shift: [-1cpx, 1cpy]
+        - ref: matrix_ring_top
+          shift: [-1cpx, 1cpy]
+        - ref: matrix_middle_top
+          shift: [-1cpx, 1cpy]
+        - ref: matrix_middle_top
+          shift: [1cpx, 1cpy]
+        - ref: matrix_inner_top
+          shift: [1cpy, 1cpy]
+        - ref: thumbs_reachy_cluster
+          shift: [1cpx, 1cpy]
+        - ref: thumbs_reachy_cluster
+          shift: [1cpx, -1cpy]
+        - ref: thumbs_middle_cluster
+          shift: [1cpx, -cpy]
+        - ref: thumbs_middle_cluster
+          shift: [-1cpx, -cpy]
+        - ref: thumbs_tucky_cluster
+          shift: [-1cpx, -1cpy]
+        - ref: matrix_pinky_bottom
+          shift: [-1cpx, -1cpy]
+  # Just for visualization purposes.
+  # Shows the outline of the PCB overlayed with keycaps
+  combo:
+    - name: board
+    - operation: subtract
+      name: keycaps
