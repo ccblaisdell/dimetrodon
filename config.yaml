@@ -109,3 +109,34 @@ outlines:
     - name: board
     - operation: subtract
       name: keycaps
+pcbs:
+  left:
+    outlines:
+      main:
+        outline: board
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          reverse: true
+          hotswap: true
+          from: "{{name}}_from"
+          to: "{{name}}_to"
+      # TODO: replace this with nice nano v2
+      promicro:
+        what: promicro
+        params:
+          orientation: "down"
+        where:
+          ref: matrix_inner_top
+          shift: [1kx,0]
+          rotate: 0
+      # TODO: reset button
+      # TODO: power switch
+      # TODO: JST plug
+      # TODO: battery outline
+      # TODO: speaker?
+      # TODO: haptic?
+      # TODO: LED?
