@@ -1,3 +1,5 @@
+meta:
+  engine: 4.1.0 # Min Ergogen version for KiCad 8 footprints
 units:
   # Proxy spacing variables, choc spacing
   kx: cx
@@ -19,25 +21,14 @@ points:
         spread: kx
       columns:
         pinky:
-          key:
-            # TODO: find a better way to do this. The other columns
-            # should add up to cancel out this splay so that the 
-            # inner columns are straight up and down.
-            splay: 13
         ring:
           key:
-            spread: kx + 2
-            splay: -5
-            stagger: ky
+            stagger: ky - 2
         middle:
           key:
-            spread: kx + 2
-            splay: -5
             stagger: 3
         pointer:
           key:
-            spread: kx + 1
-            splay: -3
             stagger: -6
         inner:
           key:
@@ -49,7 +40,7 @@ points:
     thumbs:
       anchor:
         ref: matrix_pointer_bottom
-        shift: [4, -22]
+        shift: [6, -22]
       key:
         padding: 1ky
         spread: 1kx
@@ -111,22 +102,24 @@ outlines:
       name: keycaps
 pcbs:
   left:
+    template: kicad8 # Required, since footprints are KiCad 8 only
     outlines:
       main:
         outline: board
     footprints:
       choc_hotswap:
-        what: choc
+        what: ceoloide/switch_choc_v1_v2
         where: true
         params:
-          keycaps: true
-          reverse: true
-          hotswap: true
+          choc_v2_support: false
+          keycap_height: ky
+          keycap_width: kx
+          reversible: true
           from: "{{name}}_from"
           to: "{{name}}_to"
       # TODO: replace this with nice nano v2
-      promicro:
-        what: promicro
+      nice_nano:
+        what: ceoloide/mcu_nice_nano
         params:
           orientation: "down"
         where:
