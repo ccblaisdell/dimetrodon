@@ -125,9 +125,10 @@ pcbs:
         params:
           reversible: true
           mcu_3dmodel_filename: 3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
+          mcu_3dmodel_xyz_offset: [0, 0, 3]
         where:
           ref: matrix_inner_top
-          shift: [1kx + 3, -30]
+          shift: [1kx + 3, -1ky]
           rotate: 0
       # TODO: reset button
       # TODO: power switch
