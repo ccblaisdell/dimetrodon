@@ -11,8 +11,8 @@ units:
   kpx: kx + 0.5
   kpy: ky + 0.5
   # Board padding, i.e. space between keycap and edge of board
-  cpx: 2 + kx / 2
-  cpy: 2 + ky / 2
+  cpx: 1 + kx / 2
+  cpy: 1 + ky / 2
 points:
   zones:
     matrix:
@@ -119,7 +119,7 @@ pcbs:
           switch_3dmodel_filename: 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
           from: "{{name}}_from"
           to: "{{name}}_to"
-      # TODO: replace this with nice nano v2
+      # TODO: Make an outline of this for pcb shape purposes
       nice_nano:
         what: ceoloide/mcu_nice_nano
         params:
@@ -128,7 +128,7 @@ pcbs:
           mcu_3dmodel_xyz_offset: [0, 0, 3]
         where:
           ref: matrix_inner_top
-          shift: [1kx + 3, -1ky]
+          shift: [1kx + 3, -0.5ky + cpy]
           rotate: 0
       # TODO: reset button
       # TODO: power switch
