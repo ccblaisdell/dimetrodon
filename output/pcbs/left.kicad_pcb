@@ -2803,7 +2803,7 @@
     
   (footprint "ceoloide:mcu_nice_nano"
     (layer "F.Cu")
-    (at 96.64167090000001 -37.9216422 -6)
+    (at 92.9831746 -3.113375900000001 -6)
     (property "Reference" "MCU1"
       (at 0 -15 -6)
       (layer "F.SilkS")
