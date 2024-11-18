@@ -27,10 +27,12 @@ points:
         ring:
           key:
             splay: -3
+            spread: kx + 0.5
             stagger: ky - 2
         middle:
           key:
             splay: -3
+            spread: kx + 0.5
             stagger: 3
         pointer:
           key:
@@ -146,3 +148,4 @@ pcbs:
       # TODO: speaker?
       # TODO: haptic?
       # TODO: LED?
+
