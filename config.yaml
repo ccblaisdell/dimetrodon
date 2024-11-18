@@ -115,13 +115,15 @@ pcbs:
           keycap_height: ky
           keycap_width: kx
           reversible: true
+          mcu_3dmodel_filename: 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
           from: "{{name}}_from"
           to: "{{name}}_to"
       # TODO: replace this with nice nano v2
       nice_nano:
         what: ceoloide/mcu_nice_nano
         params:
-          orientation: "down"
+          reversible: true
+          mcu_3dmodel_filename: 3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
         where:
           ref: matrix_inner_top
           shift: [1kx,0]
