@@ -4,12 +4,15 @@ units:
   # Proxy spacing variables, choc spacing
   kx: cx
   ky: cy
+
   # For the preview at https://ergogen.ceoloide.com/
   $default_width: cx
   $default_height: cy
+
   # keywell padding
   kpx: kx + 0.5
   kpy: ky + 0.5
+
   # Board padding, i.e. space between keycap and edge of board
   cpx: 1 + kx / 2
   cpy: 1 + ky / 2
@@ -23,9 +26,11 @@ points:
         pinky:
         ring:
           key:
+            splay: -3
             stagger: ky - 2
         middle:
           key:
+            splay: -3
             stagger: 3
         pointer:
           key:
@@ -58,7 +63,7 @@ points:
         cluster:
   mirror:
     ref: thumbs_reachy_cluster
-    distance: 10
+    distance: 2kx
 outlines:
   # Shows the keycaps
   keycaps:
@@ -85,6 +90,9 @@ outlines:
           shift: [1cpx, 1cpy]
         - ref: matrix_inner_top
           shift: [1cpy, 1cpy]
+        # Top right
+        - ref: matrix_inner_top
+          shift: [30, 1cpy]
         - ref: thumbs_reachy_cluster
           shift: [1cpx, 1cpy]
         - ref: thumbs_reachy_cluster
@@ -138,4 +146,3 @@ pcbs:
       # TODO: speaker?
       # TODO: haptic?
       # TODO: LED?
-
