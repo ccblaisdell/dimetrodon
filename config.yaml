@@ -127,8 +127,8 @@ pcbs:
           mcu_3dmodel_filename: 3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
         where:
           ref: matrix_inner_top
-          shift: [1kx,0]
-          rotate: 90
+          shift: [1kx + 3,0.5ky]
+          rotate: 0
       # TODO: reset button
       # TODO: power switch
       # TODO: JST plug
