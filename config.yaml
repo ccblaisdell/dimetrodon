@@ -13,7 +13,8 @@ units:
   kpx: kx + 0.5
   kpy: ky + 0.5
 
-  # Board padding, i.e. space between keycap and edge of board
+  # Board padding, i.e. distance from center of keycap (Point) to 
+  # the nearest edge of the PCB. Essentially a 1mm pad.
   cpx: 1 + kx / 2
   cpy: 1 + ky / 2
 points:
@@ -72,15 +73,13 @@ outlines:
     - what: rectangle
       where: true
       size: [kx, ky]
-  # Shows keycaps with a tiny bit of spacing around them
-  keywells:
+  switch_holes:
     - what: rectangle
       where: true
-      size: [kpx, kpy]
+      size: [14, 14]
   # Just the outline of the PCB
   board:
     - what: polygon
-      fillet: 2
       points:
         - ref: matrix_pinky_top
           shift: [-1cpx, 1cpy]
@@ -107,12 +106,10 @@ outlines:
           shift: [-1cpx, -1cpy]
         - ref: matrix_pinky_bottom
           shift: [-1cpx, -1cpy]
-  # Just for visualization purposes.
-  # Shows the outline of the PCB overlayed with keycaps
-  combo:
+  switch_plate:
     - name: board
     - operation: subtract
-      name: keycaps
+      name: switch_holes
 pcbs:
   left:
     template: kicad8 # Required, since footprints are KiCad 8 only
@@ -131,7 +128,6 @@ pcbs:
           switch_3dmodel_filename: 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
           from: "{{name}}_from"
           to: "{{name}}_to"
-      # TODO: Make an outline of this for pcb shape purposes
       nice_nano:
         what: ceoloide/mcu_nice_nano
         params:
@@ -148,4 +144,3 @@ pcbs:
       # TODO: speaker?
       # TODO: haptic?
       # TODO: LED?
-
