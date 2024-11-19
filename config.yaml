@@ -71,26 +71,26 @@ points:
     distance: 2kx
 outlines:
   # Shows the keycaps
-  keycaps:
+  _keycaps:
     - what: rectangle
       where: true
       size: [kx, ky]
-  switch_holes:
+  _switch_holes:
     - what: rectangle
       where: true
       size: [14, 14]
-  matrix:
+  _matrix:
     - what: rectangle
       where: /^matrix_/
       size: [kx, ky]
       expand: 1
-  thumbs:
+  _thumbs:
     - what: rectangle
       where: /^thumbs_/
       size: [kx, ky]
       expand: 1
   # Connect the thumbs to the matrix
-  matrix_thumb_connector:
+  _matrix_thumb_connector:
     - what: polygon
       points:
         - ref: thumbs_tucky_cluster
@@ -102,7 +102,7 @@ outlines:
         - ref: thumbs_tucky_cluster
           shift: [-1cpx - 0, 0]
   # Fix the splay gap between thumbs.
-  thumb_bandaid:
+  _thumb_bandaid:
     - what: polygon
       points:
         - ref: thumbs_middle_cluster
@@ -114,7 +114,7 @@ outlines:
         - ref: thumbs_reachy_cluster
           shift: [-1cpx, -1cpy]
   # Fix the splay gap between ring and middle fingers
-  matrix_bandaid:
+  _matrix_bandaid:
     - what: polygon
       points:
         - ref: matrix_ring_top
@@ -125,7 +125,7 @@ outlines:
           shift: [2cpx, -1cpy]
         - ref: matrix_ring_top
           shift: [1cpx, -1cpy]
-  controller:
+  _controller:
     - what: polygon
       adjust: 
         ref: matrix_inner_bottom
@@ -135,7 +135,7 @@ outlines:
         - shift: [0, nice_nano_length]
         - shift: [nice_nano_width, 0]
         - shift: [0, -nice_nano_length]
-  controller_area:
+  _controller_area:
     - what: polygon
       adjust:
         ref: matrix_inner_bottom
@@ -149,18 +149,18 @@ outlines:
         - shift: [0, -nice_nano_length]
         - shift: [0, -2cpy - 2]
   board2:
-    - name: matrix
-    - name: thumbs
-    - name: matrix_thumb_connector
-    - name: thumb_bandaid
-    - name: matrix_bandaid
-    - name: controller_area
-    - name: controller
+    - name: _matrix
+    - name: _thumbs
+    - name: _matrix_thumb_connector
+    - name: _thumb_bandaid
+    - name: _matrix_bandaid
+    - name: _controller_area
+    - name: _controller
       operation: stack
   switch_plate:
     - name: board2
     - operation: subtract
-      name: switch_holes
+      name: _switch_holes
 pcbs:
   left:
     template: kicad8 # Required, since footprints are KiCad 8 only
