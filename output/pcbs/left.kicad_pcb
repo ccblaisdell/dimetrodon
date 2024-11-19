@@ -11,7 +11,7 @@
   (paper "A3")
   (title_block
     (title "left")
-    (date "2024-11-18")
+    (date "2024-11-19")
     (rev "v1.0.0")
     (company "Unknown")
   )
@@ -2999,8 +2999,7 @@
 (gr_line (start 10.790318799999996 -58.9637443) (end 31.733423499999997 -61.334660400000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 31.733423499999997 -61.334660400000004) (end 51.6238615 -59.2440912) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 51.6238615 -59.2440912) (end 86.09316100000001 -47.577155600000005) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 86.09316100000001 -47.577155600000005) (end 106.4808599 -45.4343221) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 106.4808599 -45.4343221) (end 109.15390059999999 20.125838100000003) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 86.09316100000001 -47.577155600000005) (end 109.15390059999999 20.125838100000003) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 109.15390059999999 20.125838100000003) (end 100.8248488 37.202925) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 100.8248488 37.202925) (end 84.4779064 29.090662100000003) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 84.4779064 29.090662100000003) (end 65.2526725 23.577915) (layer Edge.Cuts) (stroke (width 0.15) (type default)))

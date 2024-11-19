@@ -77,7 +77,41 @@ outlines:
     - what: rectangle
       where: true
       size: [14, 14]
-  # Just the outline of the PCB
+  matrix:
+    - what: rectangle
+      where: /^matrix_/
+      size: [kx + 2, ky + 2]
+  thumbs:
+    - what: rectangle
+      where: /^thumbs_/
+      size: [kx + 2, ky + 2]
+  matrix_thumb_connector:
+    - what: polygon
+      points:
+        - ref: thumbs_tucky_cluster
+          shift: [-1cpx - 0, 2cpy]
+        - ref: matrix_inner_bottom
+          shift: [1cpx, 1cpy]
+        - ref: matrix_inner_bottom
+          shift: [1cpx, -3cpy]
+        - ref: thumbs_tucky_cluster
+          shift: [-1cpx - 0, 0]
+  thumb_banadaid:
+    - what: polygon
+      points:
+        - ref: thumbs_middle_cluster
+          shift: [1cpx, 1cpy]
+        - ref: thumbs_reachy_cluster
+          shift: [-1cpx, 1cpy]
+        - ref: thumbs_middle_cluster
+          shift: [1cpx, -1cpy]
+        - ref: thumbs_reachy_cluster
+          shift: [-1cpx, -1cpy]
+  board2:
+    - name: matrix
+    - name: thumbs
+    - name: matrix_thumb_connector
+    - name: thumb_banadaid
   board:
     - what: polygon
       points:
@@ -91,9 +125,6 @@ outlines:
           shift: [1cpx, 1cpy]
         - ref: matrix_inner_top
           shift: [1cpy, 1cpy]
-        # Top right
-        - ref: matrix_inner_top
-          shift: [30, 1cpy]
         - ref: thumbs_reachy_cluster
           shift: [1cpx, 1cpy]
         - ref: thumbs_reachy_cluster
