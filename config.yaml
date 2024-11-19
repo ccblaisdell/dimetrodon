@@ -371,7 +371,7 @@ pcbs:
         where:
           # Slide it left, just under the pinky
           ref: thumbs_tucky_cluster
-          shift: [-1cpx - 48, -1cpy + 5]
+          shift: [-1cpx - 43, -1cpy + 5]
           # Spin so the plug faces towards the thumbs
           rotate: 90
       top_left_hole:
