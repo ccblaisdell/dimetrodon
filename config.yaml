@@ -148,7 +148,19 @@ outlines:
         - shift: [nice_nano_width + 1, 0]
         - shift: [0, -nice_nano_length]
         - shift: [0, -2cpy - 2]
-  board2:
+  _battery:
+    # 12 x 30, small one from typeractive
+    - what: polygon
+      adjust:
+        ref: matrix_ring_bottom
+        shift: [-1cpx, -1cpy]
+        rotate: -2
+      points:
+        - shift: [7, -16]
+        - shift: [30, 0]
+        - shift: [0, 12]
+        - shift: [-30, 0]
+  left_board:
     - name: _matrix
     - name: _thumbs
     - name: _matrix_thumb_connector
@@ -156,17 +168,20 @@ outlines:
     - name: _matrix_bandaid
     - name: _controller_area
     - name: _controller
+      # operation: stack
+    - name: _battery
       operation: stack
   switch_plate:
-    - name: board2
+    - name: left_board
     - operation: subtract
-      name: _switch_holes
+      name: _keycaps
 pcbs:
   left:
-    template: kicad8 # Required, since footprints are KiCad 8 only
+    # Required, since footprints are KiCad 8 only
+    template: kicad8
     outlines:
       main:
-        outline: board2
+        outline: left_board
     footprints:
       choc_hotswap:
         what: ceoloide/switch_choc_v1_v2
@@ -202,7 +217,11 @@ pcbs:
         where:
           ref: matrix_ring_top
           shift: [0, cy + 3]
-      # TODO: JST plug
+      battery_connector:
+        what: ceoloide/battery_connector_jst_ph_2
+        where:
+          ref: thumbs_tucky_cluster
+          shift: [-1cpx - 4, -1cpy + 2]
       # TODO: battery outline
       # TODO: speaker?
       # TODO: haptic?
