@@ -290,14 +290,14 @@ pcbs:
         what: ceoloide/reset_switch_smd_side
         # top right, near the USB port
         where: 
-          ref: matrix_inner_top
-          shift: [0, cy + 3]
+          ref: matrix_middle_top
+          shift: [30, 1cpy - 4]
       power_switch:
         what: ceoloide/power_switch_smd_side
         # top left
         where:
-          ref: matrix_pinky_top
-          shift: [0, cy + 3]
+          ref: matrix_middle_top
+          shift: [-38, 1cpy - 4]
           # Spin so it's facing up
           rotate: 90
       battery_connector:
