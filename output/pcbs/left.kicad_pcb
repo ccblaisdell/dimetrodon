@@ -267,18 +267,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -338,18 +326,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -411,18 +387,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -482,18 +446,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 198) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -555,18 +507,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 198) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -626,18 +566,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 198) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -699,18 +627,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -770,18 +686,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -843,18 +747,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -914,18 +806,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -987,18 +867,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -1058,18 +926,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -1131,18 +987,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -1202,18 +1046,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -1275,18 +1107,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -1346,18 +1166,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -1419,18 +1227,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 182) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -1490,18 +1286,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 169) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -1563,18 +1347,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -1634,18 +1406,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -1707,18 +1467,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -1778,18 +1526,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 192) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -1851,18 +1587,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 192) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -1922,18 +1646,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 192) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -1995,18 +1707,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -2066,18 +1766,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -2139,18 +1827,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -2210,18 +1886,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -2283,18 +1947,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -2354,18 +2006,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -2427,18 +2067,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -2498,18 +2126,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -2571,18 +2187,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -2642,18 +2246,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -2715,18 +2307,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 208) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
     
 
@@ -2786,18 +2366,6 @@
     
     (pad "" np_thru_hole circle (at 5 -3.75 221) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
     
@@ -2985,12 +2553,6 @@
     
     
     
-    
-    (model 3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
-      (offset (xyz 0 0 3))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
     
   )
 
