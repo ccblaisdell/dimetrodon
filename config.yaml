@@ -50,7 +50,7 @@ points:
     thumbs:
       anchor:
         ref: matrix_pointer_bottom
-        shift: [6, -22]
+        shift: [4, -22]
       key:
         padding: 1ky
         spread: 1kx
@@ -58,12 +58,12 @@ points:
         tucky:
         middle:
           key:
-            shift: [2, -1.5]
-            splay: -10
+            shift: [2.4, -1.8]
+            splay: -13
         reachy:
           key:
-            shift: [4.25, -2.5]
-            splay: -10
+            shift: [5.1, -3.2]
+            splay: -13
       rows:
         cluster:
   mirror:

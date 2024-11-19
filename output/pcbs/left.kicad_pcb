@@ -1290,7 +1290,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 58.0733828 13.3276228 -6)
+    (at 56.084339 13.1185659 -6)
     (property "Reference" "S16"
       (at 0 8.8 -6)
       (layer "B.SilkS")
@@ -1362,9 +1362,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 77.4838443 17.2023024 -16)
+    (at 75.66895500000001 17.4833752 -19)
     (property "Reference" "S17"
-      (at 0 8.8 -16)
+      (at 0 8.8 -19)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1373,17 +1373,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -16) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -19) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 -16) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -16) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 -19) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 -19) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 -16) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 -19) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -1407,14 +1407,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 -16) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 36 "thumbs_middle_cluster_from"))
+    (pad "1" smd rect (at -3.275 -5.95 -19) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 36 "thumbs_middle_cluster_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -16) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 37 "thumbs_middle_cluster_to"))
+    (pad "2" smd rect (at 8.275 -3.75 -19) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 37 "thumbs_middle_cluster_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 179) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 176) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -1434,9 +1434,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 96.00143419999999 24.280670100000002 -26)
+    (at 93.634371 26.2766472 -32)
     (property "Reference" "S18"
-      (at 0 8.8 -26)
+      (at 0 8.8 -32)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1445,17 +1445,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -26) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -32) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 -26) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -26) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 -32) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 -32) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 -26) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 -32) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -1479,14 +1479,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 -26) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 38 "thumbs_reachy_cluster_from"))
+    (pad "1" smd rect (at -3.275 -5.95 -32) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 38 "thumbs_reachy_cluster_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -26) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 39 "thumbs_reachy_cluster_to"))
+    (pad "2" smd rect (at 8.275 -3.75 -32) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 39 "thumbs_reachy_cluster_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 169) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 163) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -1506,7 +1506,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 228.00286839999998 0 0)
+    (at 223.268742 0 0)
     (property "Reference" "S19"
       (at 0 8.8 0)
       (layer "B.SilkS")
@@ -1578,7 +1578,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 228.00286839999998 -17 0)
+    (at 223.268742 -17 0)
     (property "Reference" "S20"
       (at 0 8.8 0)
       (layer "B.SilkS")
@@ -1650,7 +1650,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 228.00286839999998 -34 0)
+    (at 223.268742 -34 0)
     (property "Reference" "S21"
       (at 0 8.8 0)
       (layer "B.SilkS")
@@ -1722,7 +1722,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 209.50286839999998 -15 3)
+    (at 204.768742 -15 3)
     (property "Reference" "S22"
       (at 0 8.8 3)
       (layer "B.SilkS")
@@ -1794,7 +1794,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 208.6131571 -31.9767021 3)
+    (at 203.87903070000002 -31.9767021 3)
     (property "Reference" "S23"
       (at 0 8.8 3)
       (layer "B.SilkS")
@@ -1866,7 +1866,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 207.72344579999998 -48.9534042 3)
+    (at 202.9893194 -48.9534042 3)
     (property "Reference" "S24"
       (at 0 8.8 3)
       (layer "B.SilkS")
@@ -1938,7 +1938,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 190.87121409999997 -17.0276734 6)
+    (at 186.1370877 -17.0276734 6)
     (property "Reference" "S25"
       (at 0 8.8 6)
       (layer "B.SilkS")
@@ -2010,7 +2010,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 189.09423019999997 -33.9345456 6)
+    (at 184.3601038 -33.9345456 6)
     (property "Reference" "S26"
       (at 0 8.8 6)
       (layer "B.SilkS")
@@ -2082,7 +2082,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 187.3172463 -50.8414178 6)
+    (at 182.5831199 -50.8414178 6)
     (property "Reference" "S27"
       (at 0 8.8 6)
       (layer "B.SilkS")
@@ -2154,7 +2154,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 173.5969908 -9.179029700000001 6)
+    (at 168.8628644 -9.179029700000001 6)
     (property "Reference" "S28"
       (at 0 8.8 6)
       (layer "B.SilkS")
@@ -2226,7 +2226,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 171.82000689999998 -26.0859019 6)
+    (at 167.0858805 -26.0859019 6)
     (property "Reference" "S29"
       (at 0 8.8 6)
       (layer "B.SilkS")
@@ -2298,7 +2298,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 170.043023 -42.9927741 6)
+    (at 165.30889660000003 -42.9927741 6)
     (property "Reference" "S30"
       (at 0 8.8 6)
       (layer "B.SilkS")
@@ -2370,7 +2370,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 155.9046536 -5.308473600000001 6)
+    (at 151.1705272 -5.308473600000001 6)
     (property "Reference" "S31"
       (at 0 8.8 6)
       (layer "B.SilkS")
@@ -2442,7 +2442,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 154.12766969999998 -22.2153458 6)
+    (at 149.3935433 -22.2153458 6)
     (property "Reference" "S32"
       (at 0 8.8 6)
       (layer "B.SilkS")
@@ -2514,7 +2514,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 152.35068579999998 -39.122218000000004 6)
+    (at 147.6165594 -39.122218000000004 6)
     (property "Reference" "S33"
       (at 0 8.8 6)
       (layer "B.SilkS")
@@ -2586,7 +2586,7 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 169.9294856 13.3276228 6)
+    (at 167.184403 13.1185659 6)
     (property "Reference" "S34"
       (at 0 8.8 6)
       (layer "B.SilkS")
@@ -2658,9 +2658,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 150.51902409999997 17.2023024 16)
+    (at 147.599787 17.4833752 19)
     (property "Reference" "S35"
-      (at 0 8.8 16)
+      (at 0 8.8 19)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2669,17 +2669,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 16) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 19) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 16) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 16) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 19) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 19) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 16) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 19) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2703,14 +2703,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 16) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 72 "mirror_thumbs_middle_cluster_from"))
+    (pad "1" smd rect (at -3.275 -5.95 19) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 72 "mirror_thumbs_middle_cluster_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 16) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 73 "mirror_thumbs_middle_cluster_to"))
+    (pad "2" smd rect (at 8.275 -3.75 19) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 73 "mirror_thumbs_middle_cluster_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 211) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 214) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2730,9 +2730,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 132.0014342 24.280670100000002 26)
+    (at 129.634371 26.2766472 32)
     (property "Reference" "S36"
-      (at 0 8.8 26)
+      (at 0 8.8 32)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2741,17 +2741,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 26) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 32) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 26) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 26) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 32) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 32) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 26) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 32) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2775,14 +2775,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 26) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 74 "mirror_thumbs_reachy_cluster_from"))
+    (pad "1" smd rect (at -3.275 -5.95 32) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 74 "mirror_thumbs_reachy_cluster_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 26) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 75 "mirror_thumbs_reachy_cluster_to"))
+    (pad "2" smd rect (at 8.275 -3.75 32) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 75 "mirror_thumbs_reachy_cluster_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 221) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 227) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -3085,7 +3085,7 @@
 (gr_line (start 28.168743187034853 -8.417384691299116) (end 44.094809027832035 -6.743487664325316) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 44.094809027832035 -6.743487664325357) (end 43.572166700000004 -1.7708783000000006) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 43.5721667 -1.7708783000000008) (mid 43.7895426 -1.0370294000000007) (end 44.4621601 -0.6718279000000008) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 44.4621601 -0.6718279000000008) (end 49.434769596706076 -0.14918555302220682) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 44.4621601 -0.6718279000000008) (end 47.445725800753046 -0.35824249152645304) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 84.71936246886536 -29.722949484737455) (end 86.4858935 -46.530369400000005) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 86.4858935 -46.5303694) (mid 86.26851760000001 -47.264218299999996) (end 85.59590010000001 -47.6294198) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 85.59590010000001 -47.62941980000001) (end 68.6890278591486 -49.406403737043085) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
@@ -3105,20 +3105,19 @@
 (gr_arc (start -9 -43.5) (mid -9.7071068 -43.2071068) (end -10 -42.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start -10 8.5) (end -10 -42.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start -10 8.5) (mid -9.7071068 9.2071068) (end -9 9.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 48.1296653 21.8348246) (end 65.9041154 23.7029947) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 65.9041154 23.7029947) (mid 66.0524933 23.791714100000004) (end 66.2139341 23.853552300000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 66.2139341 23.853552300000004) (end 83.51664459999999 28.815024700000002) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 83.5166446 28.815024700000002) (mid 83.6080831 28.836652) (end 83.7011479 28.8496016) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 83.70114789999998 28.849601600000003) (mid 83.72429539999999 28.862043700000005) (end 83.74776189999999 28.873873200000002) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 83.7481639 28.874069200000005) (end 99.92565279999998 36.7643577) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 99.92605479999999 36.76455380000001) (mid 100.68999409999999 36.811278300000005) (end 101.26321989999998 36.304130900000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 101.26341589999998 36.3037289) (end 108.7153333 21.0250341) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 108.71552939999998 21.0246321) (mid 108.76225389999999 20.2606928) (end 108.25510649999998 19.687467) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 108.25470449999999 19.687271) (end 102.25646021119904 16.761731800148233) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 47.2396719 20.7357742) (end 49.434769596706076 -0.14918555302216419) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 47.2396719 20.7357742) (mid 47.4570478 21.469623100000003) (end 48.1296653 21.8348246) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 46.1406215 21.6257677) (end 63.97824710000002 23.500577800000002) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 63.97824710000002 23.500577800000002) (mid 64.02190210000002 23.519179) (end 64.06639030000001 23.5356883) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 64.06639030000001 23.5356883) (end 80.6496044 29.245746799999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 80.6496044 29.245746799999996) (mid 80.79053640000001 29.422908099999997) (end 80.9677051 29.563830699999997) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 80.9677051 29.563830699999997) (end 96.2325708 39.102377499999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 96.2325708 39.102377499999996) (mid 96.98744110000001 39.2286995) (end 97.61053820000001 38.7842487) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 97.61053820000001 38.784248700000006) (end 106.61916570000001 24.367431100000005) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 106.61916570000001 24.3674311) (mid 106.74548770000001 23.6125608) (end 106.30103690000001 22.9894637) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 106.3010369 22.9894637) (end 101.89150168294377 20.234080268481243) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 45.2506281 20.5267173) (end 47.445725800753046 -0.35824249152648235) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 45.2506281 20.5267173) (mid 45.468004 21.260566200000003) (end 46.1406215 21.6257677) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 84.71936246886536 -29.722949484737484) (end 106.8972007 -27.391964799999997) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 102.25646021119904 16.76173180014814) (end 106.8972007 -27.391964799999997) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 101.89150168294377 20.23408026848142) (end 106.8972007 -27.391964799999997) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 102.28599399999999 6.913964399999999) (end 84.08624329999999 5.0010935) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 84.08624329999999 5.0010935) (end 87.6506639 -28.9121031) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 87.6506639 -28.9121031) (end 105.8504146 -26.9992323) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
