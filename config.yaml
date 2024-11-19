@@ -17,6 +17,10 @@ units:
   # the nearest edge of the PCB. Essentially a 1mm pad.
   cpx: 1 + kx / 2
   cpy: 1 + ky / 2
+
+  # controller dimensions
+  nice_nano_length: 34
+  nice_nano_width: 18
 points:
   zones:
     matrix:
@@ -155,8 +159,9 @@ pcbs:
           mcu_3dmodel_filename: 3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
           mcu_3dmodel_xyz_offset: [0, 0, 3]
         where:
+          # Align the bottom of the nice nano with the bottom keycap
           ref: matrix_inner_bottom
-          shift: [1kx + 3, 0ky]
+          shift: [1kx + 3, nice_nano_length / 2 - kx / 2]
           rotate: 0
       # TODO: reset button
       # TODO: power switch
