@@ -19,8 +19,8 @@ units:
   cpy: 1 + ky / 2
 
   # controller dimensions
-  nice_nano_length: 34
-  nice_nano_width: 18
+  nice_nano_length: 34.1
+  nice_nano_width: 18.3
 points:
   zones:
     matrix:
@@ -125,12 +125,24 @@ outlines:
           shift: [2cpx, -1cpy]
         - ref: matrix_ring_top
           shift: [1cpx, -1cpy]
+  controller:
+    - what: polygon
+      adjust: 
+        ref: matrix_inner_bottom
+        shift: [1cpx + 3, -1cpx + 1]
+      points:
+        - shift: [0, 0]
+        - shift: [0, nice_nano_length]
+        - shift: [nice_nano_width, 0]
+        - shift: [0, -nice_nano_length]
   board2:
     - name: matrix
     - name: thumbs
     - name: matrix_thumb_connector
     - name: thumb_bandaid
     - name: matrix_bandaid
+    - name: controller
+      operation: stack
   switch_plate:
     - name: board2
     - operation: subtract
@@ -151,6 +163,7 @@ pcbs:
           keycap_width: kx
           hotswap_3dmodel_filename: 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
           switch_3dmodel_filename: 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+          # TODO: These are certainly broken
           from: "{{name}}_from"
           to: "{{name}}_to"
       nice_nano:

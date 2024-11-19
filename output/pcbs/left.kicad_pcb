@@ -2803,7 +2803,7 @@
     
   (footprint "ceoloide:mcu_nice_nano"
     (layer "F.Cu")
-    (at 93.8194023 -11.069551 -6)
+    (at 93.82462869999999 -11.119277100000001 -6)
     (property "Reference" "MCU1"
       (at 0 -15 -6)
       (layer "F.SilkS")
@@ -3020,6 +3020,10 @@
 (gr_line (start 100.82484879999998 37.202925) (end 109.15390059999999 20.125838100000003) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 109.15390059999999 20.125838100000003) (end 91.17801959999998 11.358415200000003) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 89.7150161 10.8266898) (end 91.17801959999998 11.358415200000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 102.28599399999999 6.913964399999999) (end 84.08624329999999 5.0010935) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 84.08624329999999 5.0010935) (end 87.6506639 -28.9121031) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 87.6506639 -28.9121031) (end 105.8504146 -26.9992323) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 105.8504146 -26.9992323) (end 102.28599399999999 6.913964399999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 
 )
 
