@@ -187,6 +187,13 @@ outlines:
         - shift: [-65, 0]
         - ref: matrix_pinky_bottom
           shift: [-1cpx, -17]
+  _debug_rectangle:
+    - what: polygon
+      points:
+        - shift: [-80, 130]
+        - shift: [250, 0]
+        - shift: [0, -230]
+        - shift: [-250, 0]
   left_board:
     - name: _matrix
     - name: _thumbs
@@ -196,6 +203,7 @@ outlines:
     - name: _controller_area
     - name: _controller
     - name: _bottom_left
+    - name: _debug_rectangle
   switch_plate:
     - name: left_board
     - operation: subtract
