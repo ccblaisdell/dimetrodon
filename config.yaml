@@ -136,6 +136,7 @@ outlines:
           shift: [1cpx, -1cpy]
   _controller:
     - what: polygon
+      fillet: 1
       adjust: 
         ref: matrix_inner_bottom
         shift: [1cpx + 3, -1cpx + 1]
@@ -146,6 +147,7 @@ outlines:
         - shift: [0, -nice_nano_length]
   _controller_area:
     - what: polygon
+      fillet: 1
       adjust:
         ref: matrix_inner_bottom
         shift: [0, -2cpy]
@@ -183,12 +185,14 @@ outlines:
   # Makes a space for the JST connector
   _bottom_left:
     - what: polygon
+      fillet: 1
       points:
         - ref: matrix_pinky_bottom
           shift: [-1cpx, 1cpy]
         - shift: [70, 0]
         - ref: thumbs_tucky_cluster
           shift: [0cpx, -1cpy]
+        # Just eyeballing an intersectgion
         - shift: [-65, 0]
         - ref: matrix_pinky_bottom
           shift: [-1cpx, -17]
@@ -200,28 +204,53 @@ outlines:
         - shift: [0, -230]
         - shift: [-250, 0]
   _power_switch:
+    # 6.7x2.6mm body and a little actuator
+    # body
     - what: polygon
       adjust:
         ref: matrix_middle_top
-        shift: [0, 1cpy - middle_finger_prominence]
+        shift: [-40, 1cpy - middle_finger_prominence]
       points:
-        - shift: [-38, 0]
-        - shift: [5, 0]
-        - shift: [0, -2]
-        - shift: [-5, 0]
+        - shift: [0, 0]
+        - shift: [6.7, 0]
+        - shift: [0, -2.6]
+        - shift: [-6.7, 0]
+    # actuator
+    - what: polygon
+      adjust:
+        ref: matrix_middle_top
+        shift: [-40, 1cpy - middle_finger_prominence + 1.3]
+      points:
+        - shift: [1.6, 0]
+        - shift: [1.3, 0]
+        - shift: [0, -1.3]
+        - shift: [-1.3, 0]
   _reset_switch:
+    # 4.7x3.5 body and 2.6x1 button
+    # body
     - what: polygon
       adjust:
         ref: matrix_middle_top
-        shift: [0, 1cpy - middle_finger_prominence]
+        shift: [33, 1cpy - middle_finger_prominence]
       points:
-        - shift: [30, 0]
-        - shift: [5, 0]
-        - shift: [0, -2]
-        - shift: [-5, 0]
+        - shift: [0, 0]
+        - shift: [4.7, 0]
+        - shift: [0, -3.5]
+        - shift: [-4.7, 0]
+    # button
+    - what: polygon
+      adjust:
+        ref: matrix_middle_top
+        shift: [33, 1cpy - middle_finger_prominence]
+      points:
+        - shift: [(4.7 - 2.6) / 2, 1]
+        - shift: [2.6, 0]
+        - shift: [0, -1]
+        - shift: [-2.6, 0]
   # Fills out top area (mostly left) for power switch
   _top_left:
     - what: polygon
+      fillet: 1
       adjust:
         ref: matrix_middle_top
         shift: [0, 1cpy - middle_finger_prominence]
@@ -256,9 +285,9 @@ outlines:
     - name: _controller
       operation: subtract
     - name: _power_switch
-      operation: subtract
+      operation: stack
     - name: _reset_switch
-      operation: subtract
+      operation: stack
 pcbs:
   left:
     # Required, since footprints are KiCad 8 only
@@ -297,14 +326,13 @@ pcbs:
         # top right, near the USB port
         where: 
           ref: matrix_middle_top
-          shift: [30, 1cpy - 4]
-          rotate: 90
+          shift: [30, 1cpy - middle_finger_prominence]
       power_switch:
         what: ceoloide/power_switch_smd_side
         # top left
         where:
           ref: matrix_middle_top
-          shift: [-38, 1cpy - 4]
+          shift: [-38, 1cpy - middle_finger_prominence]
           # Spin so it's facing up
           rotate: 90
       battery_connector:
