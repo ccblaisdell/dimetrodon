@@ -19,6 +19,12 @@ units:
   # Controller dimensions
   nice_nano_length: 34.1
   nice_nano_width: 18.3
+
+  ###
+  # Various bandaid dimensions
+  
+  # Distance between highest finger and top of board
+  middle_finger_prominence: 3.5
 points:
   zones:
     matrix:
@@ -166,10 +172,10 @@ outlines:
     # 8 x 4.5
     - what: polygon
       adjust:
-        ref: matrix_pinky_bottom
-        shift: [-5, -1cpy - 7]
+        ref: thumbs_tucky_cluster
+        shift: [-1cpx - 48, -1cpy + 5]
       points:
-        - shift: [0, 0]
+        - shift: [-4, -2.25]
         - shift: [8, 0]
         - shift: [0, 4.5]
         - shift: [-8, 0]
@@ -197,9 +203,9 @@ outlines:
     - what: polygon
       adjust:
         ref: matrix_middle_top
-        shift: [0, 1cpy]
+        shift: [0, 1cpy - middle_finger_prominence]
       points:
-        - shift: [-38, -4]
+        - shift: [-38, 0]
         - shift: [5, 0]
         - shift: [0, -2]
         - shift: [-5, 0]
@@ -207,9 +213,9 @@ outlines:
     - what: polygon
       adjust:
         ref: matrix_middle_top
-        shift: [0, 1cpy]
+        shift: [0, 1cpy - middle_finger_prominence]
       points:
-        - shift: [30, -4]
+        - shift: [30, 0]
         - shift: [5, 0]
         - shift: [0, -2]
         - shift: [-5, 0]
@@ -218,7 +224,7 @@ outlines:
     - what: polygon
       adjust:
         ref: matrix_middle_top
-        shift: [0, 1cpy - 4]
+        shift: [0, 1cpy - middle_finger_prominence]
       points:
         - shift: [-45, 0]
         - shift: [94, 0]
@@ -292,6 +298,7 @@ pcbs:
         where: 
           ref: matrix_middle_top
           shift: [30, 1cpy - 4]
+          rotate: 90
       power_switch:
         what: ceoloide/power_switch_smd_side
         # top left
@@ -303,9 +310,9 @@ pcbs:
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
         where:
-          ref: matrix_pinky_bottom
-          # Just under the pinky
-          shift: [-5, -1cpy - 7]
+          # Slide it left, just under the pinky
+          ref: thumbs_tucky_cluster
+          shift: [-1cpx - 48, -1cpy + 5]
           # Spin so the plug faces towards the thumbs
           rotate: 90
       # TODO: speaker?
