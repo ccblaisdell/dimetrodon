@@ -84,11 +84,13 @@ outlines:
   matrix:
     - what: rectangle
       where: /^matrix_/
-      size: [kx + 2, ky + 2]
+      size: [kx, ky]
+      expand: 1
   thumbs:
     - what: rectangle
       where: /^thumbs_/
-      size: [kx + 2, ky + 2]
+      size: [kx, ky]
+      expand: 1
   # Connect the thumbs to the matrix
   matrix_thumb_connector:
     - what: polygon
@@ -135,12 +137,26 @@ outlines:
         - shift: [0, nice_nano_length]
         - shift: [nice_nano_width, 0]
         - shift: [0, -nice_nano_length]
+  controller_area:
+    - what: polygon
+      adjust:
+        ref: matrix_inner_bottom
+        shift: [0, -2cpy]
+      points:
+        - shift: [0, 0]
+        - shift: [0, 1cpy + 1]
+        - shift: [0, nice_nano_length]
+        - shift: [1cpx + 3, 0]
+        - shift: [nice_nano_width + 3, 0]
+        - shift: [0, -nice_nano_length]
+        - shift: [0, -2cpy - 2]
   board2:
     - name: matrix
     - name: thumbs
     - name: matrix_thumb_connector
     - name: thumb_bandaid
     - name: matrix_bandaid
+    - name: controller_area
     - name: controller
       operation: stack
   switch_plate:
