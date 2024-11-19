@@ -205,6 +205,7 @@
 (net 121 "MCU1_11")
 (net 122 "MCU1_13")
 (net 123 "MCU1_12")
+(net 124 "BAT_P")
 
   
   (footprint "ceoloide:switch_choc_v1_v2"
@@ -2994,6 +2995,87 @@
   
   
     
+
+  (footprint "ceoloide:reset_switch_smd_side"
+    (layer "F.Cu")
+    (at 77.7427519 -59.0126559 -6)
+    (property "Reference" "RST1"
+      (at 0 0 -6)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr smd)
+    (fp_line (start -2.35 -1.75) (end -2.35 1.75) (stroke (width 0.1) (type solid)) (layer "Dwgs.User"))
+    (fp_line (start -2.35 -1.75) (end 2.35 -1.75) (stroke (width 0.1) (type solid)) (layer "Dwgs.User"))
+    (fp_line (start -2.35 1.75) (end 2.35 1.75) (stroke (width 0.1) (type solid)) (layer "Dwgs.User"))
+    (fp_line (start -1.3 -2.75) (end -1.3 -1.75) (stroke (width 0.1) (type solid)) (layer "Dwgs.User"))
+    (fp_line (start -1.3 -2.75) (end 1.3 -2.75) (stroke (width 0.1) (type solid)) (layer "Dwgs.User"))
+    (fp_line (start 1.3 -2.75) (end 1.3 -1.75) (stroke (width 0.1) (type solid)) (layer "Dwgs.User"))
+    (fp_line (start 2.35 -1.75) (end 2.35 1.75) (stroke (width 0.1) (type solid)) (layer "Dwgs.User"))
+    
+    (pad "1" smd rect (at 2.625 -0.85 174) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "GND"))
+    (pad "2" smd rect (at 2.625 0.85 174) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 77 "RST"))
+    (pad "3" smd rect (at -2.625 -0.85 174) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "GND"))
+    (pad "4" smd rect (at -2.625 0.85 174) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 77 "RST"))
+    
+    (fp_line (start -2.35 -1.5) (end -2.35 -1.75) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
+    (fp_line (start -2.35 1.5) (end -2.35 1.75) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
+    (fp_line (start -2.1 -1.75) (end -2.35 -1.75) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
+    (fp_line (start -2.1 1.75) (end -2.35 1.75) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
+    (fp_line (start 2.1 -1.75) (end 2.35 -1.75) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
+    (fp_line (start 2.1 1.75) (end 2.35 1.75) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
+    (fp_line (start 2.35 -1.5) (end 2.35 -1.75) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
+    (fp_line (start 2.35 1.5) (end 2.35 1.75) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
+    
+  )
+    
+
+  (footprint "ceoloide:power_switch_smd_side"
+    (layer "F.Cu")
+    (at 21.326141699999997 -68.9259949 -3)
+    (property "Reference" "PWR1"
+      (at -3.6 0 -93)
+      (layer "F.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr smd)
+    
+    (fp_line (start -1.305 -3.35) (end -1.305 3.35) (layer "F.Fab") (stroke (width 0.1) (type solid)))
+    (fp_line (start 1.295 -3.35) (end -1.305 -3.35) (layer "F.Fab") (stroke (width 0.1) (type solid)))
+    (fp_line (start 1.295 3.35) (end 1.295 -3.35) (layer "F.Fab") (stroke (width 0.1) (type solid)))
+    (fp_line (start -1.305 3.35) (end 1.295 3.35) (layer "F.Fab") (stroke (width 0.1) (type solid)))
+    (fp_line (start 2.595 0.1) (end 1.295 0.1) (layer "F.Fab") (stroke (width 0.1) (type solid)))
+    (fp_line (start 2.645 0.15) (end 2.595 0.1) (layer "F.Fab") (stroke (width 0.1) (type solid)))
+    (fp_line (start 2.845 0.35) (end 2.645 0.15) (layer "F.Fab") (stroke (width 0.1) (type solid)))
+    (fp_line (start 2.845 1.2) (end 2.845 0.35) (layer "F.Fab") (stroke (width 0.1) (type solid)))
+    (fp_line (start 2.645 1.4) (end 2.845 1.2) (layer "F.Fab") (stroke (width 0.1) (type solid)))
+    (fp_line (start 1.345 1.4) (end 2.645 1.4) (layer "F.Fab") (stroke (width 0.1) (type solid)))
+    (pad "" smd rect (at 1.125 -3.65 87) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "" smd rect (at -1.085 -3.65 87) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "" smd rect (at -1.085 3.65 87) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "" smd rect (at 1.125 3.65 87) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "1" smd rect (at -1.735 2.25 87) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") )
+    (pad "2" smd rect (at -1.735 -0.75 87) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 76 "RAW"))
+    (pad "3" smd rect (at -1.735 -2.25 87) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 124 "BAT_P"))
+    
+    (fp_text user "ON" (at 0 -5 -3) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user "OFF" (at 0 5 -3) (layer "F.SilkS")
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start 0.415 -3.45) (end -0.375 -3.45) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start -0.375 3.45) (end 0.415 3.45) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start -1.425 1.6) (end -1.425 -0.1) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start 1.425 2.85) (end 1.425 -2.85) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    (fp_line (start -1.425 -1.4) (end -1.425 -1.6) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
+    
+    (pad "" np_thru_hole circle (at 0.025 -1.5 87) (size 0.9 0.9) (drill 0.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0.025 1.5 87) (size 0.9 0.9) (drill 0.9) (layers "*.Cu" "*.Mask"))
+  )
+    
   (gr_line (start -9 9.5) (end 9 9.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 9 9.5) (mid 9.7071068 9.2071068) (end 10 8.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 10 8.5) (end 10 -5.932428905881044) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
@@ -3004,7 +3086,7 @@
 (gr_line (start 44.094809027832035 -6.743487664325357) (end 43.572166700000004 -1.7708783000000006) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 43.5721667 -1.7708783000000008) (mid 43.7895426 -1.0370294000000007) (end 44.4621601 -0.6718279000000008) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 44.4621601 -0.6718279000000008) (end 49.434769596706076 -0.14918555302220682) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 84.7193624665531 -29.7229494627378) (end 86.4858935 -46.530369400000005) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 84.71936246886536 -29.722949484737455) (end 86.4858935 -46.530369400000005) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 86.4858935 -46.5303694) (mid 86.26851760000001 -47.264218299999996) (end 85.59590010000001 -47.6294198) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 85.59590010000001 -47.62941980000001) (end 68.6890278591486 -49.406403737043085) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 68.6890278591486 -49.40640373704309) (end 68.7935563 -50.40092550000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
@@ -3032,11 +3114,11 @@
 (gr_arc (start 99.92605479999999 36.76455380000001) (mid 100.68999409999999 36.811278300000005) (end 101.26321989999998 36.304130900000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 101.26341589999998 36.3037289) (end 108.7153333 21.0250341) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 108.71552939999998 21.0246321) (mid 108.76225389999999 20.2606928) (end 108.25510649999998 19.687467) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 108.25470449999999 19.687271) (end 104.16941343433463 17.69474142301651) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 108.25470449999999 19.687271) (end 102.25646021119904 16.761731800148233) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 47.2396719 20.7357742) (end 49.434769596706076 -0.14918555302216419) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 47.2396719 20.7357742) (mid 47.4570478 21.469623100000003) (end 48.1296653 21.8348246) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 84.7193624665531 -29.722949462737652) (end 108.8862445 -27.182907800000002) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 104.16941343433463 17.69474142301658) (end 108.8862445 -27.182907800000002) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 84.71936246886536 -29.722949484737484) (end 106.8972007 -27.391964799999997) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 102.25646021119904 16.76173180014814) (end 106.8972007 -27.391964799999997) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 102.28599399999999 6.913964399999999) (end 84.08624329999999 5.0010935) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 84.08624329999999 5.0010935) (end 87.6506639 -28.9121031) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 87.6506639 -28.9121031) (end 105.8504146 -26.9992323) (layer Edge.Cuts) (stroke (width 0.15) (type default)))

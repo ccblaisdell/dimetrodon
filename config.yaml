@@ -1,5 +1,6 @@
 meta:
-  engine: 4.1.0 # Min Ergogen version for KiCad 8 footprints
+  # Min Ergogen version for KiCad 8 footprints
+  engine: 4.1.0
 units:
   # Proxy spacing variables, choc spacing
   kx: cx
@@ -9,16 +10,13 @@ units:
   $default_width: cx
   $default_height: cy
 
-  # keywell padding
-  kpx: kx + 0.5
-  kpy: ky + 0.5
-
-  # Board padding, i.e. distance from center of keycap (Point) to 
-  # the nearest edge of the PCB. Essentially a 1mm pad.
+  # Switch padding, i.e. distance from center of switch (Point) to 
+  # the nearest edge of the PCB. Essentially a 1mm pad. Useful
+  # for adjustment operations in relation to a Point.
   cpx: 1 + kx / 2
   cpy: 1 + ky / 2
 
-  # controller dimensions
+  # Controller dimensions
   nice_nano_length: 34.1
   nice_nano_width: 18.3
 points:
@@ -147,7 +145,7 @@ outlines:
         - shift: [0, 1cpy + 1]
         - shift: [0, nice_nano_length]
         - shift: [1cpx + 3, 0]
-        - shift: [nice_nano_width + 3, 0]
+        - shift: [nice_nano_width + 1, 0]
         - shift: [0, -nice_nano_length]
         - shift: [0, -2cpy - 2]
   board2:
@@ -192,8 +190,18 @@ pcbs:
           ref: matrix_inner_bottom
           shift: [1kx + 3, nice_nano_length / 2 - kx / 2]
           rotate: 0
-      # TODO: reset button
-      # TODO: power switch
+      reset_switch:
+        what: ceoloide/reset_switch_smd_side
+        # top right, near the USB port
+        where: 
+          ref: matrix_inner_top
+          shift: [0, cy + 3]
+      power_switch:
+        what: ceoloide/power_switch_smd_side
+        # top left
+        where:
+          ref: matrix_ring_top
+          shift: [0, cy + 3]
       # TODO: JST plug
       # TODO: battery outline
       # TODO: speaker?
