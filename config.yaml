@@ -213,6 +213,17 @@ outlines:
         - shift: [5, 0]
         - shift: [0, -2]
         - shift: [-5, 0]
+  # Fills out top area (mostly left) for power switch
+  _top_left:
+    - what: polygon
+      adjust:
+        ref: matrix_middle_top
+        shift: [0, 1cpy - 4]
+      points:
+        - shift: [-45, 0]
+        - shift: [94, 0]
+        - shift: [0, -30]
+        - shift: [-94, 0]
   left_board:
     - name: _matrix
     - name: _thumbs
@@ -222,8 +233,7 @@ outlines:
     - name: _controller_area
     - name: _controller
     - name: _bottom_left
-    - name: _power_switch
-    - name: _reset_switch
+    - name: _top_left
     #- name: _debug_rectangle
   switch_plate:
     - name: left_board
@@ -238,6 +248,10 @@ outlines:
     - name: _jst
       operation: subtract
     - name: _controller
+      operation: subtract
+    - name: _power_switch
+      operation: subtract
+    - name: _reset_switch
       operation: subtract
 pcbs:
   left:
