@@ -328,7 +328,7 @@ pcbs:
           ref: matrix_middle_top
           # Coordinates are all based on the center, so adjust manually
           # based on 6.7x2.6 size
-          shift: [-40 + 6.7/2, 1cpy - middle_finger_prominence - 2.6/2 -1]
+          shift: [-38 + 6.7/2, 1cpy - middle_finger_prominence - 2.6/2 -1]
           # Spin so it's facing up
           rotate: 90
       reset_switch:
@@ -338,7 +338,7 @@ pcbs:
           ref: matrix_middle_top
           # Coordinates are all based on the center, so adjust manually
           # based on 4.7x3.5 body size (also 2.6x1 buttton)
-          shift: [30 + 4.7/2, 1cpy - middle_finger_prominence - 3.5/2]
+          shift: [34 + 4.7/2, 1cpy - middle_finger_prominence - 3.5/2]
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
         where:
@@ -347,6 +347,3 @@ pcbs:
           shift: [-1cpx - 48, -1cpy + 5]
           # Spin so the plug faces towards the thumbs
           rotate: 90
-      # TODO: speaker?
-      # TODO: haptic?
-      # TODO: LED?

@@ -2562,7 +2562,7 @@
 
   (footprint "ceoloide:power_switch_smd_side"
     (layer "F.Cu")
-    (at -1.5016333000000017 -58.5157088 90)
+    (at 0.4983666999999983 -58.5157088 90)
     (property "Reference" "PWR1"
       (at -3.6 0 0)
       (layer "F.SilkS")
@@ -2608,7 +2608,7 @@
 
   (footprint "ceoloide:reset_switch_smd_side"
     (layer "F.Cu")
-    (at 67.49836669999999 -59.065708799999996 0)
+    (at 71.49836669999999 -59.065708799999996 0)
     (property "Reference" "RST1"
       (at 0 0 0)
       (layer "F.SilkS")
