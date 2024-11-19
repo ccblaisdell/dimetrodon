@@ -53,7 +53,7 @@ points:
     thumbs:
       anchor:
         ref: matrix_pointer_bottom
-        shift: [4, -22]
+        shift: [4, -24]
       key:
         padding: 1ky
         spread: 1kx
@@ -145,9 +145,9 @@ outlines:
         shift: [0, -2cpy]
       points:
         - shift: [0, 0]
-        - shift: [0, 1cpy + 1]
+        - shift: [0, 1cpy + 0.5]
         - shift: [0, nice_nano_length]
-        - shift: [1cpx + 3, 0]
+        - shift: [1cpx + 2, 0]
         - shift: [nice_nano_width + 1, 0]
         - shift: [0, -nice_nano_length]
         - shift: [0, -2cpy - 2]
@@ -174,6 +174,19 @@ outlines:
         - shift: [8, 0]
         - shift: [0, 4.5]
         - shift: [-8, 0]
+  # Fills out bottom corner from pink to thumb cluster.
+  # Makes a space for the JST connector
+  _bottom_left:
+    - what: polygon
+      points:
+        - ref: matrix_pinky_bottom
+          shift: [-1cpx, 1cpy]
+        - shift: [70, 0]
+        - ref: thumbs_tucky_cluster
+          shift: [0cpx, -1cpy]
+        - shift: [-65, 0]
+        - ref: matrix_pinky_bottom
+          shift: [-1cpx, -17]
   left_board:
     - name: _matrix
     - name: _thumbs
@@ -182,7 +195,7 @@ outlines:
     - name: _matrix_bandaid
     - name: _controller_area
     - name: _controller
-      # operation: stack
+    - name: _bottom_left
   switch_plate:
     - name: left_board
     - operation: subtract
@@ -192,7 +205,9 @@ outlines:
     - name: _keycaps
       operation: subtract
     - name: _battery
+      operation: subtract
     - name: _jst
+      operation: subtract
     - name: _controller
       operation: subtract
 pcbs:
