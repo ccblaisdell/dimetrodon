@@ -22,6 +22,9 @@ units:
 points:
   zones:
     matrix:
+      anchor:
+        # Cancel out rotations from column splay
+        rotate: 6
       key:
         padding: ky
         spread: kx
@@ -190,6 +193,8 @@ outlines:
       operation: subtract
     - name: _battery
     - name: _jst
+    - name: _controller
+      operation: subtract
 pcbs:
   left:
     # Required, since footprints are KiCad 8 only

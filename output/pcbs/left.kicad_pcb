@@ -212,9 +212,9 @@
   
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 0 0 0)
+    (at 0 0 6)
     (property "Reference" "S1"
-      (at 0 8.8 0)
+      (at 0 8.8 6)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -223,17 +223,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -257,14 +257,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 1 "matrix_pinky_bottom_from"))
+    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 1 "matrix_pinky_bottom_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "matrix_pinky_bottom_to"))
+    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 2 "matrix_pinky_bottom_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -284,9 +284,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 0 -17 0)
+    (at -1.7769839 -16.9068722 6)
     (property "Reference" "S2"
-      (at 0 8.8 0)
+      (at 0 8.8 6)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -295,17 +295,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -329,14 +329,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 6 "matrix_pinky_middle_from"))
+    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 6 "matrix_pinky_middle_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 7 "matrix_pinky_middle_to"))
+    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 7 "matrix_pinky_middle_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -356,9 +356,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 0 -34 0)
+    (at -3.5539678 -33.8137444 6)
     (property "Reference" "S3"
-      (at 0 8.8 0)
+      (at 0 8.8 6)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -367,17 +367,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -401,14 +401,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 8 "matrix_pinky_top_from"))
+    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 8 "matrix_pinky_top_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 9 "matrix_pinky_top_to"))
+    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 9 "matrix_pinky_top_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -428,9 +428,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 18.5 -15 -3)
+    (at 16.8307281 -16.851605 3)
     (property "Reference" "S4"
-      (at 0 8.8 -3)
+      (at 0 8.8 3)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -439,17 +439,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -3) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 3) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 -3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 -3) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 3) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -473,14 +473,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 -3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 10 "matrix_ring_bottom_from"))
+    (pad "1" smd rect (at -3.275 -5.95 3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 10 "matrix_ring_bottom_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 11 "matrix_ring_bottom_to"))
+    (pad "2" smd rect (at 8.275 -3.75 3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 11 "matrix_ring_bottom_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 192) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 198) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -500,9 +500,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 19.3897113 -31.9767021 -3)
+    (at 15.941016800000002 -33.8283071 3)
     (property "Reference" "S5"
-      (at 0 8.8 -3)
+      (at 0 8.8 3)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -511,17 +511,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 -3) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 3) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 -3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 -3) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 3) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -545,14 +545,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 -3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 12 "matrix_ring_middle_from"))
+    (pad "1" smd rect (at -3.275 -5.95 3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 12 "matrix_ring_middle_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 13 "matrix_ring_middle_to"))
+    (pad "2" smd rect (at 8.275 -3.75 3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 13 "matrix_ring_middle_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 192) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 198) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -572,8 +572,1160 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 20.279422599999997 -48.9534042 -3)
+    (at 15.051305500000002 -50.8050092 3)
     (property "Reference" "S6"
+      (at 0 8.8 3)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 3) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 3) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 14 "matrix_ring_top_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 15 "matrix_ring_top_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 198) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 35.1483667 -20.8157088 0)
+    (property "Reference" "S7"
+      (at 0 8.8 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 16 "matrix_middle_bottom_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 17 "matrix_middle_bottom_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 35.1483667 -37.815708799999996 0)
+    (property "Reference" "S8"
+      (at 0 8.8 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 18 "matrix_middle_middle_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 19 "matrix_middle_middle_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 35.1483667 -54.815708799999996 0)
+    (property "Reference" "S9"
+      (at 0 8.8 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 20 "matrix_middle_top_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 21 "matrix_middle_top_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 53.148366599999996 -14.8157088 0)
+    (property "Reference" "S10"
+      (at 0 8.8 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 22 "matrix_pointer_bottom_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 23 "matrix_pointer_bottom_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 53.148366599999996 -31.8157088 0)
+    (property "Reference" "S11"
+      (at 0 8.8 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 24 "matrix_pointer_middle_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "matrix_pointer_middle_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 53.148366599999996 -48.815708799999996 0)
+    (property "Reference" "S12"
+      (at 0 8.8 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 26 "matrix_pointer_top_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 27 "matrix_pointer_top_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 71.1483666 -12.8157089 0)
+    (property "Reference" "S13"
+      (at 0 8.8 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 28 "matrix_inner_bottom_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 29 "matrix_inner_bottom_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 71.1483666 -29.8157089 0)
+    (property "Reference" "S14"
+      (at 0 8.8 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "matrix_inner_middle_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 31 "matrix_inner_middle_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 71.1483666 -46.815708900000004 0)
+    (property "Reference" "S15"
+      (at 0 8.8 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 32 "matrix_inner_top_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 33 "matrix_inner_top_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 57.148366599999996 7.1842912000000005 0)
+    (property "Reference" "S16"
+      (at 0 8.8 0)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 34 "thumbs_tucky_cluster_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 35 "thumbs_tucky_cluster_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 77.0819429 9.478039800000001 -13)
+    (property "Reference" "S17"
+      (at 0 8.8 -13)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 -13) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 -13) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 -13) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 -13) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 -13) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 36 "thumbs_middle_cluster_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 -13) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 37 "thumbs_middle_cluster_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 182) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 95.8680898 16.345244 -26)
+    (property "Reference" "S18"
+      (at 0 8.8 -26)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 -26) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 -26) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 -26) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 -26) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 -26) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 38 "thumbs_reachy_cluster_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 -26) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 39 "thumbs_reachy_cluster_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 169) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 227.7361796 0 -6)
+    (property "Reference" "S19"
+      (at 0 8.8 -6)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 40 "mirror_matrix_pinky_bottom_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 41 "mirror_matrix_pinky_bottom_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 229.51316350000002 -16.9068722 -6)
+    (property "Reference" "S20"
+      (at 0 8.8 -6)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 42 "mirror_matrix_pinky_middle_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 43 "mirror_matrix_pinky_middle_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 231.29014740000002 -33.8137444 -6)
+    (property "Reference" "S21"
+      (at 0 8.8 -6)
+      (layer "B.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+
+    
+    
+    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    
+    
+    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+  
+    
+    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
+
+    
+    
+    
+    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 44 "mirror_matrix_pinky_top_from"))
+    
+
+    
+    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 45 "mirror_matrix_pinky_top_to"))
+
+    
+    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    
+    
+    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+	  
+    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    
+  )
+    
+
+  (footprint "ceoloide:switch_choc_v1_v2"
+    (layer "B.Cu")
+    (at 210.90545150000003 -16.851605 -3)
+    (property "Reference" "S22"
       (at 0 8.8 -3)
       (layer "B.SilkS")
       hide
@@ -617,11 +1769,11 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 -3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 14 "matrix_ring_top_from"))
+    (pad "1" smd rect (at -3.275 -5.95 -3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 46 "mirror_matrix_ring_bottom_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 -3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 15 "matrix_ring_top_to"))
+    (pad "2" smd rect (at 8.275 -3.75 -3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 47 "mirror_matrix_ring_bottom_to"))
 
     
     (pad "" np_thru_hole circle (at 5 -3.75 192) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
@@ -644,1161 +1796,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 37.1316543 -17.0276734 -6)
-    (property "Reference" "S7"
-      (at 0 8.8 -6)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 16 "matrix_middle_bottom_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 17 "matrix_middle_bottom_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 38.9086382 -33.9345456 -6)
-    (property "Reference" "S8"
-      (at 0 8.8 -6)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 18 "matrix_middle_middle_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 19 "matrix_middle_middle_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 40.685622099999996 -50.8414178 -6)
-    (property "Reference" "S9"
-      (at 0 8.8 -6)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 20 "matrix_middle_top_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 21 "matrix_middle_top_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 54.4058776 -9.179029700000001 -6)
-    (property "Reference" "S10"
-      (at 0 8.8 -6)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 22 "matrix_pointer_bottom_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 23 "matrix_pointer_bottom_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 56.182861499999994 -26.0859019 -6)
-    (property "Reference" "S11"
-      (at 0 8.8 -6)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 24 "matrix_pointer_middle_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "matrix_pointer_middle_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 57.95984539999999 -42.9927741 -6)
-    (property "Reference" "S12"
-      (at 0 8.8 -6)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 26 "matrix_pointer_top_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 27 "matrix_pointer_top_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 72.0982148 -5.308473600000001 -6)
-    (property "Reference" "S13"
-      (at 0 8.8 -6)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 28 "matrix_inner_bottom_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 29 "matrix_inner_bottom_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 73.8751987 -22.2153458 -6)
-    (property "Reference" "S14"
-      (at 0 8.8 -6)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "matrix_inner_middle_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 31 "matrix_inner_middle_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 75.6521826 -39.122218000000004 -6)
-    (property "Reference" "S15"
-      (at 0 8.8 -6)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 32 "matrix_inner_top_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 33 "matrix_inner_top_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 56.084339 13.1185659 -6)
-    (property "Reference" "S16"
-      (at 0 8.8 -6)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 -6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 -6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 34 "thumbs_tucky_cluster_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 -6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 35 "thumbs_tucky_cluster_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 189) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 75.66895500000001 17.4833752 -19)
-    (property "Reference" "S17"
-      (at 0 8.8 -19)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 -19) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 -19) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -19) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 -19) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 -19) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 36 "thumbs_middle_cluster_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 -19) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 37 "thumbs_middle_cluster_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 176) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 93.634371 26.2766472 -32)
-    (property "Reference" "S18"
-      (at 0 8.8 -32)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 -32) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 -32) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 -32) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 -32) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 -32) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 38 "thumbs_reachy_cluster_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 -32) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 39 "thumbs_reachy_cluster_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 163) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 223.268742 0 0)
-    (property "Reference" "S19"
-      (at 0 8.8 0)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 40 "mirror_matrix_pinky_bottom_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 41 "mirror_matrix_pinky_bottom_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 223.268742 -17 0)
-    (property "Reference" "S20"
-      (at 0 8.8 0)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 42 "mirror_matrix_pinky_middle_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 43 "mirror_matrix_pinky_middle_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 223.268742 -34 0)
-    (property "Reference" "S21"
-      (at 0 8.8 0)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 44 "mirror_matrix_pinky_top_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 45 "mirror_matrix_pinky_top_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 204.768742 -15 3)
-    (property "Reference" "S22"
-      (at 0 8.8 3)
-      (layer "B.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
-
-    
-    
-    (pad "" np_thru_hole circle (at 0 0 3) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    (pad "" np_thru_hole circle (at 5.5 0 3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (pad "" np_thru_hole circle (at 0 -5.95 3) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    
-    
-    (fp_line (start -1.5 -8.2) (end -2 -7.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 1.5 -8.2) (end -1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 1.5 -8.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2 -7.7) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.52 -6.2) (end 7 -6.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -6.2) (end 7 -5.6) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 2.52 -6.2) (mid 2.139878 -6.382304) (end 2 -6.78) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-  
-    
-    (fp_line (start -1.5 -3.7) (end -2 -4.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 0.8 -3.7) (end -1.5 -3.7) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 2.5 -1.5) (end 2.5 -2.2) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -1.5) (end 2.5 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_line (start 7 -2) (end 7 -1.5) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-    (fp_arc (start 0.8 -3.7) (mid 1.956518 -3.312082) (end 2.5 -2.22) (layer "B.SilkS") (stroke (width 0.15) (type solid)))
-
-    
-    
-    
-    (pad "1" smd rect (at -3.275 -5.95 3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 46 "mirror_matrix_ring_bottom_from"))
-    
-
-    
-    (pad "2" smd rect (at 8.275 -3.75 3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 47 "mirror_matrix_ring_bottom_to"))
-
-    
-    (pad "" np_thru_hole circle (at 5 -3.75 198) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
-    
-    
-    (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-	  
-    (model 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
-  )
-    
-
-  (footprint "ceoloide:switch_choc_v1_v2"
-    (layer "B.Cu")
-    (at 203.87903070000002 -31.9767021 3)
+    (at 211.7951628 -33.8283071 -3)
     (property "Reference" "S23"
-      (at 0 8.8 3)
+      (at 0 8.8 -3)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1807,17 +1807,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 3) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -3) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 -3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 -3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 3) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 -3) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -1841,14 +1841,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 48 "mirror_matrix_ring_middle_from"))
+    (pad "1" smd rect (at -3.275 -5.95 -3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 48 "mirror_matrix_ring_middle_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 49 "mirror_matrix_ring_middle_to"))
+    (pad "2" smd rect (at 8.275 -3.75 -3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 49 "mirror_matrix_ring_middle_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 198) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 192) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -1868,9 +1868,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 202.9893194 -48.9534042 3)
+    (at 212.6848741 -50.8050092 -3)
     (property "Reference" "S24"
-      (at 0 8.8 3)
+      (at 0 8.8 -3)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1879,17 +1879,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 3) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 -3) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 -3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 -3) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 3) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 -3) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -1913,14 +1913,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 50 "mirror_matrix_ring_top_from"))
+    (pad "1" smd rect (at -3.275 -5.95 -3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 50 "mirror_matrix_ring_top_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 51 "mirror_matrix_ring_top_to"))
+    (pad "2" smd rect (at 8.275 -3.75 -3) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 51 "mirror_matrix_ring_top_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 198) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 192) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -1940,9 +1940,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 186.1370877 -17.0276734 6)
+    (at 192.58781290000002 -20.8157088 0)
     (property "Reference" "S25"
-      (at 0 8.8 6)
+      (at 0 8.8 0)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1951,17 +1951,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -1985,14 +1985,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 52 "mirror_matrix_middle_bottom_from"))
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 52 "mirror_matrix_middle_bottom_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 53 "mirror_matrix_middle_bottom_to"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 53 "mirror_matrix_middle_bottom_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2012,9 +2012,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 184.3601038 -33.9345456 6)
+    (at 192.58781290000002 -37.815708799999996 0)
     (property "Reference" "S26"
-      (at 0 8.8 6)
+      (at 0 8.8 0)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2023,17 +2023,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2057,14 +2057,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 54 "mirror_matrix_middle_middle_from"))
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 54 "mirror_matrix_middle_middle_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 55 "mirror_matrix_middle_middle_to"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 55 "mirror_matrix_middle_middle_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2084,9 +2084,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 182.5831199 -50.8414178 6)
+    (at 192.58781290000002 -54.815708799999996 0)
     (property "Reference" "S27"
-      (at 0 8.8 6)
+      (at 0 8.8 0)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2095,17 +2095,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2129,14 +2129,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 56 "mirror_matrix_middle_top_from"))
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 56 "mirror_matrix_middle_top_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 57 "mirror_matrix_middle_top_to"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 57 "mirror_matrix_middle_top_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2156,9 +2156,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 168.8628644 -9.179029700000001 6)
+    (at 174.587813 -14.8157088 0)
     (property "Reference" "S28"
-      (at 0 8.8 6)
+      (at 0 8.8 0)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2167,17 +2167,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2201,14 +2201,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 58 "mirror_matrix_pointer_bottom_from"))
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 58 "mirror_matrix_pointer_bottom_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 59 "mirror_matrix_pointer_bottom_to"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 59 "mirror_matrix_pointer_bottom_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2228,9 +2228,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 167.0858805 -26.0859019 6)
+    (at 174.587813 -31.8157088 0)
     (property "Reference" "S29"
-      (at 0 8.8 6)
+      (at 0 8.8 0)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2239,17 +2239,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2273,14 +2273,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 60 "mirror_matrix_pointer_middle_from"))
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 60 "mirror_matrix_pointer_middle_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 61 "mirror_matrix_pointer_middle_to"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 61 "mirror_matrix_pointer_middle_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2300,9 +2300,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 165.30889660000003 -42.9927741 6)
+    (at 174.587813 -48.815708799999996 0)
     (property "Reference" "S30"
-      (at 0 8.8 6)
+      (at 0 8.8 0)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2311,17 +2311,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2345,14 +2345,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 62 "mirror_matrix_pointer_top_from"))
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 62 "mirror_matrix_pointer_top_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 63 "mirror_matrix_pointer_top_to"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 63 "mirror_matrix_pointer_top_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2372,9 +2372,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 151.1705272 -5.308473600000001 6)
+    (at 156.587813 -12.8157089 0)
     (property "Reference" "S31"
-      (at 0 8.8 6)
+      (at 0 8.8 0)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2383,17 +2383,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2417,14 +2417,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 64 "mirror_matrix_inner_bottom_from"))
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 64 "mirror_matrix_inner_bottom_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 65 "mirror_matrix_inner_bottom_to"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 65 "mirror_matrix_inner_bottom_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2444,9 +2444,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 149.3935433 -22.2153458 6)
+    (at 156.587813 -29.8157089 0)
     (property "Reference" "S32"
-      (at 0 8.8 6)
+      (at 0 8.8 0)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2455,17 +2455,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2489,14 +2489,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 66 "mirror_matrix_inner_middle_from"))
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 66 "mirror_matrix_inner_middle_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 67 "mirror_matrix_inner_middle_to"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 67 "mirror_matrix_inner_middle_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2516,9 +2516,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 147.6165594 -39.122218000000004 6)
+    (at 156.587813 -46.815708900000004 0)
     (property "Reference" "S33"
-      (at 0 8.8 6)
+      (at 0 8.8 0)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2527,17 +2527,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2561,14 +2561,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 68 "mirror_matrix_inner_top_from"))
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 68 "mirror_matrix_inner_top_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 69 "mirror_matrix_inner_top_to"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 69 "mirror_matrix_inner_top_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2588,9 +2588,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 167.184403 13.1185659 6)
+    (at 170.587813 7.1842912000000005 0)
     (property "Reference" "S34"
-      (at 0 8.8 6)
+      (at 0 8.8 0)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2599,17 +2599,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 6) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 0) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 6) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 0) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 6) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 0) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2633,14 +2633,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 70 "mirror_thumbs_tucky_cluster_from"))
+    (pad "1" smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 70 "mirror_thumbs_tucky_cluster_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 6) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 71 "mirror_thumbs_tucky_cluster_to"))
+    (pad "2" smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 71 "mirror_thumbs_tucky_cluster_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2660,9 +2660,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 147.599787 17.4833752 19)
+    (at 150.6542367 9.478039800000001 13)
     (property "Reference" "S35"
-      (at 0 8.8 19)
+      (at 0 8.8 13)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2671,17 +2671,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 19) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 13) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 19) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 19) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 13) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 13) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 19) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 13) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2705,14 +2705,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 19) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 72 "mirror_thumbs_middle_cluster_from"))
+    (pad "1" smd rect (at -3.275 -5.95 13) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 72 "mirror_thumbs_middle_cluster_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 19) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 73 "mirror_thumbs_middle_cluster_to"))
+    (pad "2" smd rect (at 8.275 -3.75 13) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 73 "mirror_thumbs_middle_cluster_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 214) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 208) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2732,9 +2732,9 @@
 
   (footprint "ceoloide:switch_choc_v1_v2"
     (layer "B.Cu")
-    (at 129.634371 26.2766472 32)
+    (at 131.8680898 16.345244 26)
     (property "Reference" "S36"
-      (at 0 8.8 32)
+      (at 0 8.8 26)
       (layer "B.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2743,17 +2743,17 @@
 
     
     
-    (pad "" np_thru_hole circle (at 0 0 32) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 0 26) (size 3.4 3.4) (drill 3.4) (layers "*.Cu" "*.Mask"))
     
     
     
-    (pad "" np_thru_hole circle (at 5.5 0 32) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at -5.5 0 32) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5.5 0 26) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at -5.5 0 26) (size 1.9 1.9) (drill 1.9) (layers "*.Cu" "*.Mask"))
     
     
     
     
-    (pad "" np_thru_hole circle (at 0 -5.95 32) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0 -5.95 26) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     
@@ -2777,14 +2777,14 @@
     
     
     
-    (pad "1" smd rect (at -3.275 -5.95 32) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 74 "mirror_thumbs_reachy_cluster_from"))
+    (pad "1" smd rect (at -3.275 -5.95 26) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 74 "mirror_thumbs_reachy_cluster_from"))
     
 
     
-    (pad "2" smd rect (at 8.275 -3.75 32) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 75 "mirror_thumbs_reachy_cluster_to"))
+    (pad "2" smd rect (at 8.275 -3.75 26) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (net 75 "mirror_thumbs_reachy_cluster_to"))
 
     
-    (pad "" np_thru_hole circle (at 5 -3.75 227) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 5 -3.75 221) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
     (model 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
@@ -2806,9 +2806,9 @@
     
   (footprint "ceoloide:mcu_nice_nano"
     (layer "F.Cu")
-    (at 93.82462869999999 -11.119277100000001 -6)
+    (at 92.1483666 -20.8657089 0)
     (property "Reference" "MCU1"
-      (at 0 -15 -6)
+      (at 0 -15 0)
       (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2829,146 +2829,146 @@
     
     
     
-    (pad "24" thru_hole circle (at -7.62 -12.7 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 87 "P1"))
-    (pad "1" thru_hole circle (at 7.62 -12.7 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 76 "RAW"))
+    (pad "24" thru_hole circle (at -7.62 -12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 87 "P1"))
+    (pad "1" thru_hole circle (at 7.62 -12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 76 "RAW"))
       
-    (fp_text user "P1" (at -4.47 -12.7 -6) (layer "F.SilkS")
+    (fp_text user "P1" (at -4.47 -12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "RAW" (at 4.47 -12.7 -6) (layer "F.SilkS")
+    (fp_text user "RAW" (at 4.47 -12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
     
-    (pad "23" thru_hole circle (at -7.62 -10.16 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 88 "P0"))
-    (pad "2" thru_hole circle (at 7.62 -10.16 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 3 "GND"))
+    (pad "23" thru_hole circle (at -7.62 -10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 88 "P0"))
+    (pad "2" thru_hole circle (at 7.62 -10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 3 "GND"))
       
-    (fp_text user "P0" (at -4.47 -10.16 -6) (layer "F.SilkS")
+    (fp_text user "P0" (at -4.47 -10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "GND" (at 4.47 -10.16 -6) (layer "F.SilkS")
+    (fp_text user "GND" (at 4.47 -10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
     
-    (pad "22" thru_hole circle (at -7.62 -7.619999999999999 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 3 "GND"))
-    (pad "3" thru_hole circle (at 7.62 -7.619999999999999 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 77 "RST"))
+    (pad "22" thru_hole circle (at -7.62 -7.619999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 3 "GND"))
+    (pad "3" thru_hole circle (at 7.62 -7.619999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 77 "RST"))
       
-    (fp_text user "GND" (at -4.47 -7.619999999999999 -6) (layer "F.SilkS")
+    (fp_text user "GND" (at -4.47 -7.619999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "RST" (at 4.47 -7.619999999999999 -6) (layer "F.SilkS")
+    (fp_text user "RST" (at 4.47 -7.619999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
     
-    (pad "21" thru_hole circle (at -7.62 -5.079999999999999 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 3 "GND"))
-    (pad "4" thru_hole circle (at 7.62 -5.079999999999999 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 78 "VCC"))
+    (pad "21" thru_hole circle (at -7.62 -5.079999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 3 "GND"))
+    (pad "4" thru_hole circle (at 7.62 -5.079999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 78 "VCC"))
       
-    (fp_text user "GND" (at -4.47 -5.079999999999999 -6) (layer "F.SilkS")
+    (fp_text user "GND" (at -4.47 -5.079999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "VCC" (at 4.47 -5.079999999999999 -6) (layer "F.SilkS")
+    (fp_text user "VCC" (at 4.47 -5.079999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
     
-    (pad "20" thru_hole circle (at -7.62 -2.539999999999999 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 89 "P2"))
-    (pad "5" thru_hole circle (at 7.62 -2.539999999999999 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 79 "P21"))
+    (pad "20" thru_hole circle (at -7.62 -2.539999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 89 "P2"))
+    (pad "5" thru_hole circle (at 7.62 -2.539999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 79 "P21"))
       
-    (fp_text user "P2" (at -4.47 -2.539999999999999 -6) (layer "F.SilkS")
+    (fp_text user "P2" (at -4.47 -2.539999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "P21" (at 4.47 -2.539999999999999 -6) (layer "F.SilkS")
+    (fp_text user "P21" (at 4.47 -2.539999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
     
-    (pad "19" thru_hole circle (at -7.62 0 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 90 "P3"))
-    (pad "6" thru_hole circle (at 7.62 0 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 80 "P20"))
+    (pad "19" thru_hole circle (at -7.62 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 90 "P3"))
+    (pad "6" thru_hole circle (at 7.62 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 80 "P20"))
       
-    (fp_text user "P3" (at -4.47 0 -6) (layer "F.SilkS")
+    (fp_text user "P3" (at -4.47 0 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "P20" (at 4.47 0 -6) (layer "F.SilkS")
+    (fp_text user "P20" (at 4.47 0 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
     
-    (pad "18" thru_hole circle (at -7.62 2.540000000000001 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 91 "P4"))
-    (pad "7" thru_hole circle (at 7.62 2.540000000000001 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 81 "P19"))
+    (pad "18" thru_hole circle (at -7.62 2.540000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 91 "P4"))
+    (pad "7" thru_hole circle (at 7.62 2.540000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 81 "P19"))
       
-    (fp_text user "P4" (at -4.47 2.540000000000001 -6) (layer "F.SilkS")
+    (fp_text user "P4" (at -4.47 2.540000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "P19" (at 4.47 2.540000000000001 -6) (layer "F.SilkS")
+    (fp_text user "P19" (at 4.47 2.540000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
     
-    (pad "17" thru_hole circle (at -7.62 5.080000000000002 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 92 "P5"))
-    (pad "8" thru_hole circle (at 7.62 5.080000000000002 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 82 "P18"))
+    (pad "17" thru_hole circle (at -7.62 5.080000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 92 "P5"))
+    (pad "8" thru_hole circle (at 7.62 5.080000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 82 "P18"))
       
-    (fp_text user "P5" (at -4.47 5.080000000000002 -6) (layer "F.SilkS")
+    (fp_text user "P5" (at -4.47 5.080000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "P18" (at 4.47 5.080000000000002 -6) (layer "F.SilkS")
+    (fp_text user "P18" (at 4.47 5.080000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
     
-    (pad "16" thru_hole circle (at -7.62 7.620000000000001 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 93 "P6"))
-    (pad "9" thru_hole circle (at 7.62 7.620000000000001 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 83 "P15"))
+    (pad "16" thru_hole circle (at -7.62 7.620000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 93 "P6"))
+    (pad "9" thru_hole circle (at 7.62 7.620000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 83 "P15"))
       
-    (fp_text user "P6" (at -4.47 7.620000000000001 -6) (layer "F.SilkS")
+    (fp_text user "P6" (at -4.47 7.620000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "P15" (at 4.47 7.620000000000001 -6) (layer "F.SilkS")
+    (fp_text user "P15" (at 4.47 7.620000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
     
-    (pad "15" thru_hole circle (at -7.62 10.16 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 94 "P7"))
-    (pad "10" thru_hole circle (at 7.62 10.16 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 84 "P14"))
+    (pad "15" thru_hole circle (at -7.62 10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 94 "P7"))
+    (pad "10" thru_hole circle (at 7.62 10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 84 "P14"))
       
-    (fp_text user "P7" (at -4.47 10.16 -6) (layer "F.SilkS")
+    (fp_text user "P7" (at -4.47 10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "P14" (at 4.47 10.16 -6) (layer "F.SilkS")
+    (fp_text user "P14" (at 4.47 10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
     
-    (pad "14" thru_hole circle (at -7.62 12.7 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 95 "P8"))
-    (pad "11" thru_hole circle (at 7.62 12.7 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 85 "P16"))
+    (pad "14" thru_hole circle (at -7.62 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 95 "P8"))
+    (pad "11" thru_hole circle (at 7.62 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 85 "P16"))
       
-    (fp_text user "P8" (at -4.47 12.7 -6) (layer "F.SilkS")
+    (fp_text user "P8" (at -4.47 12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "P16" (at 4.47 12.7 -6) (layer "F.SilkS")
+    (fp_text user "P16" (at 4.47 12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
     
-    (pad "13" thru_hole circle (at -7.62 15.240000000000002 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 96 "P9"))
-    (pad "12" thru_hole circle (at 7.62 15.240000000000002 -6) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 86 "P10"))
+    (pad "13" thru_hole circle (at -7.62 15.240000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 96 "P9"))
+    (pad "12" thru_hole circle (at 7.62 15.240000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 86 "P10"))
       
-    (fp_text user "P9" (at -4.47 15.240000000000002 -6) (layer "F.SilkS")
+    (fp_text user "P9" (at -4.47 15.240000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "P10" (at 4.47 15.240000000000002 -6) (layer "F.SilkS")
+    (fp_text user "P10" (at 4.47 15.240000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
@@ -3000,9 +3000,9 @@
 
   (footprint "ceoloide:reset_switch_smd_side"
     (layer "F.Cu")
-    (at 77.7427519 -59.0126559 -6)
+    (at 71.1483666 -66.8157089 0)
     (property "Reference" "RST1"
-      (at 0 0 -6)
+      (at 0 0 0)
       (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3016,10 +3016,10 @@
     (fp_line (start 1.3 -2.75) (end 1.3 -1.75) (stroke (width 0.1) (type solid)) (layer "Dwgs.User"))
     (fp_line (start 2.35 -1.75) (end 2.35 1.75) (stroke (width 0.1) (type solid)) (layer "Dwgs.User"))
     
-    (pad "1" smd rect (at 2.625 -0.85 174) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "GND"))
-    (pad "2" smd rect (at 2.625 0.85 174) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 77 "RST"))
-    (pad "3" smd rect (at -2.625 -0.85 174) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "GND"))
-    (pad "4" smd rect (at -2.625 0.85 174) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 77 "RST"))
+    (pad "1" smd rect (at 2.625 -0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "GND"))
+    (pad "2" smd rect (at 2.625 0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 77 "RST"))
+    (pad "3" smd rect (at -2.625 -0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 3 "GND"))
+    (pad "4" smd rect (at -2.625 0.85 180) (size 1.55 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 77 "RST"))
     
     (fp_line (start -2.35 -1.5) (end -2.35 -1.75) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
     (fp_line (start -2.35 1.5) (end -2.35 1.75) (stroke (width 0.1) (type solid)) (layer "F.SilkS"))
@@ -3035,9 +3035,9 @@
 
   (footprint "ceoloide:power_switch_smd_side"
     (layer "F.Cu")
-    (at 21.326141699999997 -68.9259949 -3)
+    (at 14.0045864 -70.7775999 3)
     (property "Reference" "PWR1"
-      (at -3.6 0 -93)
+      (at -3.6 0 -87)
       (layer "F.SilkS")
       hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3054,18 +3054,18 @@
     (fp_line (start 2.845 1.2) (end 2.845 0.35) (layer "F.Fab") (stroke (width 0.1) (type solid)))
     (fp_line (start 2.645 1.4) (end 2.845 1.2) (layer "F.Fab") (stroke (width 0.1) (type solid)))
     (fp_line (start 1.345 1.4) (end 2.645 1.4) (layer "F.Fab") (stroke (width 0.1) (type solid)))
-    (pad "" smd rect (at 1.125 -3.65 87) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
-    (pad "" smd rect (at -1.085 -3.65 87) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
-    (pad "" smd rect (at -1.085 3.65 87) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
-    (pad "" smd rect (at 1.125 3.65 87) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
-    (pad "1" smd rect (at -1.735 2.25 87) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") )
-    (pad "2" smd rect (at -1.735 -0.75 87) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 76 "RAW"))
-    (pad "3" smd rect (at -1.735 -2.25 87) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 124 "BAT_P"))
+    (pad "" smd rect (at 1.125 -3.65 93) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "" smd rect (at -1.085 -3.65 93) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "" smd rect (at -1.085 3.65 93) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "" smd rect (at 1.125 3.65 93) (size 1 0.8) (layers "F.Cu" "F.Paste" "F.Mask"))
+    (pad "1" smd rect (at -1.735 2.25 93) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") )
+    (pad "2" smd rect (at -1.735 -0.75 93) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 76 "RAW"))
+    (pad "3" smd rect (at -1.735 -2.25 93) (size 0.7 1.5) (layers "F.Cu" "F.Paste" "F.Mask") (net 124 "BAT_P"))
     
-    (fp_text user "ON" (at 0 -5 -3) (layer "F.SilkS")
+    (fp_text user "ON" (at 0 -5 3) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user "OFF" (at 0 5 -3) (layer "F.SilkS")
+    (fp_text user "OFF" (at 0 5 3) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 0.415 -3.45) (end -0.375 -3.45) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
@@ -3074,16 +3074,16 @@
     (fp_line (start 1.425 2.85) (end 1.425 -2.85) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -1.425 -1.4) (end -1.425 -1.6) (layer "F.SilkS") (stroke (width 0.12) (type solid)))
     
-    (pad "" np_thru_hole circle (at 0.025 -1.5 87) (size 0.9 0.9) (drill 0.9) (layers "*.Cu" "*.Mask"))
-    (pad "" np_thru_hole circle (at 0.025 1.5 87) (size 0.9 0.9) (drill 0.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0.025 -1.5 93) (size 0.9 0.9) (drill 0.9) (layers "*.Cu" "*.Mask"))
+    (pad "" np_thru_hole circle (at 0.025 1.5 93) (size 0.9 0.9) (drill 0.9) (layers "*.Cu" "*.Mask"))
   )
     
 
     (footprint "ceoloide:battery_connector_jst_ph_2"
         (layer "F.Cu")
-        (at 41.377069 19.1140816 -6)
+        (at 43.148366599999996 14.6842912 0)
         (property "Reference" "JST1"
-            (at 0 4.8 -6)
+            (at 0 4.8 0)
             (layer "F.SilkS")
             hide
             (effects (font (size 1 1) (thickness 0.15)))
@@ -3115,53 +3115,53 @@
         (fp_line (start 2.14 6.36) (end 3.06 6.36) (stroke (width 0.12) (type solid)) (layer "F.SilkS"))
         (fp_line (start 3.06 6.36) (end 3.06 5.36) (stroke (width 0.12) (type solid)) (layer "F.SilkS"))
         
-        (pad "1" thru_hole roundrect (at -1 0 -6) (size 1.2 1.75) (drill 0.75) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.20) (net 3 "GND"))
-        (pad "2" thru_hole oval (at 1 0 -6) (size 1.2 1.75) (drill 0.75) (layers "*.Cu" "*.Mask") (net 124 "BAT_P"))
+        (pad "1" thru_hole roundrect (at -1 0 0) (size 1.2 1.75) (drill 0.75) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.20) (net 3 "GND"))
+        (pad "2" thru_hole oval (at 1 0 0) (size 1.2 1.75) (drill 0.75) (layers "*.Cu" "*.Mask") (net 124 "BAT_P"))
         
     )
         
-  (gr_line (start -9 9.5) (end 9 9.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 9 9.5) (mid 9.7071068 9.2071068) (end 10 8.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 10 8.5) (end 10 -5.932428905881044) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 10 -5.932428905881044) (end 26.9904742 -5.0419958000000005) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 26.990474199999998 -5.0419958000000005) (mid 27.7119407 -5.297480500000001) (end 28.041439699999998 -5.9882893) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 28.041439699999998 -5.9882893) (end 28.168743187034853 -8.417384691299048) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 28.168743187034853 -8.417384691299116) (end 44.094809027832035 -6.743487664325316) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 44.094809027832035 -6.743487664325357) (end 43.572166700000004 -1.7708783000000006) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 43.5721667 -1.7708783000000008) (mid 43.7895426 -1.0370294000000007) (end 44.4621601 -0.6718279000000008) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 44.4621601 -0.6718279000000008) (end 47.445725800753046 -0.35824249152645304) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 84.71936246886536 -29.722949484737455) (end 86.4858935 -46.530369400000005) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 86.4858935 -46.5303694) (mid 86.26851760000001 -47.264218299999996) (end 85.59590010000001 -47.6294198) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 85.59590010000001 -47.62941980000001) (end 68.6890278591486 -49.406403737043085) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 68.6890278591486 -49.40640373704309) (end 68.7935563 -50.40092550000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 68.79355629999999 -50.40092550000001) (mid 68.5761804 -51.134774400000005) (end 67.9035629 -51.49997590000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 67.90356289999998 -51.4999759) (end 50.99669067216796 -53.27695983567468) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 50.99669067216796 -53.27695983567469) (end 51.51933299999999 -58.249569199999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 51.519332999999996 -58.249569199999996) (mid 51.301957099999996 -58.983418099999994) (end 50.629339599999994 -59.3486196) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 50.629339599999994 -59.348619600000006) (end 32.72794549999999 -61.230132000000005) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 32.72794549999999 -61.230132000000005) (mid 31.99409659999999 -61.012756100000004) (end 31.62889509999999 -60.3401386) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 31.628895099999998 -60.3401386) (end 31.3708668219751 -57.885163560241324) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 11.788948399999995 -58.9114084) (end 31.3708668219751 -57.88516356024133) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 11.788948399999995 -58.9114084) (mid 11.067481899999995 -58.6559237) (end 10.737982899999995 -57.965114899999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 10.737982899999997 -57.965114899999996) (end 9.94468 -42.8279934) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 9.94468 -42.8279934) (mid 9.5796579 -43.3148599) (end 9 -43.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 9 -43.5) (end -9 -43.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start -9 -43.5) (mid -9.7071068 -43.2071068) (end -10 -42.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start -10 8.5) (end -10 -42.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start -10 8.5) (mid -9.7071068 9.2071068) (end -9 9.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 46.1406215 21.6257677) (end 63.97824710000002 23.500577800000002) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 63.97824710000002 23.500577800000002) (mid 64.02190210000002 23.519179) (end 64.06639030000001 23.5356883) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 64.06639030000001 23.5356883) (end 80.6496044 29.245746799999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 80.6496044 29.245746799999996) (mid 80.79053640000001 29.422908099999997) (end 80.9677051 29.563830699999997) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 80.9677051 29.563830699999997) (end 96.2325708 39.102377499999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 96.2325708 39.102377499999996) (mid 96.98744110000001 39.2286995) (end 97.61053820000001 38.7842487) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 97.61053820000001 38.784248700000006) (end 106.61916570000001 24.367431100000005) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 106.61916570000001 24.3674311) (mid 106.74548770000001 23.6125608) (end 106.30103690000001 22.9894637) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 106.3010369 22.9894637) (end 101.89150168294377 20.234080268481243) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 45.2506281 20.5267173) (end 47.445725800753046 -0.35824249152648235) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 45.2506281 20.5267173) (mid 45.468004 21.260566200000003) (end 46.1406215 21.6257677) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 84.71936246886536 -29.722949484737484) (end 106.8972007 -27.391964799999997) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 101.89150168294377 20.23408026848142) (end 106.8972007 -27.391964799999997) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+  (gr_line (start -7.9576766 10.3887142) (end 9.943717500000002 8.5072018) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 9.943717500000002 8.5072018) (mid 10.616335000000001 8.1420003) (end 10.833710900000002 7.4081514) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 10.833710899999998 7.4081514) (end 9.325111279118863 -6.9452149930246065) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 9.325111279118863 -6.9452149930246225) (end 26.315585500000005 -7.835648099999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 26.3155855 -7.8356481) (mid 27.0063943 -8.1651471) (end 27.261879 -8.8866136) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 27.261879 -8.8866136) (end 27.134575523001 -11.315708800000039) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 27.134575523001 -11.3157088) (end 43.1483667 -11.3157088) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 43.1483667 -11.3157088) (end 43.148366599999996 -6.3157087999999995) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 43.148366599999996 -6.3157087999999995) (mid 43.4412598 -5.608601999999999) (end 44.148366599999996 -5.3157087999999995) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 44.148366599999996 -5.3157087999999995) (end 47.148366599999996 -5.3157087999999995) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 81.1483666 -38.4157089) (end 81.1483666 -55.315708900000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 81.1483666 -55.315708900000004) (mid 80.85547340000001 -56.0228157) (end 80.1483666 -56.315708900000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 80.1483666 -56.315708900000004) (end 63.1483666 -56.315708900000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 63.1483666 -56.315708900000004) (end 63.1483666 -57.3157088) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 63.1483666 -57.3157088) (mid 62.8554734 -58.0228156) (end 62.1483666 -58.3157088) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 62.148366599999996 -58.315708799999996) (end 45.148366599999996 -58.315708799999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 45.148366599999996 -58.315708799999996) (end 45.1483667 -63.315708799999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 45.1483667 -63.315708799999996) (mid 44.855473499999995 -64.0228156) (end 44.1483667 -64.3157088) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 44.1483667 -64.3157088) (end 26.148366699999997 -64.3157088) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 26.148366699999997 -64.3157088) (mid 25.4412599 -64.0228156) (end 25.148366699999997 -63.315708799999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 25.148366699999997 -63.315708799999996) (end 25.148366699999997 -60.84721104908856) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 5.566448099999999 -59.8209661) (end 25.148366699999997 -60.84721104908856) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 5.566448099999999 -59.8209661) (mid 4.8756393 -59.4914671) (end 4.620154599999999 -58.7700006) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 4.620154600000001 -58.7700006) (end 5.413457499999996 -43.63287949999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 5.413457499999996 -43.63287949999999) (mid 4.999543599999996 -44.07892359999999) (end 4.403708799999997 -44.20245859999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 4.4037087999999995 -44.2024586) (end -13.497685300000002 -42.320946199999995) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start -13.497685300000002 -42.3209462) (mid -14.170302800000002 -41.9557447) (end -14.387678700000002 -41.2218958) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start -14.3876787 -41.2218958) (end -9.056726999999999 9.498720799999997) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start -9.056727 9.498720800000001) (mid -8.6915255 10.1713383) (end -7.9576766 10.3887142) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 48.148366599999996 16.6842912) (end 66.0842466 16.684291200000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 66.0842466 16.684291200000004) (mid 66.1296069 16.698227400000004) (end 66.1755773 16.709996000000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 66.1755773 16.709996000000004) (end 83.26481050000001 20.6553563) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 83.26481050000001 20.6553563) (mid 83.42348880000002 20.816815700000003) (end 83.61441750000002 20.9384471) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 83.61481950000001 20.938643100000004) (end 99.7923084 28.828931599999997) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 99.79271040000002 28.8291277) (mid 100.55664970000002 28.8758522) (end 101.12987550000001 28.368704800000003) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 101.13007150000001 28.368302800000002) (end 108.5819889 13.089608000000002) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 108.582185 13.089205999999997) (mid 108.6289095 12.325266699999998) (end 108.1217621 11.752040899999997) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 108.1213601 11.751844899999998) (end 103.4483666 9.472673694781314) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 47.148366599999996 15.6842912) (end 47.148366599999996 -5.3157087999999995) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 47.148366599999996 15.6842912) (mid 47.4412598 16.391398000000002) (end 48.148366599999996 16.6842912) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 81.1483666 -38.4157089) (end 103.4483666 -38.4157089) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 103.4483666 9.472673694781314) (end 103.4483666 -38.4157089) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 
 )
 
