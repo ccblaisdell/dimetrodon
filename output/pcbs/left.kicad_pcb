@@ -2562,7 +2562,7 @@
 
   (footprint "ceoloide:power_switch_smd_side"
     (layer "F.Cu")
-    (at 0.4983666999999983 -58.5157088 90)
+    (at 1.4983666999999983 -59.5157088 90)
     (property "Reference" "PWR1"
       (at -3.6 0 0)
       (layer "F.SilkS")
@@ -2608,7 +2608,7 @@
 
   (footprint "ceoloide:reset_switch_smd_side"
     (layer "F.Cu")
-    (at 71.49836669999999 -59.065708799999996 0)
+    (at 70.49836669999999 -59.065708799999996 0)
     (property "Reference" "RST1"
       (at 0 0 0)
       (layer "F.SilkS")
@@ -2800,10 +2800,10 @@
 (gr_line (start 84.1483667 -59.815708799999996) (end 84.1483667 -37.9157089) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start -8.851633300000003 -60.815708799999996) (mid -9.558740100000003 -60.522815599999994) (end -9.851633300000003 -59.815708799999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 84.1483667 -59.815708799999996) (mid 83.8554735 -60.522815599999994) (end 83.1483667 -60.815708799999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 13.148366599999996 -3.8157087999999995) (end 13.148366599999996 16.1842912) (layer F.SilkS) (stroke (width 0.15) (type default)))
-(gr_line (start 13.148366599999996 16.1842912) (end 43.148366599999996 16.1842912) (layer F.SilkS) (stroke (width 0.15) (type default)))
-(gr_line (start 43.148366599999996 16.1842912) (end 43.148366599999996 -3.8157087999999995) (layer F.SilkS) (stroke (width 0.15) (type default)))
-(gr_line (start 43.148366599999996 -3.8157087999999995) (end 13.148366599999996 -3.8157087999999995) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 13.148366599999996 -1.3157087999999995) (end 13.148366599999996 18.6842912) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 13.148366599999996 18.6842912) (end 43.148366599999996 18.6842912) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 43.148366599999996 18.6842912) (end 43.148366599999996 -1.3157087999999995) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 43.148366599999996 -1.3157087999999995) (end 13.148366599999996 -1.3157087999999995) (layer F.SilkS) (stroke (width 0.15) (type default)))
 
 )
 
