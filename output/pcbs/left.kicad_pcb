@@ -2686,10 +2686,10 @@
 (gr_line (start -80 -130) (end 170 -130) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 170 -130) (end 170 100) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 170 100) (end -80 100) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 12.690136100000002 -4.105251299999999) (end 13.039184200000001 15.891702600000002) (layer F.Silkscreen) (stroke (width 0.15) (type default)))
-(gr_line (start 13.039184200000001 15.891702600000002) (end 43.034615099999996 15.368130400000002) (layer F.Silkscreen) (stroke (width 0.15) (type default)))
-(gr_line (start 43.034615099999996 15.368130400000002) (end 42.6855669 -4.628823499999999) (layer F.Silkscreen) (stroke (width 0.15) (type default)))
-(gr_line (start 42.6855669 -4.628823499999999) (end 12.690136100000002 -4.105251299999999) (layer F.Silkscreen) (stroke (width 0.15) (type default)))
+(gr_line (start 12.690136100000002 -4.105251299999999) (end 13.039184200000001 15.891702600000002) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 13.039184200000001 15.891702600000002) (end 43.034615099999996 15.368130400000002) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 43.034615099999996 15.368130400000002) (end 42.6855669 -4.628823499999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 42.6855669 -4.628823499999999) (end 12.690136100000002 -4.105251299999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
 
 )
 
