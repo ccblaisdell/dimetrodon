@@ -85,6 +85,7 @@ outlines:
     - what: rectangle
       where: /^thumbs_/
       size: [kx + 2, ky + 2]
+  # Connect the thumbs to the matrix
   matrix_thumb_connector:
     - what: polygon
       points:
@@ -96,7 +97,8 @@ outlines:
           shift: [1cpx, -3cpy]
         - ref: thumbs_tucky_cluster
           shift: [-1cpx - 0, 0]
-  thumb_banadaid:
+  # Fix the splay gap between thumbs.
+  thumb_bandaid:
     - what: polygon
       points:
         - ref: thumbs_middle_cluster
@@ -107,38 +109,26 @@ outlines:
           shift: [1cpx, -1cpy]
         - ref: thumbs_reachy_cluster
           shift: [-1cpx, -1cpy]
+  # Fix the splay gap between ring and middle fingers
+  matrix_bandaid:
+    - what: polygon
+      points:
+        - ref: matrix_ring_top
+          shift: [0cpx, 1cpy]
+        - ref: matrix_ring_top
+          shift: [2cpx, 1cpy]
+        - ref: matrix_ring_top
+          shift: [2cpx, -1cpy]
+        - ref: matrix_ring_top
+          shift: [1cpx, -1cpy]
   board2:
     - name: matrix
     - name: thumbs
     - name: matrix_thumb_connector
-    - name: thumb_banadaid
-  board:
-    - what: polygon
-      points:
-        - ref: matrix_pinky_top
-          shift: [-1cpx, 1cpy]
-        - ref: matrix_ring_top
-          shift: [-1cpx, 1cpy]
-        - ref: matrix_middle_top
-          shift: [-1cpx, 1cpy]
-        - ref: matrix_middle_top
-          shift: [1cpx, 1cpy]
-        - ref: matrix_inner_top
-          shift: [1cpy, 1cpy]
-        - ref: thumbs_reachy_cluster
-          shift: [1cpx, 1cpy]
-        - ref: thumbs_reachy_cluster
-          shift: [1cpx, -1cpy]
-        - ref: thumbs_middle_cluster
-          shift: [1cpx, -cpy]
-        - ref: thumbs_middle_cluster
-          shift: [-1cpx, -cpy]
-        - ref: thumbs_tucky_cluster
-          shift: [-1cpx, -1cpy]
-        - ref: matrix_pinky_bottom
-          shift: [-1cpx, -1cpy]
+    - name: thumb_bandaid
+    - name: matrix_bandaid
   switch_plate:
-    - name: board
+    - name: board2
     - operation: subtract
       name: switch_holes
 pcbs:
@@ -146,7 +136,7 @@ pcbs:
     template: kicad8 # Required, since footprints are KiCad 8 only
     outlines:
       main:
-        outline: board
+        outline: board2
     footprints:
       choc_hotswap:
         what: ceoloide/switch_choc_v1_v2
