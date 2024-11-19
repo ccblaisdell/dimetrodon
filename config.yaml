@@ -153,13 +153,24 @@ outlines:
     - what: polygon
       adjust:
         ref: matrix_ring_bottom
-        shift: [-1cpx, -1cpy]
+        shift: [-1cpx + 4.5, -1cpy - 23]
         rotate: -2
       points:
-        - shift: [7, -16]
+        - shift: [0, 0]
         - shift: [30, 0]
-        - shift: [0, 12]
+        - shift: [0, 20]
         - shift: [-30, 0]
+  _jst:
+    # 8 x 4.5
+    - what: polygon
+      adjust:
+        ref: matrix_pinky_bottom
+        shift: [-5, -1cpy - 7]
+      points:
+        - shift: [0, 0]
+        - shift: [8, 0]
+        - shift: [0, 4.5]
+        - shift: [-8, 0]
   left_board:
     - name: _matrix
     - name: _thumbs
@@ -169,12 +180,16 @@ outlines:
     - name: _controller_area
     - name: _controller
       # operation: stack
-    - name: _battery
-      operation: stack
   switch_plate:
     - name: left_board
     - operation: subtract
-      name: _keycaps
+      name: _switch_holes
+  preview:
+    - name: left_board
+    - name: _keycaps
+      operation: subtract
+    - name: _battery
+    - name: _jst
 pcbs:
   left:
     # Required, since footprints are KiCad 8 only
