@@ -152,12 +152,11 @@ outlines:
         - shift: [0, -nice_nano_length]
         - shift: [0, -2cpy - 2]
   _battery:
-    # 12 x 30, small one from typeractive
+    # 20 x 30, the one totem uses
     - what: polygon
       adjust:
-        ref: matrix_ring_bottom
-        shift: [-1cpx + 4.5, -1cpy - 23]
-        rotate: -2
+        ref: thumbs_tucky_cluster
+        shift: [-1cpx - 30 - 4, -1cpy + 2.5]
       points:
         - shift: [0, 0]
         - shift: [30, 0]
@@ -194,6 +193,26 @@ outlines:
         - shift: [250, 0]
         - shift: [0, -230]
         - shift: [-250, 0]
+  _power_switch:
+    - what: polygon
+      adjust:
+        ref: matrix_middle_top
+        shift: [0, 1cpy]
+      points:
+        - shift: [-38, -4]
+        - shift: [5, 0]
+        - shift: [0, -2]
+        - shift: [-5, 0]
+  _reset_switch:
+    - what: polygon
+      adjust:
+        ref: matrix_middle_top
+        shift: [0, 1cpy]
+      points:
+        - shift: [30, -4]
+        - shift: [5, 0]
+        - shift: [0, -2]
+        - shift: [-5, 0]
   left_board:
     - name: _matrix
     - name: _thumbs
@@ -203,7 +222,9 @@ outlines:
     - name: _controller_area
     - name: _controller
     - name: _bottom_left
-    - name: _debug_rectangle
+    - name: _power_switch
+    - name: _reset_switch
+    #- name: _debug_rectangle
   switch_plate:
     - name: left_board
     - operation: subtract
@@ -257,8 +278,6 @@ pcbs:
         where: 
           ref: matrix_inner_top
           shift: [0, cy + 3]
-          # Spin so it's facing up.
-          rotate: 90
       power_switch:
         what: ceoloide/power_switch_smd_side
         # top left
@@ -274,7 +293,7 @@ pcbs:
           # Just under the pinky
           shift: [-5, -1cpy - 7]
           # Spin so the plug faces towards the thumbs
-          rotate: -90
+          rotate: 90
       # TODO: speaker?
       # TODO: haptic?
       # TODO: LED?
