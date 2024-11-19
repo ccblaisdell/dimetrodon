@@ -20,11 +20,10 @@ units:
   nice_nano_length: 34.1
   nice_nano_width: 18.3
 
-  ###
-  # Various bandaid dimensions
-  
   # Distance between highest finger and top of board
   middle_finger_prominence: 3.5
+
+  mounting_hole_radius: 1.8
 points:
   zones:
     matrix:
@@ -175,7 +174,7 @@ outlines:
     - what: polygon
       adjust:
         ref: thumbs_tucky_cluster
-        shift: [-1cpx - 48, -1cpy + 5]
+        shift: [-1cpx - 43, -1cpy + 5]
       points:
         - shift: [-4, -2.25]
         - shift: [8, 0]
@@ -259,6 +258,32 @@ outlines:
         - shift: [94, 0]
         - shift: [0, -30]
         - shift: [-94, 0]
+  _mounting_holes:
+    - what: circle
+      adjust: &top_left_hole
+        ref: matrix_pinky_top
+        shift: [0, 21]
+      radius: mounting_hole_radius
+    - what: circle
+      adjust: &top_right_hole
+        ref: matrix_inner_top
+        shift: [1cpx, 1cpy + 1]
+      radius: mounting_hole_radius
+    - what: circle
+      adjust: &bottom_middle_hole
+        ref: matrix_middle_bottom
+        shift: [0cpx, -1cpy - 3]
+      radius: mounting_hole_radius
+    - what: circle
+      adjust: &bottom_right_hole
+        ref: thumbs_reachy_cluster
+        shift: [0cpx - 4, 1cpy + 5]
+      radius: mounting_hole_radius
+    - what: circle
+      adjust: &bottom_left_hole
+        ref: matrix_pinky_bottom
+        shift: [-6, -14]
+      radius: mounting_hole_radius
   left_board:
     - name: _matrix
     - name: _thumbs
@@ -284,6 +309,8 @@ outlines:
       operation: subtract
     - name: _controller
       operation: subtract
+    - name: _mounting_holes
+      operation: stack
     - name: _power_switch
       operation: stack
     - name: _reset_switch
@@ -347,3 +374,21 @@ pcbs:
           shift: [-1cpx - 48, -1cpy + 5]
           # Spin so the plug faces towards the thumbs
           rotate: 90
+      top_left_hole:
+        what: ceoloide/mounting_hole_plated
+        where: *top_left_hole
+      top_right_hole:
+        what: ceoloide/mounting_hole_plated
+        where: *top_right_hole
+      bottom_left_hole:
+        what: ceoloide/mounting_hole_plated
+        where: *bottom_left_hole
+      bottom_middle_hole:
+        what: ceoloide/mounting_hole_plated
+        where: *bottom_middle_hole
+      bottom_right_hole:
+        what: ceoloide/mounting_hole_plated
+        where: *bottom_right_hole
+# TODO: plated mounting holes
+# TODO: nets
+# TODO: mirror components, outlines
