@@ -342,23 +342,41 @@ pcbs:
           # mcu_3dmodel_filename: 3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
           # mcu_3dmodel_xyz_offset: [0, 0, 3]
           P1: matrix_inner_top
-          P0: matrix_inner_home
+          P1_label: "inner_top"
+          P0: matrix_inner_middle
+          P0_label: "inner_middle"
           P2: matrix_inner_bottom
+          P2_label: "inner_bottom"
           P3: matrix_ring_top
+          P3_label: "ring_top"
           P4: matrix_middle_bottom
+          P4_label: "middle_bottom"
           P5: matrix_middle_home
+          P5_label: "middle_home"
           P6: matrix_middle_top
-          P7: matrix_index_bottom
-          P8: matrix_index_home
-          P9: matrix_index_top
+          P6_label: "middle_top"
+          P7: matrix_pointer_bottom
+          P7_label: "pointer_bottom"
+          P8: matrix_pointer_home
+          P8_label: "pointer_home"
+          P9: matrix_pointer_top
+          P9_label: "pointer_top"
           P10: thumbfan_far_thumb
+          P10_label: "far_thumb"
           P16: thumbfan_home_thumb
+          P16_label: "home_thumb"
           P14: thumbfan_near_thumb
+          P14_label: "near_thumb"
           P15: matrix_pinky_bottom
+          P15_label: "pinky_bottom"
           P18: matrix_pinky_home
+          P18_label: "pinky_home"
           P19: matrix_pinky_top
+          P19_label: "pinky_top"
           P20: matrix_ring_bottom
+          P20_label: "ring_bottom"
           P21: matrix_ring_home
+          P21_label: "ring_home"
         where:
           # Align the bottom of the nice nano with the bottom keycap
           ref: matrix_inner_bottom
