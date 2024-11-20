@@ -58,7 +58,7 @@ points:
     thumbs:
       anchor:
         ref: matrix_pointer_bottom
-        shift: [4, -24]
+        shift: [4, -22]
       key:
         padding: 1ky
         spread: 1kx
@@ -74,9 +74,6 @@ points:
             splay: -13
       rows:
         cluster:
-  mirror:
-    ref: thumbs_reachy_cluster
-    distance: 2kx
 outlines:  
   _keycaps:
     - what: rectangle
@@ -173,9 +170,9 @@ outlines:
     - what: polygon
       adjust: &jst_connector
         ref: thumbs_tucky_cluster
-        shift: [-1cpx - 43, -1cpy + 5]
+        shift: [-1cpx - 44, -1cpy - 4.5/2]
       points:
-        - shift: [-4, -2.25]
+        - shift: [-8 / 2, 4.5 / 2]
         - shift: [8, 0]
         - shift: [0, 4.5]
         - shift: [-8, 0]
@@ -190,10 +187,10 @@ outlines:
         - shift: [70, 0]
         - ref: thumbs_tucky_cluster
           shift: [0cpx, -1cpy]
-        # Just eyeballing an intersectgion
+        # Just eyeballing an intersection
         - shift: [-65, 0]
         - ref: matrix_pinky_bottom
-          shift: [-1cpx, -17]
+          shift: [-1cpx, -1cpy - 6]
   _debug_rectangle:
     - what: polygon
       points:
@@ -281,7 +278,7 @@ outlines:
     - what: circle
       adjust: &bottom_left_hole
         ref: matrix_pinky_bottom
-        shift: [-6, -14]
+        shift: [-1cpx + 3, -1cpy - 3.5]
       radius: mounting_hole_radius
   left_board:
     - name: _matrix
