@@ -132,28 +132,27 @@ outlines:
   _controller:
     - what: polygon
       fillet: 1
-      adjust: 
+      adjust: &controller
         ref: matrix_inner_bottom
-        shift: [1cpx + 3, -1cpx + 1]
+        # Let's define the center for this outline so
+        # we can reuse it in the PCB
+        shift: [1cpx + nice_nano_width / 2 + 3, -1cpx - nice_nano_length / 2 + 1]
       points:
-        - shift: [0, 0]
+        # start at top left
+        - shift: [-nice_nano_width / 2, nice_nano_length / 2]
         - shift: [0, nice_nano_length]
         - shift: [nice_nano_width, 0]
         - shift: [0, -nice_nano_length]
   _controller_area:
     - what: polygon
       fillet: 1
-      adjust:
-        ref: matrix_inner_bottom
-        shift: [0, -2cpy]
+      adjust: *controller
       points:
-        - shift: [0, 0]
-        - shift: [0, 1cpy + 0.5]
-        - shift: [0, nice_nano_length]
-        - shift: [1cpx + 2, 0]
-        - shift: [nice_nano_width + 1, 0]
-        - shift: [0, -nice_nano_length]
-        - shift: [0, -2cpy - 2]
+        # start at top right of controller
+        - shift: [nice_nano_width / 2, 1.5nice_nano_length]
+        - shift: [0, -nice_nano_length - 1ky]
+        - shift: [-nice_nano_width - kx, 0]
+        - shift: [0, nice_nano_length + 1ky]
   _battery:
     # 20 x 30, the one totem uses
     - what: polygon
@@ -377,9 +376,7 @@ pcbs:
           P21: matrix_ring_home
           P21_label: "P21"
         where:
-          # Align the bottom of the nice nano with the bottom keycap
-          ref: matrix_inner_bottom
-          shift: [1kx + 3, nice_nano_length / 2 - kx / 2]
+          <<: *controller
           rotate: 0
       power_switch:
         what: ceoloide/power_switch_smd_side
