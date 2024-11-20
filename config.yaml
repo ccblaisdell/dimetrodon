@@ -136,10 +136,10 @@ outlines:
         ref: matrix_inner_bottom
         # Let's define the center for this outline so
         # we can reuse it in the PCB
-        shift: [1cpx + nice_nano_width / 2 + 3, -1cpx - nice_nano_length / 2 + 1]
+        shift: [1kx / 2 + 4 + nice_nano_width / 2, -1cy / 2 + nice_nano_length / 2]
       points:
         # start at top left
-        - shift: [-nice_nano_width / 2, nice_nano_length / 2]
+        - shift: [-nice_nano_width / 2, -nice_nano_length / 2]
         - shift: [0, nice_nano_length]
         - shift: [nice_nano_width, 0]
         - shift: [0, -nice_nano_length]
@@ -149,7 +149,7 @@ outlines:
       adjust: *controller
       points:
         # start at top right of controller
-        - shift: [nice_nano_width / 2, 1.5nice_nano_length]
+        - shift: [nice_nano_width / 2, nice_nano_length / 2]
         - shift: [0, -nice_nano_length - 1ky]
         - shift: [-nice_nano_width - kx, 0]
         - shift: [0, nice_nano_length + 1ky]
