@@ -170,9 +170,9 @@ outlines:
     - what: polygon
       adjust: &jst_connector
         ref: thumbs_tucky_cluster
-        shift: [-1cpx - 44, -1cpy - 4.5/2]
+        shift: [-1cpx - 49, -1cpy]
       points:
-        - shift: [-8 / 2, 4.5 / 2]
+        - shift: [0, 0]
         - shift: [8, 0]
         - shift: [0, 4.5]
         - shift: [-8, 0]
