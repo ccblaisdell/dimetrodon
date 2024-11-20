@@ -11,7 +11,7 @@
   (paper "A3")
   (title_block
     (title "left")
-    (date "2024-11-19")
+    (date "2024-11-20")
     (rev "v1.0.0")
     (company "Unknown")
   )
@@ -2682,6 +2682,21 @@
         
     )
         
+
+  (gr_text "Battery"
+    (at 92.1483666 13.6842912 0)
+    (layer "F.SilkS" )
+    (effects
+      (font 
+        (size 1 1)
+        (thickness 0.15)
+        
+        
+      )
+      
+    )
+  )
+      
 
   (footprint "ceoloide:mounting_hole_plated"
     (layer "F.Cu")

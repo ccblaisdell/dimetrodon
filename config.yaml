@@ -160,7 +160,7 @@ outlines:
   _battery:
     # 20 x 30, the one totem uses
     - what: polygon
-      adjust:
+      adjust: &battery_outline
         ref: thumbs_tucky_cluster
         shift: [-1cpx - 30 - 4, -1cpy]
       points:
@@ -366,6 +366,14 @@ pcbs:
           shift: [-1cpx - 43, -1cpy + 5]
           # Spin so the plug faces towards the thumbs
           rotate: 90
+      battery_text:
+        what: ceoloide/utility_text
+        where:
+          # Slide it left, just under the pinky
+          ref: thumbs_tucky_cluster
+          shift: [35, -1cpy + 5]
+        params:
+          text: "Battery"
       top_left_hole:
         what: ceoloide/mounting_hole_plated
         where: *top_left_hole
