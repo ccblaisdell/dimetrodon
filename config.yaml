@@ -371,10 +371,16 @@ pcbs:
           <<: *power_switch
           # Spin so it's facing up
           rotate: 90
+        params:
+          from: Braw
+          to: RAW
       reset_switch:
         what: ceoloide/reset_switch_smd_side
         # top right, near the USB port
         where: *reset_switch 
+        params:
+          from: GND
+          to: RST
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
         where:
@@ -383,6 +389,9 @@ pcbs:
           shift: [-1cpx - 43, -1cpy + 5]
           # Spin so the plug faces towards the thumbs
           rotate: 90
+        params:
+          BAT_P: Braw
+          BAT_N: GND
       battery_text:
         what: ceoloide/utility_text
         where:
@@ -406,5 +415,4 @@ pcbs:
       bottom_right_hole:
         what: ceoloide/mounting_hole_plated
         where: *bottom_right_hole
-# TODO: nets
 # TODO: mirror components, outlines
