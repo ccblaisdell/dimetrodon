@@ -166,13 +166,15 @@ outlines:
         - shift: [0, 20]
         - shift: [-30, 0]
   _jst:
-    # 8 x 4.5
+    # 8 x 4.5 is the actual component, but may need to adjust
+    # to match the footprint. Trying my best!
     - what: polygon
       adjust: &jst_connector
         ref: thumbs_tucky_cluster
-        shift: [-1cpx - 49, -1cpy]
+        shift: [-1cpx - 47, -1cpy + 3]
       points:
-        - shift: [0, 0]
+        # Manually shift the start point to more closely match the PCB
+        - shift: [-2, -3]
         - shift: [8, 0]
         - shift: [0, 4.5]
         - shift: [-8, 0]
@@ -428,4 +430,7 @@ pcbs:
       bottom_right_hole:
         what: ceoloide/mounting_hole_plated
         where: *bottom_right_hole
-# TODO: mirror components, outlines
+# TODO: mirror components, outlines OR figure out reversible
+# TODO: Figure out 3d components -> Case CAD flow
+# TODO: Figure out `bound` options and see if that will simplify some outlines
+# TODO: Refactor to use more zones?
