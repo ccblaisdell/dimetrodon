@@ -415,7 +415,7 @@ pcbs:
         where:
           # Slide it left, just under the pinky
           ref: thumbs_tucky_cluster
-          shift: [35, -1cpy + 5]
+          shift: [-35, -1cpy + 5]
         params:
           text: "Battery"
       top_left_hole:

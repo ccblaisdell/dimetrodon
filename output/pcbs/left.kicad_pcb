@@ -2637,7 +2637,7 @@
         
 
   (gr_text "Battery"
-    (at 92.1483666 13.6842912 0)
+    (at 22.148366599999996 13.6842912 0)
     (layer "F.SilkS" )
     (effects
       (font 
