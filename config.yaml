@@ -171,10 +171,10 @@ outlines:
     - what: polygon
       adjust: &jst_connector
         ref: thumbs_tucky_cluster
-        shift: [-1cpx - 47, -1cpy + 3]
+        shift: [-1cpx - 47, -1cpy + 4]
       points:
         # Manually shift the start point to more closely match the PCB
-        - shift: [-2, -3]
+        - shift: [-2, -4]
         - shift: [8, 0]
         - shift: [0, 4.5]
         - shift: [-8, 0]

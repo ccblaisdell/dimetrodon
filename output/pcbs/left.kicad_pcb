@@ -1498,7 +1498,7 @@
 
     (footprint "ceoloide:battery_connector_jst_ph_2"
         (layer "F.Cu")
-        (at 0.14836659999999569 13.6842912 90)
+        (at 0.14836659999999569 12.6842912 90)
         (property "Reference" "JST1"
             (at 0 4.8 90)
             (layer "F.SilkS")
