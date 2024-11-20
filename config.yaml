@@ -171,7 +171,7 @@ outlines:
   _jst:
     # 8 x 4.5
     - what: polygon
-      adjust:
+      adjust: &jst_connector
         ref: thumbs_tucky_cluster
         shift: [-1cpx - 43, -1cpy + 5]
       points:
@@ -402,9 +402,7 @@ pcbs:
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
         where:
-          # Slide it left, just under the pinky
-          ref: thumbs_tucky_cluster
-          shift: [-1cpx - 43, -1cpy + 5]
+          <<: *jst_connector
           # Spin so the plug faces towards the thumbs
           rotate: 90
         params:
