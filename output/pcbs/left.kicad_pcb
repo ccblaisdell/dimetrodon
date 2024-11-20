@@ -2353,7 +2353,7 @@
     (pad "24" thru_hole circle (at -7.62 -12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 18 "matrix_inner_top"))
     (pad "1" thru_hole circle (at 7.62 -12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 40 "RAW"))
       
-    (fp_text user "inner_top" (at -4.47 -12.7 0) (layer "F.SilkS")
+    (fp_text user "P1" (at -4.47 -12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
@@ -2365,7 +2365,7 @@
     (pad "23" thru_hole circle (at -7.62 -10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 17 "matrix_inner_middle"))
     (pad "2" thru_hole circle (at 7.62 -10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 2 "GND"))
       
-    (fp_text user "inner_middle" (at -4.47 -10.16 0) (layer "F.SilkS")
+    (fp_text user "P0" (at -4.47 -10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
@@ -2401,11 +2401,11 @@
     (pad "20" thru_hole circle (at -7.62 -2.539999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 16 "matrix_inner_bottom"))
     (pad "5" thru_hole circle (at 7.62 -2.539999999999999 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 43 "matrix_ring_home"))
       
-    (fp_text user "inner_bottom" (at -4.47 -2.539999999999999 0) (layer "F.SilkS")
+    (fp_text user "P2" (at -4.47 -2.539999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "ring_home" (at 4.47 -2.539999999999999 0) (layer "F.SilkS")
+    (fp_text user "P21" (at 4.47 -2.539999999999999 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
@@ -2413,11 +2413,11 @@
     (pad "19" thru_hole circle (at -7.62 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 9 "matrix_ring_top"))
     (pad "6" thru_hole circle (at 7.62 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 7 "matrix_ring_bottom"))
       
-    (fp_text user "ring_top" (at -4.47 0 0) (layer "F.SilkS")
+    (fp_text user "P3" (at -4.47 0 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "ring_bottom" (at 4.47 0 0) (layer "F.SilkS")
+    (fp_text user "P20" (at 4.47 0 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
@@ -2425,11 +2425,11 @@
     (pad "18" thru_hole circle (at -7.62 2.540000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 10 "matrix_middle_bottom"))
     (pad "7" thru_hole circle (at 7.62 2.540000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 6 "matrix_pinky_top"))
       
-    (fp_text user "middle_bottom" (at -4.47 2.540000000000001 0) (layer "F.SilkS")
+    (fp_text user "P4" (at -4.47 2.540000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "pinky_top" (at 4.47 2.540000000000001 0) (layer "F.SilkS")
+    (fp_text user "P19" (at 4.47 2.540000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
@@ -2437,11 +2437,11 @@
     (pad "17" thru_hole circle (at -7.62 5.080000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 48 "matrix_middle_home"))
     (pad "8" thru_hole circle (at 7.62 5.080000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 44 "matrix_pinky_home"))
       
-    (fp_text user "middle_home" (at -4.47 5.080000000000002 0) (layer "F.SilkS")
+    (fp_text user "P5" (at -4.47 5.080000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "pinky_home" (at 4.47 5.080000000000002 0) (layer "F.SilkS")
+    (fp_text user "P18" (at 4.47 5.080000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
@@ -2449,11 +2449,11 @@
     (pad "16" thru_hole circle (at -7.62 7.620000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 12 "matrix_middle_top"))
     (pad "9" thru_hole circle (at 7.62 7.620000000000001 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 1 "matrix_pinky_bottom"))
       
-    (fp_text user "middle_top" (at -4.47 7.620000000000001 0) (layer "F.SilkS")
+    (fp_text user "P6" (at -4.47 7.620000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "pinky_bottom" (at 4.47 7.620000000000001 0) (layer "F.SilkS")
+    (fp_text user "P15" (at 4.47 7.620000000000001 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
@@ -2461,11 +2461,11 @@
     (pad "15" thru_hole circle (at -7.62 10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 13 "matrix_pointer_bottom"))
     (pad "10" thru_hole circle (at 7.62 10.16 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 45 "thumbfan_near_thumb"))
       
-    (fp_text user "pointer_bottom" (at -4.47 10.16 0) (layer "F.SilkS")
+    (fp_text user "P7" (at -4.47 10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "near_thumb" (at 4.47 10.16 0) (layer "F.SilkS")
+    (fp_text user "P14" (at 4.47 10.16 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
@@ -2473,11 +2473,11 @@
     (pad "14" thru_hole circle (at -7.62 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 49 "matrix_pointer_home"))
     (pad "11" thru_hole circle (at 7.62 12.7 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 46 "thumbfan_home_thumb"))
       
-    (fp_text user "pointer_home" (at -4.47 12.7 0) (layer "F.SilkS")
+    (fp_text user "P8" (at -4.47 12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "home_thumb" (at 4.47 12.7 0) (layer "F.SilkS")
+    (fp_text user "P16" (at 4.47 12.7 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
@@ -2485,11 +2485,11 @@
     (pad "13" thru_hole circle (at -7.62 15.240000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 15 "matrix_pointer_top"))
     (pad "12" thru_hole circle (at 7.62 15.240000000000002 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask") (net 47 "thumbfan_far_thumb"))
       
-    (fp_text user "pointer_top" (at -4.47 15.240000000000002 0) (layer "F.SilkS")
+    (fp_text user "P9" (at -4.47 15.240000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
-    (fp_text user "far_thumb" (at 4.47 15.240000000000002 0) (layer "F.SilkS")
+    (fp_text user "P10" (at 4.47 15.240000000000002 0) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
     )
             
