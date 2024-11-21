@@ -131,33 +131,36 @@ outlines:
       expand: 1
   _thumbs:
     - what: rectangle
-      where: /^thumbs_/
+      where: /thumbs_/
       size: [kx, ky]
-      expand: 1
+    - what: polygon
+      points:
+        - ref: thumbs_tucky_cluster
+          shift: [0.5kx, 0.5ky]
+        - ref: thumbs_middle_cluster
+          shift: [-0.5kx, 0.5ky]
+        - ref: thumbs_middle_cluster
+          shift: [0.5kx, 0.5ky]
+        - ref: thumbs_reachy_cluster
+          shift: [-0.5kx, 0.5ky]
+        - ref: thumbs_reachy_cluster
+        - ref: thumbs_reachy_cluster
+          shift: [-0.5kx, -0.5ky]
+        - ref: thumbs_tucky_cluster
+          shift: [0.5kx, -0.5ky]
+        - ref: thumbs_tucky_cluster
   # Connect the thumbs to the matrix
   _matrix_thumb_connector:
     - what: polygon
       points:
         - ref: thumbs_tucky_cluster
-          shift: [-1cpx - 0, 2cpy]
+          shift: [-0.5kx - 0, 2cpy]
         - ref: matrix_inner_bottom
           shift: [1cpx, 1cpy]
         - ref: matrix_inner_bottom
           shift: [1cpx, -3cpy]
         - ref: thumbs_tucky_cluster
-          shift: [-1cpx - 0, 0]
-  # Fix the splay gap between thumbs.
-  _thumb_bandaid:
-    - what: polygon
-      points:
-        - ref: thumbs_middle_cluster
-          shift: [1cpx, 1cpy]
-        - ref: thumbs_reachy_cluster
-          shift: [-1cpx, 1cpy]
-        - ref: thumbs_middle_cluster
-          shift: [1cpx, -1cpy]
-        - ref: thumbs_reachy_cluster
-          shift: [-1cpx, -1cpy]
+          shift: [-0.5kx - 0, 0]
   # Fix the splay gap between ring and middle fingers
   _matrix_bandaid:
     - what: polygon
@@ -199,7 +202,7 @@ outlines:
     - what: polygon
       adjust: &battery_outline
         ref: thumbs_tucky_cluster
-        shift: [-1cpx - 30 - 4, -1cpy]
+        shift: [-1cpx - 30 - 4, -0.5ky]
       points:
         - shift: [0, 0]
         - shift: [30, 0]
@@ -211,7 +214,7 @@ outlines:
     - what: polygon
       adjust: &jst_connector
         ref: thumbs_tucky_cluster
-        shift: [-1cpx - 47, -1cpy + 4]
+        shift: [-1cpx - 47, -0.5ky + 4]
       points:
         # Manually shift the start point to more closely match the PCB
         - shift: [-2, -4]
@@ -225,14 +228,14 @@ outlines:
       fillet: 1
       points:
         - ref: matrix_pinky_bottom
-          shift: [-1cpx, 1cpy]
+          shift: [-1cpx, 0.5ky]
         - shift: [70, 0]
         - ref: thumbs_tucky_cluster
-          shift: [0cpx, -1cpy]
+          shift: [0cpx, -0.5ky]
         # Just eyeballing an intersection
         - shift: [-65, 0]
         - ref: matrix_pinky_bottom
-          shift: [-1cpx, -1cpy - 6]
+          shift: [-1cpx, -1cpy - 5]
   _debug_rectangle:
     - what: polygon
       points:
@@ -320,13 +323,12 @@ outlines:
     - what: circle
       adjust: &bottom_left_hole
         ref: matrix_pinky_bottom
-        shift: [-1cpx + 3, -1cpy - 3.5]
+        shift: [-1cpx + 3, -0.5ky - 3.5]
       radius: mounting_hole_radius
   left_board:
     - name: _matrix
     - name: _thumbs
     - name: _matrix_thumb_connector
-    - name: _thumb_bandaid
     - name: _matrix_bandaid
     - name: _controller_area
     - name: _controller
@@ -434,6 +436,14 @@ pcbs:
         what: ceoloide/mounting_hole_plated
         where: *bottom_right_hole
 # TODO: mirror components, outlines OR figure out reversible
-# TODO: Figure out 3d components -> Case CAD flow
+# TODO: Try out flatfootfox's cutouts for underside of board
+# TODO: Figure out 3d components -> Case CAD flow.
 # TODO: Figure out `bound` options and see if that will simplify some outlines
 # TODO: Refactor to use more zones?
+# TODO: Try out infused-kim's ergogen/kicad helpers to preserve routing
+# TODO: Try out autorouting
+# TODO: Illustrations!
+# TODO: Bottom PCB with cutouts for case bottom!
+# TODO: TOP PCB as switch plate? Sandwich in between with foam or something?
+# TODO: Light guides for LEDs
+# TODO: Little reset pusher tab (I think Forager does this)
