@@ -37,25 +37,60 @@ points:
         spread: kx
       columns:
         pinky:
+          rows:
+            bottom:
+                column_net: P18
+            home:
+                column_net: P15
+            top:
+                column_net: P14
         ring:
           key:
             splay: -3
             spread: kx + 0.5
             stagger: ky - 2
+          rows:
+            bottom:
+                column_net: P16
+            home:
+                column_net: P10
+            top:
+                column_net: P9
         middle:
           key:
             splay: -3
             spread: kx + 0.5
             stagger: 3
+          rows:
+            bottom:
+                column_net: P8
+            home:
+                column_net: P7
+            top:
+                column_net: P6
         pointer:
           key:
             stagger: -6
+          rows:
+            bottom:
+                column_net: P5
+            home:
+                column_net: P4
+            top:
+                column_net: P3
         inner:
           key:
             stagger: -2
+          rows:
+            bottom:
+                column_net: P2
+            home:
+                column_net: P0
+            top:
+                column_net: P1
       rows:
         bottom:
-        middle:
+        home:
         top:
     thumbs:
       anchor:
@@ -66,14 +101,18 @@ points:
         spread: 1kx
       columns:
         tucky:
+          key:
+            column_net: P19
         middle:
           key:
             shift: [2.4, -1.8]
             splay: -13
+            column_net: P20
         reachy:
           key:
             shift: [5.1, -3.2]
             splay: -13
+            column_net: P21
       rows:
         cluster:
 outlines:  
@@ -330,56 +369,21 @@ pcbs:
         where: true
         params:
           choc_v2_support: false
+          include_corner_marks: true
+          include_keycap: true
           keycap_height: ky
           keycap_width: kx
           # hotswap_3dmodel_filename: 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+          # keycap_3dmodel_filename: 3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
           # switch_3dmodel_filename: 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-          from: "{{name}}"
+          from: "{{column_net}}"
           to: "GND"
       nice_nano:
         what: ceoloide/mcu_nice_nano
         params:
           # mcu_3dmodel_filename: 3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
           # mcu_3dmodel_xyz_offset: [0, 0, 3]
-          P1: matrix_inner_top
-          P1_label: "P1"
-          P0: matrix_inner_middle
-          P0_label: "P0"
-          P2: matrix_inner_bottom
-          P2_label: "P2"
-          P3: matrix_ring_top
-          P3_label: "P3"
-          P4: matrix_middle_bottom
-          P4_label: "P4"
-          P5: matrix_middle_home
-          P5_label: "P5"
-          P6: matrix_middle_top
-          P6_label: "P6"
-          P7: matrix_pointer_bottom
-          P7_label: "P7"
-          P8: matrix_pointer_home
-          P8_label: "P8"
-          P9: matrix_pointer_top
-          P9_label: "P9"
-          P10: thumbfan_far_thumb
-          P10_label: "P10"
-          P16: thumbfan_home_thumb
-          P16_label: "P16"
-          P14: thumbfan_near_thumb
-          P14_label: "P14"
-          P15: matrix_pinky_bottom
-          P15_label: "P15"
-          P18: matrix_pinky_home
-          P18_label: "P18"
-          P19: matrix_pinky_top
-          P19_label: "P19"
-          P20: matrix_ring_bottom
-          P20_label: "P20"
-          P21: matrix_ring_home
-          P21_label: "P21"
-        where:
-          <<: *controller
-          rotate: 0
+        where: *controller
       power_switch:
         what: ceoloide/power_switch_smd_side
         # top left
