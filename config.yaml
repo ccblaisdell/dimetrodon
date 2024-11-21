@@ -128,7 +128,22 @@ outlines:
     - what: rectangle
       where: /^matrix_/
       size: [kx, ky]
-      expand: 1
+    - what: polygon
+      points:
+        - ref: matrix_ring_top
+          shift: [0cpx, 0.5ky]
+        - shift: [2cpx, 0]
+        - ref: matrix_middle_bottom
+          shift: [0, -0.5ky]
+        - shift: [-2cpx, 0]
+    - what: polygon
+      points:
+        - ref: matrix_pinky_top
+          shift: [0, 0.5ky]
+        - shift: [1kx, 0]
+        - ref: matrix_ring_bottom
+          shift: [0, -0.5ky]
+        - shift: [-1kx, 0]
   _thumbs:
     - what: rectangle
       where: /thumbs_/
@@ -161,18 +176,6 @@ outlines:
           shift: [1cpx, -3cpy]
         - ref: thumbs_tucky_cluster
           shift: [-0.5kx - 0, 0]
-  # Fix the splay gap between ring and middle fingers
-  _matrix_bandaid:
-    - what: polygon
-      points:
-        - ref: matrix_ring_top
-          shift: [0cpx, 1cpy]
-        - ref: matrix_ring_top
-          shift: [2cpx, 1cpy]
-        - ref: matrix_ring_top
-          shift: [2cpx, -1cpy]
-        - ref: matrix_ring_top
-          shift: [1cpx, -1cpy]
   _controller:
     - what: polygon
       fillet: 1
@@ -227,15 +230,15 @@ outlines:
     - what: polygon
       fillet: 1
       points:
-        - ref: matrix_pinky_bottom
-          shift: [-1cpx, 0.5ky]
+        - ref: matrix_pinky_home
+          shift: [-0.5kx, 0]
         - shift: [70, 0]
         - ref: thumbs_tucky_cluster
           shift: [0cpx, -0.5ky]
         # Just eyeballing an intersection
         - shift: [-65, 0]
         - ref: matrix_pinky_bottom
-          shift: [-1cpx, -1cpy - 5]
+          shift: [-0.5kx, -0.5ky - 5]
   _debug_rectangle:
     - what: polygon
       points:
@@ -323,13 +326,12 @@ outlines:
     - what: circle
       adjust: &bottom_left_hole
         ref: matrix_pinky_bottom
-        shift: [-1cpx + 3, -0.5ky - 3.5]
+        shift: [-0.5kx + 3, -0.5ky - 3.5]
       radius: mounting_hole_radius
   left_board:
     - name: _matrix
     - name: _thumbs
     - name: _matrix_thumb_connector
-    - name: _matrix_bandaid
     - name: _controller_area
     - name: _controller
     - name: _bottom_left
