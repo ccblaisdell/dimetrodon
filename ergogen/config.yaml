@@ -128,7 +128,6 @@ outlines:
     - what: rectangle
       where: /^matrix_/
       size: [kx, ky]
-      expand: 0.5
     - what: polygon
       points:
         - ref: matrix_ring_top
@@ -149,7 +148,7 @@ outlines:
     - what: rectangle
       where: /thumbs_/
       size: [kx, ky]
-      expand: 0.5
+
     - what: polygon
       points:
         - ref: thumbs_tucky_cluster
@@ -196,6 +195,7 @@ outlines:
     - what: polygon
       fillet: 1
       adjust: *controller
+      expand: 1
       points:
         # start at top right of controller
         - shift: [nice_nano_width / 2, nice_nano_length / 2]
