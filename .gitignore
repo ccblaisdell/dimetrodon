@@ -1,2 +1,6 @@
 node_modules
-*.lck # Kicad lock files
+
+# Kicad
+*.lck
+*.kicad_prl
+*.kicad_pro

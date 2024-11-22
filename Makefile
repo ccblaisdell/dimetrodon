@@ -1,4 +1,6 @@
-ergogen:
-	npm run ergogen .
+.PHONY: build ergogen
 
 build: ergogen
+
+ergogen:
+	npm run build
