@@ -39,7 +39,11 @@ jobs:
           boards: left
           config: default
 
-      # TODO: Export DSN file for freerouting
+      - name: Export DSN file for freerouting
+        uses: ./github/actions/export-dsn
+        with:
+          boards: left
+
       # TODO: Autoroute PCB
       # TODO: Import SES
       # TODO: Run Kibot to generate images, gerbers for the autorouted board
