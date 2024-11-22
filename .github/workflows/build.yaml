@@ -49,7 +49,11 @@ jobs:
         with:
           boards: left
 
-      # TODO: Import SES
+      - name: Import SES
+        uses: ./github/actions/import-ses
+        with:
+          boards: left
+
       # TODO: Run Kibot to generate images, gerbers for the autorouted board
 
       - name: Publish output
