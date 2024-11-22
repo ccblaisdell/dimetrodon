@@ -235,10 +235,14 @@ outlines:
         - shift: [70, 0]
         - ref: thumbs_tucky_cluster
           shift: [0cpx, -0.5ky]
-        # Just eyeballing an intersection
-        - shift: [-65, 0]
-        - ref: matrix_pinky_bottom
-          shift: [-0.5kx, -0.5ky - 5]
+        - aggregate:
+            method: intersect
+            parts: 
+              - ref: matrix_pinky_bottom
+                shift: [-0.5kx, -0.5ky]
+              - ref: thumbs_tucky_cluster
+                shift: [0, -0.5ky]
+                rotate: -90
   _debug_rectangle:
     - what: polygon
       points:
@@ -437,7 +441,6 @@ pcbs:
       bottom_right_hole:
         what: ceoloide/mounting_hole_plated
         where: *bottom_right_hole
-# TODO: Try that intersection function again, but orient the point first
 # TODO: figure out reversible settings
 # TODO: Try out flatfootfox's cutouts for underside of board
 # TODO: Bottom PCB with cutouts for case bottom!
