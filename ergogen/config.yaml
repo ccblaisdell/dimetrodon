@@ -128,6 +128,7 @@ outlines:
     - what: rectangle
       where: /^matrix_/
       size: [kx, ky]
+      expand: 0.5
     - what: polygon
       points:
         - ref: matrix_ring_top
@@ -148,6 +149,7 @@ outlines:
     - what: rectangle
       where: /thumbs_/
       size: [kx, ky]
+      expand: 0.5
     - what: polygon
       points:
         - ref: thumbs_tucky_cluster
