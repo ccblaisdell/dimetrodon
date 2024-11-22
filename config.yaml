@@ -449,6 +449,7 @@ pcbs:
         where: *bottom_right_hole
 # FUNCTIONAL STUFF
 # TODO: figure out reversible settings
+# TODO: Figure out autorouting https://github.com/ceoloide/corney-island/tree/main/.github/actions/autoroute
 # TODO: Minimal case
 # TODO: Try out infused-kim's ergogen/kicad helpers to preserve routing
 # FANCY STUFF
