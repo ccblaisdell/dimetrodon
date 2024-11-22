@@ -40,12 +40,12 @@ jobs:
           config: default
 
       - name: Export DSN file for freerouting
-        uses: ./github/actions/export-dsn
+        uses: ./.github/actions/export-dsn
         with:
           boards: left
 
       - name: Autoroute PCB
-        uses: ./github/actions/autoroute
+        uses: ./.github/actions/autoroute
         with:
           boards: left
 
