@@ -437,15 +437,14 @@ pcbs:
       bottom_right_hole:
         what: ceoloide/mounting_hole_plated
         where: *bottom_right_hole
-# TODO: mirror components, outlines OR figure out reversible
+# TODO: Try that intersection function again, but orient the point first
+# TODO: figure out reversible settings
 # TODO: Try out flatfootfox's cutouts for underside of board
-# TODO: Figure out 3d components -> Case CAD flow.
-# TODO: Figure out `bound` options and see if that will simplify some outlines
-# TODO: Refactor to use more zones?
-# TODO: Try out infused-kim's ergogen/kicad helpers to preserve routing
-# TODO: Try out autorouting
-# TODO: Illustrations!
 # TODO: Bottom PCB with cutouts for case bottom!
+# TODO: Minimal case
+# TODO: Try out infused-kim's ergogen/kicad helpers to preserve routing
+# TODO: Illustrations!
 # TODO: TOP PCB as switch plate? Sandwich in between with foam or something?
 # TODO: Light guides for LEDs
 # TODO: Little reset pusher tab (I think Forager does this)
+# TODO: Peel-away super duper low profile controller sockets like Tern
