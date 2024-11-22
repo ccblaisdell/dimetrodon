@@ -390,6 +390,7 @@ pcbs:
       nice_nano:
         what: ceoloide/mcu_nice_nano
         params:
+          only_required_jumpers: true
           reversible: true
           # mcu_3dmodel_filename: 3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
           # mcu_3dmodel_xyz_offset: [0, 0, 3]
