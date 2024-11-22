@@ -128,7 +128,9 @@ outlines:
     - what: rectangle
       where: /^matrix_/
       size: [kx, ky]
+      expand: 1
     - what: polygon
+      expand: 1
       points:
         - ref: matrix_ring_top
           shift: [0cpx, 0.5ky]
@@ -137,6 +139,7 @@ outlines:
           shift: [0, -0.5ky]
         - shift: [-2cpx, 0]
     - what: polygon
+      expand: 1
       points:
         - ref: matrix_pinky_top
           shift: [0, 0.5ky]
@@ -148,6 +151,7 @@ outlines:
     - what: rectangle
       where: /thumbs_/
       size: [kx, ky]
+      expand: 1
 
     - what: polygon
       points:
@@ -231,6 +235,7 @@ outlines:
   _bottom_left:
     - what: polygon
       fillet: 1
+      expand: 1
       points:
         - ref: matrix_pinky_home
           shift: [-0.5kx, 0]
@@ -300,6 +305,7 @@ outlines:
   _top_left:
     - what: polygon
       fillet: 1
+      expand: 1
       adjust:
         ref: matrix_middle_top
         shift: [0, 1cpy - middle_finger_prominence]
@@ -344,7 +350,8 @@ outlines:
     - name: _top_left
     #- name: _debug_rectangle
   switch_plate:
-    - name: left_board
+    - what: outline
+      name: left_board
     - operation: subtract
       name: _switch_holes
   preview:
