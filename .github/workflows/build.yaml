@@ -44,7 +44,11 @@ jobs:
         with:
           boards: left
 
-      # TODO: Autoroute PCB
+      - name: Autoroute PCB
+        uses: ./github/actions/autoroute
+        with:
+          boards: left
+
       # TODO: Import SES
       # TODO: Run Kibot to generate images, gerbers for the autorouted board
 
