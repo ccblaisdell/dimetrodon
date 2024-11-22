@@ -447,8 +447,8 @@ pcbs:
         what: ceoloide/mounting_hole_plated
         where: *bottom_right_hole
 # FUNCTIONAL STUFF
-# TODO: figure out reversible settings
 # TODO: Figure out autorouting https://github.com/ceoloide/corney-island/tree/main/.github/actions/autoroute
+# TODO: Cut out hole for battery
 # TODO: Minimal case
 # TODO: Try out infused-kim's ergogen/kicad helpers to preserve routing
 # FANCY STUFF
@@ -456,6 +456,6 @@ pcbs:
 # TODO: Bottom PCB with cutouts for case bottom!
 # TODO: Illustrations!
 # TODO: TOP PCB as switch plate? Sandwich in between with foam or something?
-# TODO: Light guides for LEDs
-# TODO: Little reset pusher tab (I think Forager does this)
+# TODO: Light guides for LEDs (bit of transparent filament)
+# TODO: Little reset pusher tab (I think Forager does this) (It presses a button that's built into the XIAO, so we might not want this)
 # TODO: Peel-away super duper low profile controller sockets like Tern
