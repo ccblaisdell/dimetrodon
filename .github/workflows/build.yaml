@@ -54,13 +54,16 @@ jobs:
         with:
           boards: left
 
-      # TODO: Run Kibot to generate images, gerbers for the autorouted board
+      - name: Run Kibot to generate images, gerbers for the autorouted board
+        uses: ./.github/actions/kibot
+        with:
+          boards: left
+          config: boards
 
       - name: Publish output
         uses: actions/upload-artifact@v4
         with:
           name: build
-          # TODO: Include cases
           path: |
             gerbers
             images
