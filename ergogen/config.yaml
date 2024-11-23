@@ -344,11 +344,17 @@ outlines:
     - name: _controller
     - name: _bottom_left
     - name: _top_left
+    - name: _battery
+      operation: subtract
     #- name: _debug_rectangle
   switch_plate:
     - name: left_board
-    - operation: subtract
-      name: _switch_holes
+    - name: _switch_holes
+      operation: subtract
+    - name: _mounting_holes
+      operation: subtract
+    - name: _controller
+      operation: subtract
   preview:
     - name: left_board
     - name: _keycaps
@@ -359,6 +365,8 @@ outlines:
       operation: subtract
     - name: _controller
       operation: subtract
+    - name: _battery
+      operation: stack
     - name: _mounting_holes
       operation: stack
     - name: _power_switch
