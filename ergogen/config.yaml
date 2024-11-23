@@ -148,6 +148,7 @@ outlines:
     - what: rectangle
       where: /thumbs_/
       size: [2cpx, 2cpy]
+      fillet: 1
 
     - what: polygon
       points:
@@ -206,7 +207,9 @@ outlines:
     - what: polygon
       adjust: &battery_outline
         ref: thumbs_tucky_cluster
-        shift: [-1cpx - 30 - 4, -1cpy]
+        shift: [-1cpx - 30 - 4, -1cpy + 0]
+      expand: 1
+      fillet: 1
       points:
         - shift: [0, 0]
         - shift: [30, 0]
@@ -218,10 +221,10 @@ outlines:
     - what: polygon
       adjust: &jst_connector
         ref: thumbs_tucky_cluster
-        shift: [-1cpx - 47, -1cpy + 4]
+        shift: [-1cpx - 47, -1cpy + 3.5]
       points:
         # Manually shift the start point to more closely match the PCB
-        - shift: [-2, -4]
+        - shift: [-2, -3]
         - shift: [8, 0]
         - shift: [0, 4.5]
         - shift: [-8, 0]
@@ -369,9 +372,12 @@ pcbs:
     outlines:
       main:
         outline: left_board
-      battery_guide:
+      battery_guide_front:
         outline: _battery
         layer: F.SilkS
+      battery_guide_back:
+        outline: _battery
+        layer: B.SilkS
     footprints:
       choc_hotswap:
         what: ceoloide/switch_choc_v1_v2
@@ -427,11 +433,11 @@ pcbs:
       battery_text:
         what: ceoloide/utility_text
         where:
-          # Slide it left, just under the pinky
           ref: thumbs_tucky_cluster
-          shift: [-35, -1cpy + 5]
+          shift: [-1cpx - 30 + 1, -1cpy + 22]
         params:
-          text: "Battery"
+          reversible: true
+          text: "XX2030 Battery"
       top_left_hole:
         what: ceoloide/mounting_hole_plated
         where: *top_left_hole
@@ -449,11 +455,11 @@ pcbs:
         where: *bottom_right_hole
       ground_plane:
         what: ceoloide/utility_filled_zone
+        params:
+          fill_type: hatch
 # FUNCTIONAL STUFF
-# TODO: Figure out autorouting https://github.com/ceoloide/corney-island/tree/main/.github/actions/autoroute
-# TODO: Cut out hole for battery
+# TODO: Get the last bits autorouting or manually do them
 # TODO: Minimal case
-# TODO: Try out infused-kim's ergogen/kicad helpers to preserve routing
 # FANCY STUFF
 # TODO: Try out flatfootfox's cutouts for underside of board
 # TODO: Bottom PCB with cutouts for case bottom!
