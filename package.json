@@ -1,9 +1,12 @@
 {
   "scripts": {
-    "build": "ergogen ./ergogen/ --output ./ --clear",
+    "build": "npm run build:ergogen build:cases",
+    "build:ergogen": "ergogen ./ergogen/ --output ./ --clear",
+    "build:case": "npx @jscad/cli",
     "prepare": "husky"
   },
   "dependencies": {
+    "@jscad/cli": "^1.10.0",
     "ergogen": "^4.1.0",
     "husky": "^9.1.7"
   }

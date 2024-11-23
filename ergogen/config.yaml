@@ -128,6 +128,7 @@ outlines:
     - what: rectangle
       where: /^matrix_/
       size: [2cpx, 2cpy]
+      fillet: 1
     - what: polygon
       points:
         - ref: matrix_ring_top
@@ -336,6 +337,15 @@ outlines:
         ref: matrix_pinky_bottom
         shift: [-1cpx + 3, -1cpy - 3.5]
       radius: mounting_hole_radius
+  base:
+    - name: _matrix
+    - name: _thumbs
+    - name: _matrix_thumb_connector
+    - name: _controller_area
+    - name: _controller
+    - name: _bottom_left
+    - name: _top_left
+    - name: _battery
   left_board:
     - name: _matrix
     - name: _thumbs
@@ -492,7 +502,26 @@ pcbs:
         what: ceoloide/utility_filled_zone
         params:
           remove_islands: always
-
+cases:
+  silicone_base:
+    - name: base
+      extrude: 1
+  cork_base:
+    - name: base
+      extrude: 1.8
+      shift: [0, 0, 1]
+  pcb:
+    - name: left_board
+      extrude: 1.6
+      shift: [0, 0, 1 + 1.8]
+  gasket:
+    - name: switch_plate
+      extrude: 1
+      shift: [0, 0, 1 + 1.8 + 1.6]
+  switch_plate:
+    - name: switch_plate
+      extrude: 1.2
+      shift: [0, 0, 1 + 1.8 + 1.6 + 1]
 # FUNCTIONAL STUFF
 # TODO: Get the last bits autorouting or manually do them
 # TODO: Minimal case
