@@ -128,9 +128,7 @@ outlines:
     - what: rectangle
       where: /^matrix_/
       size: [kx, ky]
-      expand: 1
     - what: polygon
-      expand: 1
       points:
         - ref: matrix_ring_top
           shift: [0cpx, 0.5ky]
@@ -139,7 +137,6 @@ outlines:
           shift: [0, -0.5ky]
         - shift: [-2cpx, 0]
     - what: polygon
-      expand: 1
       points:
         - ref: matrix_pinky_top
           shift: [0, 0.5ky]
@@ -151,7 +148,6 @@ outlines:
     - what: rectangle
       where: /thumbs_/
       size: [kx, ky]
-      expand: 1
 
     - what: polygon
       points:
@@ -199,7 +195,6 @@ outlines:
     - what: polygon
       fillet: 1
       adjust: *controller
-      expand: 1
       points:
         # start at top right of controller
         - shift: [nice_nano_width / 2, nice_nano_length / 2]
@@ -235,7 +230,6 @@ outlines:
   _bottom_left:
     - what: polygon
       fillet: 1
-      expand: 1
       points:
         - ref: matrix_pinky_home
           shift: [-0.5kx, 0]
@@ -265,7 +259,7 @@ outlines:
         ref: matrix_middle_top
         # Coordinates are all based on the center, so adjust manually
         # based on 6.7x2.6 size
-        shift: [-37 + 6.7/2, 1cpy - middle_finger_prominence - 2.6/2 - 0.2]
+        shift: [-37 + 6.7/2, 1cpy - middle_finger_prominence - 2.6/2 - 1]
       points:
         - shift: [-6.7, 2.6/2]
         - shift: [6.7, 0]
@@ -305,7 +299,6 @@ outlines:
   _top_left:
     - what: polygon
       fillet: 1
-      expand: 1
       adjust:
         ref: matrix_middle_top
         shift: [0, 1cpy - middle_finger_prominence]
@@ -350,8 +343,7 @@ outlines:
     - name: _top_left
     #- name: _debug_rectangle
   switch_plate:
-    - what: outline
-      name: left_board
+    - name: left_board
     - operation: subtract
       name: _switch_holes
   preview:
