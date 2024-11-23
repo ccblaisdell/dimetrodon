@@ -13,8 +13,8 @@ units:
   # Switch padding, i.e. distance from center of switch (Point) to 
   # the nearest edge of the PCB. Essentially a 1mm pad. Useful
   # for adjustment operations in relation to a Point.
-  cpx: 1 + kx / 2
-  cpy: 1 + ky / 2
+  cpx: 0 + kx / 2
+  cpy: 0 + ky / 2
 
   # Controller dimensions
   nice_nano_length: 33
@@ -131,18 +131,18 @@ outlines:
     - what: polygon
       points:
         - ref: matrix_ring_top
-          shift: [0cpx, 0.5ky]
+          shift: [0cpx, 1cpy]
         - shift: [2cpx, 0]
         - ref: matrix_middle_bottom
-          shift: [0, -0.5ky]
+          shift: [0, -1cpy]
         - shift: [-2cpx, 0]
     - what: polygon
       points:
         - ref: matrix_pinky_top
-          shift: [0, 0.5ky]
+          shift: [0, 1cpy]
         - shift: [1kx, 0]
         - ref: matrix_ring_bottom
-          shift: [0, -0.5ky]
+          shift: [0, -1cpy]
         - shift: [-1kx, 0]
   _thumbs:
     - what: rectangle
@@ -152,31 +152,31 @@ outlines:
     - what: polygon
       points:
         - ref: thumbs_tucky_cluster
-          shift: [0.5kx, 0.5ky]
+          shift: [1cpx, 1cpy]
         - ref: thumbs_middle_cluster
-          shift: [-0.5kx, 0.5ky]
+          shift: [-1cpx, 1cpy]
         - ref: thumbs_middle_cluster
-          shift: [0.5kx, 0.5ky]
+          shift: [1cpx, 1cpy]
         - ref: thumbs_reachy_cluster
-          shift: [-0.5kx, 0.5ky]
+          shift: [-1cpx, 1cpy]
         - ref: thumbs_reachy_cluster
         - ref: thumbs_reachy_cluster
-          shift: [-0.5kx, -0.5ky]
+          shift: [-1cpx, -1cpy]
         - ref: thumbs_tucky_cluster
-          shift: [0.5kx, -0.5ky]
+          shift: [1cpx, -1cpy]
         - ref: thumbs_tucky_cluster
   # Connect the thumbs to the matrix
   _matrix_thumb_connector:
     - what: polygon
       points:
         - ref: thumbs_tucky_cluster
-          shift: [-0.5kx - 0, 2cpy]
+          shift: [-1cpx - 0, 2cpy]
         - ref: matrix_inner_bottom
           shift: [1cpx, 1cpy]
         - ref: matrix_inner_bottom
           shift: [1cpx, -3cpy]
         - ref: thumbs_tucky_cluster
-          shift: [-0.5kx - 0, 0]
+          shift: [-1cpx - 0, 0]
   _controller:
     - what: polygon
       fillet: 1
@@ -206,7 +206,7 @@ outlines:
     - what: polygon
       adjust: &battery_outline
         ref: thumbs_tucky_cluster
-        shift: [-1cpx - 30 - 4, -0.5ky]
+        shift: [-1cpx - 30 - 4, -1cpy]
       points:
         - shift: [0, 0]
         - shift: [30, 0]
@@ -218,7 +218,7 @@ outlines:
     - what: polygon
       adjust: &jst_connector
         ref: thumbs_tucky_cluster
-        shift: [-1cpx - 47, -0.5ky + 4]
+        shift: [-1cpx - 47, -1cpy + 4]
       points:
         # Manually shift the start point to more closely match the PCB
         - shift: [-2, -4]
@@ -232,17 +232,17 @@ outlines:
       fillet: 1
       points:
         - ref: matrix_pinky_home
-          shift: [-0.5kx, 0]
+          shift: [-1cpx, 0]
         - shift: [70, 0]
         - ref: thumbs_tucky_cluster
-          shift: [0cpx, -0.5ky]
+          shift: [0cpx, -1cpy]
         - aggregate:
             method: intersect
             parts: 
               - ref: matrix_pinky_bottom
-                shift: [-0.5kx, -0.5ky]
+                shift: [-1cpx, -1cpy]
               - ref: thumbs_tucky_cluster
-                shift: [0, -0.5ky]
+                shift: [0, -1cpy]
                 rotate: -90
   _debug_rectangle:
     - what: polygon
@@ -331,7 +331,7 @@ outlines:
     - what: circle
       adjust: &bottom_left_hole
         ref: matrix_pinky_bottom
-        shift: [-0.5kx + 3, -0.5ky - 3.5]
+        shift: [-1cpx + 3, -1cpy - 3.5]
       radius: mounting_hole_radius
   left_board:
     - name: _matrix
