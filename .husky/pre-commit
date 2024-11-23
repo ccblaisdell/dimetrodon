@@ -1,2 +1,2 @@
-make build
-git add outlines pcbs
+make ergogen
+git add cases outlines pcbs
