@@ -13,8 +13,8 @@ units:
   # Switch padding, i.e. distance from center of switch (Point) to 
   # the nearest edge of the PCB. Essentially a 1mm pad. Useful
   # for adjustment operations in relation to a Point.
-  cpx: 0 + kx / 2
-  cpy: 0 + ky / 2
+  cpx: 1 + kx / 2
+  cpy: 1 + ky / 2
 
   # Controller dimensions
   nice_nano_length: 33
@@ -127,7 +127,7 @@ outlines:
   _matrix:
     - what: rectangle
       where: /^matrix_/
-      size: [kx, ky]
+      size: [2cpx, 2cpy]
     - what: polygon
       points:
         - ref: matrix_ring_top
@@ -147,7 +147,7 @@ outlines:
   _thumbs:
     - what: rectangle
       where: /thumbs_/
-      size: [kx, ky]
+      size: [2cpx, 2cpy]
 
     - what: polygon
       points:
@@ -259,7 +259,7 @@ outlines:
         ref: matrix_middle_top
         # Coordinates are all based on the center, so adjust manually
         # based on 6.7x2.6 size
-        shift: [-37 + 6.7/2, 1cpy - middle_finger_prominence - 2.6/2 - 1]
+        shift: [-37 + 6.7/2, 1cpy - middle_finger_prominence - 2.6/2 - 0.5]
       points:
         - shift: [-6.7, 2.6/2]
         - shift: [6.7, 0]
