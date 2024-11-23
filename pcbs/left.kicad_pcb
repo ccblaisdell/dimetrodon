@@ -4413,20 +4413,20 @@
     (min_thickness 0.25)
     (filled_areas_thickness no)
     (fill 
-      (mode hatch)
+      yes
       (thermal_gap 0.5)
       (thermal_bridge_width 0.5)
       (smoothing chamfer)
       (radius 0.5)
-      (island_removal_mode 1)
-      (island_area_min 5)
-      (hatch_thickness 1)
-      (hatch_gap 1.5)
-      (hatch_orientation 0)
       
       
-      (hatch_border_algorithm hatch_thickness)
-      (hatch_min_hole_area 0.3)
+      
+      
+      
+      
+      
+      
+      
     )
     (polygon
       (pts

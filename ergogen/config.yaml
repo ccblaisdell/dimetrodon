@@ -355,6 +355,31 @@ outlines:
       operation: subtract
     - name: _controller
       operation: subtract
+  _ground_plane:
+    - what: polygon
+      points:
+        - ref: matrix_pinky_top
+          shift: [-1cpx, 0]
+        - ref: matrix_ring_top
+          shift: [-1cpx, 0]
+        - ref: matrix_middle_top
+          shift: [-1cpx, 0]
+        - ref: matrix_middle_top
+          shift: [1cpx, 0]
+        - ref: matrix_pointer_top
+          shift: [1cpx, 0]
+        - ref: matrix_inner_top
+          shift: [1cpx, 0]
+        - ref: matrix_inner_bottom
+          shift: [1cpx, 0]
+        - ref: thumbs_reachy_cluster
+          shift: [1cpx, 0]
+        - ref: thumbs_middle_cluster
+          shift: [0cpx, 0]
+        - ref: thumbs_tucky_cluster
+          shift: [-1cpx, 0]
+        - ref: matrix_pinky_bottom
+          shift: [-1cpx, 0]
   preview:
     - name: left_board
     - name: _keycaps
@@ -372,6 +397,8 @@ outlines:
     - name: _power_switch
       operation: stack
     - name: _reset_switch
+      operation: stack
+    - name: _ground_plane
       operation: stack
 pcbs:
   left:
@@ -464,7 +491,8 @@ pcbs:
       ground_plane:
         what: ceoloide/utility_filled_zone
         params:
-          fill_type: hatch
+          remove_islands: always
+
 # FUNCTIONAL STUFF
 # TODO: Get the last bits autorouting or manually do them
 # TODO: Minimal case
