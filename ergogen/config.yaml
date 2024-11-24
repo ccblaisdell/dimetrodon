@@ -127,7 +127,7 @@ outlines:
   _matrix:
     - what: rectangle
       where: /^matrix_/
-      size: [2cpx, 2cpy]
+      size: [2cpx + 0.5, 2cpy + 0.5]
       fillet: 1
     - what: polygon
       points:
@@ -277,8 +277,6 @@ outlines:
   _bottom_left:
     - what: polygon
       fillet: 1
-      # TEMPORARY, debugging
-      expand: 1
       points:
         - ref: matrix_pinky_home
           shift: [-1cpx, 0]
@@ -289,10 +287,37 @@ outlines:
             method: intersect
             parts: 
               - ref: matrix_pinky_bottom
-                shift: [-1cpx, -1cpy]
+                shift: [-1cpx - 0.5, -1cpy]
               - ref: thumbs_tucky_cluster
                 shift: [0, -1cpy]
                 rotate: -90
+  # Currently unused, but I wanted to commit it at least once
+  _bottom_left_2:
+    - what: polygon
+      fillet: 1
+      points:
+        - aggregate:
+            method: intersect
+            parts:
+              - ref: matrix_pinky_top
+                shift: [-1cpx + 5, 1cpy]
+                rotate: 0
+              - ref: matrix_middle_top
+                shift: [0, 1cpy - middle_finger_prominence]
+                rotate: 90
+        - shift: [70, 0]
+        - ref: thumbs_tucky_cluster
+          shift: [0, -1cpy]
+        - aggregate:
+            method: intersect
+            parts: 
+              - ref: matrix_pinky_top
+                shift: [-1cpx + 5, 1cpy]
+                rotate: -6
+              - ref: thumbs_tucky_cluster
+                shift: [0, -1cpy]
+                rotate: -90
+        
   _debug_rectangle:
     - what: polygon
       points:
