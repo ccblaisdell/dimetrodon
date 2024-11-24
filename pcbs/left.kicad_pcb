@@ -4018,7 +4018,7 @@
     
     
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
-      (offset (xyz 0 0 3))
+      (offset (xyz 0 0 0.5))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -4399,6 +4399,12 @@
     (fp_line (start 2.1 1.75) (end 2.35 1.75) (stroke (width 0.1) (type solid)) (layer "B.SilkS"))
     (fp_line (start 2.35 -1.5) (end 2.35 -1.75) (stroke (width 0.1) (type solid)) (layer "B.SilkS"))
     (fp_line (start 2.35 1.5) (end 2.35 1.75) (stroke (width 0.1) (type solid)) (layer "B.SilkS"))
+    
+    (model ${DIMETRODON_KICAD}/3dmodels/EVQPU-JA-02K.STEP
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 180))
+    )
     
   )
     
