@@ -356,7 +356,10 @@ outlines:
     - name: _top_left
     - name: _battery
       operation: subtract
-    #- name: _debug_rectangle
+  keywell:
+    - name: _matrix
+    - name: _thumbs
+    - name: _matrix_thumb_connector
   switch_plate:
     - name: left_board
     - name: _switch_holes
@@ -407,8 +410,6 @@ outlines:
     - name: _power_switch
       operation: stack
     - name: _reset_switch
-      operation: stack
-    - name: _ground_plane
       operation: stack
 pcbs:
   left:
@@ -522,6 +523,19 @@ cases:
     - name: switch_plate
       extrude: 1.2
       shift: [0, 0, 1 + 1.8 + 1.6 + 1]
+  _case_skirt:
+    - name: base
+      shift: [0, 0, 1]
+      extrude: 1.8 + 1.6 + 1.2
+  _case_upper:
+    - name: base
+      shift: [0, 0, 1 + 1.8 + 1.6 + 1.2]
+      extrude: 4.5
+  case:
+    - what: case
+      name: _case_skirt
+    - what: case
+      name: _case_upper
 # FUNCTIONAL STUFF
 # TODO: Get the last bits autorouting or manually do them
 # TODO: Minimal case
