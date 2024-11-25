@@ -521,7 +521,7 @@ pcbs:
         params:
           reversible: true
           mcu_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
-          mcu_3dmodel_xyz_offset: [0, 0, 0.5]
+          mcu_3dmodel_xyz_offset: [0, 0, 3]
         where: *controller
       power_switch:
         what: ceoloide/power_switch_smd_side
@@ -537,14 +537,11 @@ pcbs:
           switch_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Switch_MSK12C02.step
           switch_3dmodel_xyz_rotation: [0, 0, 90]
       reset_switch:
-        what: reset_switch_smd_side
+        what: ceoloide/reset_switch_smd_side
         # top right, near the USB port
         where: *reset_switch 
         params:
           reversible: true
-          switch_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/EVQPU-JA-02K.STEP
-          switch_3dmodel_xyz_offset: [0, 0, 0]
-          switch_3dmodel_xyz_rotation: [-90, 0, 180]
           from: GND
           to: RST
       battery_connector:
