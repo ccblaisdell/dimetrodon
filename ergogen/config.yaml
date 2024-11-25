@@ -602,10 +602,10 @@ pcbs:
       # bottom_right_hole:
       #   what: ceoloide/mounting_hole_plated
       #   where: *bottom_right_hole
-      ground_plane:
-        what: ceoloide/utility_filled_zone
-        params:
-          remove_islands: always
+      # ground_plane:
+      #   what: ceoloide/utility_filled_zone
+      #   params:
+      #     remove_islands: always
 cases:
   silicone_base:
     - name: base

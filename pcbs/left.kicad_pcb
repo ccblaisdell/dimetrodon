@@ -4674,43 +4674,6 @@
     
   )
     
-
-  (zone
-    (net 2)
-    (net_name "GND")
-    (locked no)
-    (layers "F.Cu")
-    
-    (hatch edge 0.5)
-    
-    (connect_pads 
-      (clearance 0.508)
-    )
-    (min_thickness 0.25)
-    (filled_areas_thickness no)
-    (fill 
-      yes
-      (thermal_gap 0.5)
-      (thermal_bridge_width 0.5)
-      (smoothing chamfer)
-      (radius 0.5)
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    )
-    (polygon
-      (pts
-        (xy 0 0) (xy 420 0) (xy 420 297) (xy 0 297) 
-      )
-    )
-  )
-    
   (gr_line (start -14.662441230573664 -41.44439416097023) (end -10.26322534063556 0.41134895156405094) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start -9.87919091789348 -42.9526423531506) (end -13.772447830573663 -42.543444560970265) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 45.3983667 -61.315708799999996) (end 45.3983667 -63.565708799999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
