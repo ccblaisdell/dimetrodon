@@ -161,8 +161,8 @@ outlines:
           shift: [1cpx, 1cpy]
         - ref: thumbs_reachy_cluster
           shift: [-1cpx, 1cpy]
-        - ref: thumbs_reachy_cluster
-          shift: [0, 1cpy]
+        # - ref: thumbs_reachy_cluster
+        #   shift: [0, 1cpy]
         - ref: thumbs_reachy_cluster
         - ref: thumbs_reachy_cluster
           shift: [-1cpx, -1cpy]
@@ -379,21 +379,13 @@ outlines:
   _top_left:
     - what: polygon
       fillet: 1
-      adjust:
-        ref: matrix_middle_top
-        shift: [0, 1cpy - middle_finger_prominence]
       points:
-        - shift: [-45, 0]
+        - ref: matrix_middle_top
+          shift: [-45, 1cpy - middle_finger_prominence]
         - shift: [94, 0]
         - shift: [0, -65]
-        - shift: [-94, 0]
-      #points:
-      #  - ref: matrix_middle_top
-      #    shift: [-45, 1cpy - middle_finger_prominence]
-      #  - shift: [94, 0]
-      #  - shift: [0, -65]
-      #  - ref: matrix_pinky_bottom
-      #    shift: [-1cpx, 0]
+        - ref: matrix_pinky_bottom
+          shift: [-1cpx, 0]
   _mounting_holes:
     - what: circle
       adjust: &top_left_hole
