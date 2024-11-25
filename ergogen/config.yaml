@@ -162,8 +162,6 @@ outlines:
         - ref: thumbs_reachy_cluster
           shift: [-1cpx, 1cpy]
         - ref: thumbs_reachy_cluster
-          shift: [0, 1cpy]
-        - ref: thumbs_reachy_cluster
         - ref: thumbs_reachy_cluster
           shift: [-1cpx, -1cpy]
         - ref: thumbs_tucky_cluster
@@ -205,27 +203,6 @@ outlines:
         - shift: [0, -nice_nano_length - 1ky - 5]
         - shift: [-nice_nano_width - 2, 0]
         - shift: [0, nice_nano_length + 1ky + 5]
-  _controller_cover:
-    - what: polygon
-      points:
-        - ref: matrix_inner_bottom
-          shift: [1kx / 2 , 5 + -1cy / 2 + nice_nano_length]
-        - shift: [nice_nano_width + 4, 0]
-        - shift: [0, -nice_nano_length - 22]
-        - shift: [-nice_nano_width - 4, 4]
-    - what: polygon
-      operation: subtract
-      points:
-        - ref: thumbs_middle_cluster
-          shift: [-1cpx, 1cpy]
-        - ref: thumbs_middle_cluster
-          shift: [1cpx, 1cpy]
-        - ref: thumbs_reachy_cluster
-          shift: [-1cpx, 1cpy]
-        - ref: thumbs_reachy_cluster
-          shift: [1cpx, 1cpy]
-        - ref: thumbs_reachy_cluster
-        - ref: thumbs_middle_cluster
   _battery:
     # 20 x 30, the one totem uses
     - what: polygon
@@ -360,13 +337,14 @@ outlines:
   _top_left:
     - what: polygon
       fillet: 1
+      adjust:
+        ref: matrix_middle_top
+        shift: [0, 1cpy - middle_finger_prominence]
       points:
-        - ref: matrix_middle_top
-          shift: [-45, 1cpy - middle_finger_prominence]
+        - shift: [-45, 0]
         - shift: [94, 0]
         - shift: [0, -65]
-        - ref: matrix_pinky_bottom
-          shift: [-1cpx, 0]
+        - shift: [-94, 0]
   _mounting_holes:
     - what: circle
       adjust: &top_left_hole
@@ -471,11 +449,13 @@ outlines:
       operation: stack
     - name: _mounting_holes
       operation: stack
+    # - name: _switch_holes
+    #  operation: stack
     - name: _power_switch
       operation: stack
     - name: _reset_switch
       operation: stack
-    - name: _controller_cover
+    - name: _controller
       operation: stack
 pcbs:
   left:
@@ -602,9 +582,9 @@ cases:
       name: _case_skirt
     - what: case
       name: _case_upper
-# CASE
-# TODO: Are the keywells spacious enough? Need an extra 0.5mm?
-# TODO: 
+# FUNCTIONAL STUFF
+# TODO: Get the last bits autorouting or manually do them
+# TODO: Minimal case
 # FANCY STUFF
 # TODO: Try out flatfootfox's cutouts for underside of board
 # TODO: Bottom PCB with cutouts for case bottom!
