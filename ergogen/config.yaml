@@ -195,9 +195,18 @@ outlines:
         - shift: [0, nice_nano_length]
         - shift: [nice_nano_width, 0]
         - shift: [0, -nice_nano_length]
-  _controller_cover:
+  _controller_area:
     - what: polygon
       fillet: 1
+      adjust: *controller
+      points:
+        # start at top right of controller
+        - shift: [nice_nano_width / 2, nice_nano_length / 2]
+        - shift: [0, -nice_nano_length - 1ky - 5]
+        - shift: [-nice_nano_width - 2, 0]
+        - shift: [0, nice_nano_length + 1ky + 5]
+  _controller_cover:
+    - what: polygon
       points:
         - ref: matrix_inner_bottom
           shift: [1kx / 2 , 5 + -1cy / 2 + nice_nano_length]
@@ -415,7 +424,7 @@ outlines:
     - name: _matrix
     - name: _thumbs
     - name: _matrix_thumb_connector
-    - name: _controller_cover
+    - name: _controller_area
     - name: _bottom_left
     - name: _top_left
     - name: _battery_filler
@@ -425,7 +434,7 @@ outlines:
     - name: _matrix
     - name: _thumbs
     - name: _matrix_thumb_connector
-    - name: _controller_cover
+    - name: _controller_area
     - name: _bottom_left
     - name: _top_left
     - name: _battery
