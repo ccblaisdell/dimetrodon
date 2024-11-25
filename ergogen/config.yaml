@@ -380,6 +380,8 @@ outlines:
     - name: _bottom_left
     - name: _top_left
     - name: _battery
+    - name: _mounting_holes
+      operation: subtract
   left_board:
     - name: _matrix
     - name: _thumbs
@@ -389,6 +391,8 @@ outlines:
     - name: _bottom_left
     - name: _top_left
     - name: _battery
+      operation: subtract
+    - name: _mounting_holes
       operation: subtract
   keywell:
     - name: _matrix
