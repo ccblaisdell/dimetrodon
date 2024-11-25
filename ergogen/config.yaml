@@ -586,7 +586,7 @@ pcbs:
           reversible: true
           text: "XX2030 Battery"
       top_left_hole:
-        what: ceoloide/mounting_hole_plated
+        what: ceoloide/mounting_hole_npth
         where: *top_left_hole
       # top_right_hole:
       #   what: ceoloide/mounting_hole_plated
