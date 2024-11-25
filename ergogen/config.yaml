@@ -161,8 +161,8 @@ outlines:
           shift: [1cpx, 1cpy]
         - ref: thumbs_reachy_cluster
           shift: [-1cpx, 1cpy]
-        # - ref: thumbs_reachy_cluster
-        #   shift: [0, 1cpy]
+        - ref: thumbs_reachy_cluster
+          shift: [0, 1cpy]
         - ref: thumbs_reachy_cluster
         - ref: thumbs_reachy_cluster
           shift: [-1cpx, -1cpy]
@@ -494,7 +494,7 @@ outlines:
       operation: stack
     - name: _reset_switch
       operation: stack
-    - name: _controller
+    - name: _controller_cover
       operation: stack
 pcbs:
   left:
