@@ -484,6 +484,12 @@ pcbs:
     outlines:
       main:
         outline: left_board
+      battery_guide_front:
+        outline: _battery
+        layer: F.SilkS
+      battery_guide_back:
+        outline: _battery
+        layer: B.SilkS
     footprints:
       choc_hotswap:
         what: ceoloide/switch_choc_v1_v2
@@ -501,7 +507,7 @@ pcbs:
           hotswap_3dmodel_xyz_rotation: [0, 180, 0]
 
           keycap_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-          keycap_3dmodel_xyz_offset: [0, 0, -8]
+          keycap_3dmodel_xyz_offset: [0, 0, -7.6]
           keycap_3dmodel_xyz_rotation: [0, 180, 0]
 
           switch_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
@@ -542,16 +548,13 @@ pcbs:
           from: GND
           to: RST
       battery_connector:
-        what: battery_connector_jst_ph_2
+        what: ceoloide/battery_connector_jst_ph_2
         where:
           <<: *jst_connector
           # Spin so the plug faces towards the thumbs
           rotate: 90
         params:
           reversible: true
-          battery_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/JST-S2B-PH-K-S.STEP
-          battery_3dmodel_xyz_offset: [1, 0, 0]
-          battery_3dmodel_xyz_rotation: [180, 0, 180]
           BAT_P: Braw
           BAT_N: GND
       battery_text:

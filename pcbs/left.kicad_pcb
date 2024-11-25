@@ -267,7 +267,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -404,7 +404,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -541,7 +541,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -678,7 +678,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -815,7 +815,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -952,7 +952,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -1089,7 +1089,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -1226,7 +1226,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -1363,7 +1363,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -1500,7 +1500,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -1637,7 +1637,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -1774,7 +1774,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -1911,7 +1911,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -2048,7 +2048,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -2185,7 +2185,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -2322,7 +2322,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -2459,7 +2459,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -2596,7 +2596,7 @@
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -8))
+      (offset (xyz 0 0 -7.6))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )
@@ -4614,12 +4614,6 @@
             ) 
         )
         
-    (model ${DIMETRODON_KICAD}/3dmodels/JST-S2B-PH-K-S.STEP
-      (offset (xyz 1 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 180 0 180))
-    )
-    
     )
          
     (segment (start 101.9483666 114.18429119999999) (end 100.1483666 114.18429119999999) (width 0.25) (layer "F.Cu") (net 53))
@@ -4822,6 +4816,22 @@
 (gr_circle (center 135.1483667 91.68429119999999) (end 136.9483667 91.68429119999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
 (gr_circle (center 198.6292952 101.55924569999999) (end 200.4292952 101.55924569999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
 (gr_circle (center 94.3972168 113.6604839) (end 96.19721679999999 113.6604839) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_line (start 112.1483666 96.68429119999999) (end 112.1483666 116.68429119999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_arc (start 112.1483666 116.68429119999999) (mid 112.4412598 117.391398) (end 113.1483666 117.68429119999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 113.1483666 117.68429119999999) (end 143.1483666 117.68429119999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_arc (start 143.1483666 117.68429119999999) (mid 143.8554734 117.391398) (end 144.1483666 116.68429119999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 144.1483666 116.68429119999999) (end 144.1483666 96.68429119999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_arc (start 144.1483666 96.68429119999999) (mid 143.8554734 95.97718439999998) (end 143.1483666 95.68429119999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 143.1483666 95.68429119999999) (end 113.1483666 95.68429119999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_arc (start 113.1483666 95.68429119999999) (mid 112.4412598 95.97718439999998) (end 112.1483666 96.68429119999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 112.1483666 96.68429119999999) (end 112.1483666 116.68429119999999) (layer B.SilkS) (stroke (width 0.15) (type default)))
+(gr_arc (start 112.1483666 116.68429119999999) (mid 112.4412598 117.391398) (end 113.1483666 117.68429119999999) (layer B.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 113.1483666 117.68429119999999) (end 143.1483666 117.68429119999999) (layer B.SilkS) (stroke (width 0.15) (type default)))
+(gr_arc (start 143.1483666 117.68429119999999) (mid 143.8554734 117.391398) (end 144.1483666 116.68429119999999) (layer B.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 144.1483666 116.68429119999999) (end 144.1483666 96.68429119999999) (layer B.SilkS) (stroke (width 0.15) (type default)))
+(gr_arc (start 144.1483666 96.68429119999999) (mid 143.8554734 95.97718439999998) (end 143.1483666 95.68429119999999) (layer B.SilkS) (stroke (width 0.15) (type default)))
+(gr_line (start 143.1483666 95.68429119999999) (end 113.1483666 95.68429119999999) (layer B.SilkS) (stroke (width 0.15) (type default)))
+(gr_arc (start 113.1483666 95.68429119999999) (mid 112.4412598 95.97718439999998) (end 112.1483666 96.68429119999999) (layer B.SilkS) (stroke (width 0.15) (type default)))
 
 )
 
