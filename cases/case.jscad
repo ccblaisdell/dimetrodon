@@ -6,10 +6,6 @@ function base_extrude_4_6000000000000005_outline_fn(){
     CAG.circle({"center":[198.6292952,-101.5592457],"radius":1.8})
 ).union(
     CAG.circle({"center":[135.1483667,-91.6842912],"radius":1.8})
-).union(
-    CAG.circle({"center":[181.1483666,-42.6842911],"radius":1.8})
-).union(
-    CAG.circle({"center":[94.2509345,-45.3012958],"radius":1.8})
 )).extrude({ offset: [0, 0, 4.6000000000000005] });
 }
 
@@ -22,10 +18,6 @@ function base_extrude_4_5_outline_fn(){
     CAG.circle({"center":[198.6292952,-101.5592457],"radius":1.8})
 ).union(
     CAG.circle({"center":[135.1483667,-91.6842912],"radius":1.8})
-).union(
-    CAG.circle({"center":[181.1483666,-42.6842911],"radius":1.8})
-).union(
-    CAG.circle({"center":[94.2509345,-45.3012958],"radius":1.8})
 )).extrude({ offset: [0, 0, 4.5] });
 }
 
