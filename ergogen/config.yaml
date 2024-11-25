@@ -127,7 +127,7 @@ outlines:
   _matrix:
     - what: rectangle
       where: /^matrix_/
-      size: [2cpx + 0.5, 2cpy + 0.5]
+      size: [2cpx, 2cpy]
       fillet: 1
     - what: polygon
       points:
@@ -162,8 +162,6 @@ outlines:
         - ref: thumbs_reachy_cluster
           shift: [-1cpx, 1cpy]
         - ref: thumbs_reachy_cluster
-          shift: [0, 1cpy]
-        - ref: thumbs_reachy_cluster
         - ref: thumbs_reachy_cluster
           shift: [-1cpx, -1cpy]
         - ref: thumbs_tucky_cluster
@@ -195,29 +193,16 @@ outlines:
         - shift: [0, nice_nano_length]
         - shift: [nice_nano_width, 0]
         - shift: [0, -nice_nano_length]
-  _controller_cover:
+  _controller_area:
     - what: polygon
-      fillet: 0
-      expand: 0.5
+      fillet: 1
+      adjust: *controller
       points:
-        - ref: matrix_inner_bottom
-          shift: [1kx / 2 , 5 + -1cy / 2 + nice_nano_length]
-        - shift: [nice_nano_width + 4, 0]
-        - shift: [0, -nice_nano_length - 22]
-        - shift: [-nice_nano_width - 4, 4]
-    - what: polygon
-      operation: subtract
-      points:
-        - ref: thumbs_middle_cluster
-          shift: [-1cpx, 1cpy]
-        - ref: thumbs_middle_cluster
-          shift: [1cpx, 1cpy]
-        - ref: thumbs_reachy_cluster
-          shift: [-1cpx, 1cpy]
-        - ref: thumbs_reachy_cluster
-          shift: [1cpx, 1cpy]
-        - ref: thumbs_reachy_cluster
-        - ref: thumbs_middle_cluster
+        # start at top right of controller
+        - shift: [nice_nano_width / 2, nice_nano_length / 2]
+        - shift: [0, -nice_nano_length - 1ky - 5]
+        - shift: [-nice_nano_width - kx, 0]
+        - shift: [0, nice_nano_length + 1ky + 5]
   _battery:
     # 20 x 30, the one totem uses
     - what: polygon
@@ -226,17 +211,6 @@ outlines:
         shift: [-1cpx - 30 - 4, -1cpy + 0]
       expand: 1
       fillet: 1
-      points:
-        - shift: [0, 0]
-        - shift: [30, 0]
-        - shift: [0, 20]
-        - shift: [-30, 0]
-  # Useful to build a part that doesn't have a hole for the battery
-  _battery_filler:
-    - what: polygon
-      adjust: &battery_outline
-        ref: thumbs_tucky_cluster
-        shift: [-1cpx - 30 - 4, -1cpy + 0]
       points:
         - shift: [0, 0]
         - shift: [30, 0]
@@ -255,15 +229,6 @@ outlines:
         - shift: [8, 0]
         - shift: [0, 4.5]
         - shift: [-8, 0]
-  _jst_courtyard:
-    - what: polygon
-      adjust: *jst_connector
-      expand: 0.5
-      points:
-        - shift: [-2, -4]
-        - shift: [16, 0]
-        - shift: [0, 5.5]
-        - shift: [-16, 0]
   # Fills out bottom corner from pink to thumb cluster.
   # Makes a space for the JST connector
   _bottom_left:
@@ -279,37 +244,10 @@ outlines:
             method: intersect
             parts: 
               - ref: matrix_pinky_bottom
-                shift: [-1cpx - 0.5, -1cpy]
+                shift: [-1cpx, -1cpy]
               - ref: thumbs_tucky_cluster
                 shift: [0, -1cpy]
                 rotate: -90
-  # Currently unused, but I wanted to commit it at least once
-  _bottom_left_2:
-    - what: polygon
-      fillet: 1
-      points:
-        - aggregate:
-            method: intersect
-            parts:
-              - ref: matrix_pinky_top
-                shift: [-1cpx + 5, 1cpy]
-                rotate: 0
-              - ref: matrix_middle_top
-                shift: [0, 1cpy - middle_finger_prominence]
-                rotate: 90
-        - shift: [70, 0]
-        - ref: thumbs_tucky_cluster
-          shift: [0, -1cpy]
-        - aggregate:
-            method: intersect
-            parts: 
-              - ref: matrix_pinky_top
-                shift: [-1cpx + 5, 1cpy]
-                rotate: -6
-              - ref: thumbs_tucky_cluster
-                shift: [0, -1cpy]
-                rotate: -90
-        
   _debug_rectangle:
     - what: polygon
       points:
@@ -339,15 +277,6 @@ outlines:
         - shift: [1.3, 0]
         - shift: [0, -1.5]
         - shift: [-1.3, 0]
-  _power_switch_courtyard:
-    - what: polygon
-      adjust: *power_switch
-      expand: 0.5
-      points:
-        - shift: [-6.7, 2.6/2 + 1]
-        - shift: [6.7, 0]
-        - shift: [0, -2.6 - 0.5]
-        - shift: [-6.7, 0]
   _reset_switch:
     # 4.7x3.5 body and 2.6x1 button
     # body
@@ -357,7 +286,7 @@ outlines:
         # based on 4.7x3.5 body size (also 2.6x1 buttton)
         ref: matrix_middle_top
         shift: [33 + 4.7/2, 1cpy - middle_finger_prominence - 3.5/2]
-      points: &reset_switch_points
+      points:
         - shift: [-4.7/2, 3.5/2]
         - shift: [4.7, 0]
         - shift: [0, -3.5]
@@ -370,22 +299,18 @@ outlines:
         - shift: [2.6, 0]
         - shift: [0, -1]
         - shift: [-2.6, 0]
-  _reset_switch_courtyard:
-    - what: polygon
-      expand: 0.5
-      adjust: *reset_switch
-      points: *reset_switch_points
   # Fills out top area (mostly left) for power switch
   _top_left:
     - what: polygon
       fillet: 1
+      adjust:
+        ref: matrix_middle_top
+        shift: [0, 1cpy - middle_finger_prominence]
       points:
-        - ref: matrix_middle_top
-          shift: [-45, 1cpy - middle_finger_prominence]
+        - shift: [-45, 0]
         - shift: [94, 0]
-        - shift: [0, -65]
-        - ref: matrix_pinky_bottom
-          shift: [-1cpx, 0]
+        - shift: [0, -30]
+        - shift: [-94, 0]
   _mounting_holes:
     - what: circle
       adjust: &top_left_hole
@@ -410,50 +335,38 @@ outlines:
     - what: circle
       adjust: &bottom_left_hole
         ref: matrix_pinky_bottom
-        shift: [-1cpx + 3, -1cpy - 3]
+        shift: [-1cpx + 3, -1cpy - 3.5]
       radius: mounting_hole_radius
   base:
     - name: _matrix
     - name: _thumbs
     - name: _matrix_thumb_connector
-    - name: _controller_cover
+    - name: _controller_area
+    - name: _controller
     - name: _bottom_left
     - name: _top_left
-    - name: _battery_filler
-    - name: _mounting_holes
-      operation: subtract
+    - name: _battery
   left_board:
     - name: _matrix
     - name: _thumbs
     - name: _matrix_thumb_connector
-    - name: _controller_cover
+    - name: _controller_area
+    - name: _controller
     - name: _bottom_left
     - name: _top_left
     - name: _battery
-      operation: subtract
-    - name: _mounting_holes
       operation: subtract
   keywell:
     - name: _matrix
     - name: _thumbs
     - name: _matrix_thumb_connector
   switch_plate:
-    - name: _matrix
-    - name: _thumbs
-    - name: _matrix_thumb_connector
-    - name: _bottom_left
-    - name: _top_left
-    - name: _battery
-      operation: subtract
+    - name: left_board
     - name: _switch_holes
       operation: subtract
     - name: _mounting_holes
       operation: subtract
-    - name: _power_switch_courtyard
-      operation: subtract
-    - name: _reset_switch
-      operation: subtract
-    - name: _jst_courtyard
+    - name: _controller
       operation: subtract
   _ground_plane:
     - what: polygon
@@ -484,7 +397,11 @@ outlines:
     - name: left_board
     - name: _keycaps
       operation: subtract
+    - name: _battery
+      operation: subtract
     - name: _jst
+      operation: subtract
+    - name: _controller
       operation: subtract
     - name: _battery
       operation: stack
@@ -494,8 +411,6 @@ outlines:
       operation: stack
     - name: _reset_switch
       operation: stack
-    - name: _controller_cover
-      operation: stack
 pcbs:
   left:
     # Required, since footprints are KiCad 8 only
@@ -503,6 +418,12 @@ pcbs:
     outlines:
       main:
         outline: left_board
+      battery_guide_front:
+        outline: _battery
+        layer: F.SilkS
+      battery_guide_back:
+        outline: _battery
+        layer: B.SilkS
     footprints:
       choc_hotswap:
         what: ceoloide/switch_choc_v1_v2
@@ -514,27 +435,17 @@ pcbs:
           keycap_height: ky
           keycap_width: kx
           reversible: true
-
-          hotswap_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-          hotswap_3dmodel_xyz_offset: [0, 0, -1.6]
-          hotswap_3dmodel_xyz_rotation: [0, 180, 0]
-
-          keycap_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-          keycap_3dmodel_xyz_offset: [0, 0, -8]
-          keycap_3dmodel_xyz_rotation: [0, 180, 0]
-
-          switch_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-          switch_3dmodel_xyz_offset: [0, 0, -1.5]
-          switch_3dmodel_xyz_rotation: [0, 180, 0]
-
+          # hotswap_3dmodel_filename: 3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+          # keycap_3dmodel_filename: 3dmodels/ScottoKeebs_CAD.3dshapes/Choc_1.00u_CAD.step
+          # switch_3dmodel_filename: 3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
           from: "{{column_net}}"
           to: "GND"
       nice_nano:
         what: ceoloide/mcu_nice_nano
         params:
           reversible: true
-          mcu_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
-          mcu_3dmodel_xyz_offset: [0, 0, 0.5]
+          # mcu_3dmodel_filename: 3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
+          # mcu_3dmodel_xyz_offset: [0, 0, 3]
         where: *controller
       power_switch:
         what: ceoloide/power_switch_smd_side
@@ -547,30 +458,22 @@ pcbs:
           reversible: true
           from: Braw
           to: RAW
-          switch_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Switch_MSK12C02.step
-          switch_3dmodel_xyz_rotation: [0, 0, 90]
       reset_switch:
-        what: reset_switch_smd_side
+        what: ceoloide/reset_switch_smd_side
         # top right, near the USB port
         where: *reset_switch 
         params:
           reversible: true
-          switch_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/EVQPU-JA-02K.STEP
-          switch_3dmodel_xyz_offset: [0, 0, 0]
-          switch_3dmodel_xyz_rotation: [-90, 0, 180]
           from: GND
           to: RST
       battery_connector:
-        what: battery_connector_jst_ph_2
+        what: ceoloide/battery_connector_jst_ph_2
         where:
           <<: *jst_connector
           # Spin so the plug faces towards the thumbs
           rotate: 90
         params:
           reversible: true
-          battery_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/JST-S2B-PH-K-S.STEP
-          battery_3dmodel_xyz_offset: [1, 0, 0]
-          battery_3dmodel_xyz_rotation: [180, 0, 180]
           BAT_P: Braw
           BAT_N: GND
       battery_text:
@@ -633,9 +536,9 @@ cases:
       name: _case_skirt
     - what: case
       name: _case_upper
-# CASE
-# TODO: Are the keywells spacious enough? Need an extra 0.5mm?
-# TODO: 
+# FUNCTIONAL STUFF
+# TODO: Get the last bits autorouting or manually do them
+# TODO: Minimal case
 # FANCY STUFF
 # TODO: Try out flatfootfox's cutouts for underside of board
 # TODO: Bottom PCB with cutouts for case bottom!
