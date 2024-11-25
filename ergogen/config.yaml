@@ -31,7 +31,8 @@ points:
         # Cancel out rotations from column splay
         rotate: 6
         # Adjust translation for KiCad
-        shift: [100, -100]
+        # Temporarily disabling to debug outline issues
+        # shift: [100, -100]
       key:
         padding: ky
         spread: kx
