@@ -277,8 +277,6 @@ outlines:
   _bottom_left:
     - what: polygon
       fillet: 1
-      # TEMPORARY, debugging
-      expand: 1
       points:
         - ref: matrix_pinky_home
           shift: [-1cpx, 0]
