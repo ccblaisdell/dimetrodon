@@ -361,11 +361,11 @@ outlines:
         ref: matrix_middle_bottom
         shift: [0cpx, -1cpy - 3]
       radius: mounting_hole_radius
-    - what: circle
-      adjust: &bottom_right_hole
-        ref: thumbs_reachy_cluster
-        shift: [0cpx - 4, 1cpy + 5]
-      radius: mounting_hole_radius
+    # - what: circle
+    #   adjust: &bottom_right_hole
+    #     ref: thumbs_reachy_cluster
+    #     shift: [0cpx - 4, 1cpy + 5]
+    #   radius: mounting_hole_radius
     # - what: circle
     #   adjust: &bottom_left_hole
     #     ref: matrix_pinky_bottom
@@ -534,9 +534,9 @@ pcbs:
       bottom_middle_hole:
         what: ceoloide/mounting_hole_plated
         where: *bottom_middle_hole
-      bottom_right_hole:
-        what: ceoloide/mounting_hole_plated
-        where: *bottom_right_hole
+      # bottom_right_hole:
+      #   what: ceoloide/mounting_hole_plated
+      #   where: *bottom_right_hole
       ground_plane:
         what: ceoloide/utility_filled_zone
         params:
