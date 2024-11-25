@@ -201,7 +201,7 @@ outlines:
         # start at top right of controller
         - shift: [nice_nano_width / 2, nice_nano_length / 2]
         - shift: [0, -nice_nano_length - 1ky - 5]
-        - shift: [-nice_nano_width - kx, 0]
+        - shift: [-nice_nano_width - 2, 0]
         - shift: [0, nice_nano_length + 1ky + 5]
   _battery:
     # 20 x 30, the one totem uses
@@ -343,7 +343,7 @@ outlines:
       points:
         - shift: [-45, 0]
         - shift: [94, 0]
-        - shift: [0, -30]
+        - shift: [0, -65]
         - shift: [-94, 0]
   _mounting_holes:
     - what: circle
