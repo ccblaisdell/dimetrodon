@@ -396,26 +396,26 @@ outlines:
         ref: matrix_pinky_top
         shift: [3, 18]
       radius: mounting_hole_radius
-    # - what: circle
-    #   adjust: &top_right_hole
-    #     ref: matrix_inner_top
-    #     shift: [1cpx, 1cpy + 1]
-    #   radius: mounting_hole_radius
-    # - what: circle
-    #   adjust: &bottom_middle_hole
-    #     ref: matrix_middle_bottom
-    #     shift: [0cpx, -1cpy - 3]
-    #   radius: mounting_hole_radius
-    # - what: circle
-    #   adjust: &bottom_right_hole
-    #     ref: thumbs_reachy_cluster
-    #     shift: [0cpx - 4, 1cpy + 5]
-    #   radius: mounting_hole_radius
-    # - what: circle
-    #   adjust: &bottom_left_hole
-    #     ref: matrix_pinky_bottom
-    #     shift: [-1cpx + 3, -1cpy - 3]
-    #   radius: mounting_hole_radius
+    - what: circle
+      adjust: &top_right_hole
+        ref: matrix_inner_top
+        shift: [1cpx, 1cpy + 1]
+      radius: mounting_hole_radius
+    - what: circle
+      adjust: &bottom_middle_hole
+        ref: matrix_middle_bottom
+        shift: [0cpx, -1cpy - 3]
+      radius: mounting_hole_radius
+    - what: circle
+      adjust: &bottom_right_hole
+        ref: thumbs_reachy_cluster
+        shift: [0cpx - 4, 1cpy + 5]
+      radius: mounting_hole_radius
+    - what: circle
+      adjust: &bottom_left_hole
+        ref: matrix_pinky_bottom
+        shift: [-1cpx + 3, -1cpy - 3]
+      radius: mounting_hole_radius
   base:
     - name: _matrix
     - name: _thumbs
@@ -588,18 +588,18 @@ pcbs:
       top_left_hole:
         what: ceoloide/mounting_hole_npth
         where: *top_left_hole
-      # top_right_hole:
-      #   what: ceoloide/mounting_hole_plated
-      #   where: *top_right_hole
-      # bottom_left_hole:
-      #   what: ceoloide/mounting_hole_plated
-      #   where: *bottom_left_hole
-      # bottom_middle_hole:
-      #   what: ceoloide/mounting_hole_plated
-      #   where: *bottom_middle_hole
-      # bottom_right_hole:
-      #   what: ceoloide/mounting_hole_plated
-      #   where: *bottom_right_hole
+      top_right_hole:
+        what: ceoloide/mounting_hole_npth
+        where: *top_right_hole
+      bottom_left_hole:
+        what: ceoloide/mounting_hole_npth
+        where: *bottom_left_hole
+      bottom_middle_hole:
+        what: ceoloide/mounting_hole_npth
+        where: *bottom_middle_hole
+      bottom_right_hole:
+        what: ceoloide/mounting_hole_npth
+        where: *bottom_right_hole
       ground_plane:
         what: ceoloide/utility_filled_zone
         params:
