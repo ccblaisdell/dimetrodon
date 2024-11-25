@@ -21,7 +21,7 @@ units:
   nice_nano_width: 18.3
 
   # Distance between highest finger and top of board
-  middle_finger_prominence: 3.5
+  middle_finger_prominence: 3
 
   mounting_hole_radius: 1.8
 points:
