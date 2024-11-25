@@ -4659,7 +4659,7 @@
 
   (footprint "ceoloide:mounting_hole_plated"
     (layer "F.Cu")
-    (at -5.7490655 -54.698704199999995 6)
+    (at -2.4519145 -52.028723899999996 6)
     (property "Reference" "H1"
       (at 0 3 6)
       (layer "F.SilkS")
@@ -4742,7 +4742,7 @@
 (gr_arc (start 44.148366599999996 -3.3157087999999995) (mid 43.855473399999994 -4.0228155999999995) (end 43.148366599999996 -4.3157087999999995) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 43.148366599999996 -4.3157087999999995) (end 13.148366599999996 -4.3157087999999995) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 13.148366599999996 -4.3157087999999995) (mid 12.441259799999996 -4.0228155999999995) (end 12.148366599999996 -3.3157087999999995) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_circle (center -5.7490655 -54.698704199999995) (end -3.9490655000000006 -54.698704199999995) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center -2.4519145 -52.028723899999996) (end -0.6519145 -52.028723899999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
 (gr_line (start 84.1483667 -42.815708900000004) (end 102.4483666 -42.815708900000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 102.9483666 -42.315708900000004) (mid 102.80192 -42.66926230000001) (end 102.4483666 -42.815708900000004) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 102.9483666 -42.315708900000004) (end 102.9483666 9.228807272410748) (layer Edge.Cuts) (stroke (width 0.15) (type default)))

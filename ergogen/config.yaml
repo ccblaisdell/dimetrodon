@@ -396,7 +396,7 @@ outlines:
     - what: circle
       adjust: &top_left_hole
         ref: matrix_pinky_top
-        shift: [0, 21]
+        shift: [3, 18]
       radius: mounting_hole_radius
     # - what: circle
     #   adjust: &top_right_hole
