@@ -201,7 +201,6 @@ outlines:
   _controller_area:
     - what: polygon
       fillet: 0
-      expand: 0.5
       points:
         - ref: matrix_inner_bottom
           shift: [1kx / 2 , 5 + -1cy / 2 + nice_nano_length]
