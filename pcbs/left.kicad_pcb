@@ -4309,24 +4309,6 @@
   )
       
 
-  (footprint "ceoloide:mounting_hole_plated"
-    (layer "F.Cu")
-    (at 94.3972168 113.6604839 6)
-    (property "Reference" "H1"
-      (at 0 3 6)
-      (layer "F.SilkS")
-      hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    
-    (pad "" thru_hole circle (at 0 0 6) (size 3.8000000000000003 3.8000000000000003) (drill 2.2) (layers "*.Cu" "*.Mask"))
-    
-    (fp_circle (center 0 0) (end -2.1500000000000004 0) (layer "F.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
-    (fp_circle (center 0 0) (end -2.1500000000000004 0) (layer "B.CrtYd") (stroke (width 0.05) (type solid)) (fill none))
-    
-  )
-    
-
   (zone
     (net 2)
     (net_name "GND")
@@ -4400,7 +4382,6 @@
 (gr_arc (start 144.1483666 96.68429119999999) (mid 143.8554734 95.97718439999998) (end 143.1483666 95.68429119999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 143.1483666 95.68429119999999) (end 113.1483666 95.68429119999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 113.1483666 95.68429119999999) (mid 112.4412598 95.97718439999998) (end 112.1483666 96.68429119999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_circle (center 94.3972168 113.6604839) (end 96.19721679999999 113.6604839) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
 (gr_line (start 112.1483666 96.68429119999999) (end 112.1483666 116.68429119999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
 (gr_arc (start 112.1483666 116.68429119999999) (mid 112.4412598 117.391398) (end 113.1483666 117.68429119999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
 (gr_line (start 113.1483666 117.68429119999999) (end 143.1483666 117.68429119999999) (layer F.SilkS) (stroke (width 0.15) (type default)))
