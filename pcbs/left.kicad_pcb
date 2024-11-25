@@ -254,24 +254,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -391,24 +373,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -528,24 +492,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 201) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -665,24 +611,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 198) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -802,24 +730,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 198) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -939,24 +849,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 198) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -1076,24 +968,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -1213,24 +1087,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -1350,24 +1206,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -1487,24 +1325,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -1624,24 +1444,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -1761,24 +1563,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -1898,24 +1682,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -2035,24 +1801,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -2172,24 +1920,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -2309,24 +2039,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 195) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -2446,24 +2158,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 182) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -2583,24 +2277,6 @@
     (pad "" np_thru_hole circle (at 5 -3.75 169) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask"))
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
-      (offset (xyz 0 0 -1.5))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-    
-    (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
-      (offset (xyz 0 0 -7.6))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
-    )
-	  
   )
     
 
@@ -4017,12 +3693,6 @@
     )
     
     
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
-      (offset (xyz 0 0 3))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-    
   )
 
   
@@ -4342,12 +4012,6 @@
     (fp_line (start -0.375 -3.45) (end 0.415 -3.45) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -1.425 -1.6) (end -1.425 0.1) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start 1.425 -2.85) (end 1.425 2.85) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
-    
-    (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Switch_MSK12C02.step
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 90))
-    )
     
     (pad "" np_thru_hole circle (at 0.025 -1.5 180) (size 0.9 0.9) (drill 0.9) (layers "*.Cu" "*.Mask"))
     (pad "" np_thru_hole circle (at 0.025 1.5 180) (size 0.9 0.9) (drill 0.9) (layers "*.Cu" "*.Mask"))
