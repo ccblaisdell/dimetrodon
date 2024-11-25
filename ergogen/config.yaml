@@ -392,12 +392,12 @@ outlines:
         - shift: [0, -65]
         - ref: matrix_pinky_bottom
           shift: [-1cpx, 0]
-  _mounting_holes: []
-    # - what: circle
-    #   adjust: &top_left_hole
-    #     ref: matrix_pinky_top
-    #     shift: [0, 21]
-    #   radius: mounting_hole_radius
+  _mounting_holes:
+    - what: circle
+      adjust: &top_left_hole
+        ref: matrix_pinky_top
+        shift: [0, 21]
+      radius: mounting_hole_radius
     # - what: circle
     #   adjust: &top_right_hole
     #     ref: matrix_inner_top
@@ -587,9 +587,9 @@ pcbs:
         params:
           reversible: true
           text: "XX2030 Battery"
-      # top_left_hole:
-      #   what: ceoloide/mounting_hole_plated
-      #   where: *top_left_hole
+      top_left_hole:
+        what: ceoloide/mounting_hole_plated
+        where: *top_left_hole
       # top_right_hole:
       #   what: ceoloide/mounting_hole_plated
       #   where: *top_right_hole
