@@ -182,6 +182,7 @@ outlines:
           shift: [1cpx, -3cpy]
         - ref: thumbs_tucky_cluster
           shift: [-1cpx - 0, 0]
+  # Matches the actual nice nano shape, just for previewing
   _controller:
     - what: polygon
       fillet: 1
@@ -196,7 +197,8 @@ outlines:
         - shift: [0, nice_nano_length]
         - shift: [nice_nano_width, 0]
         - shift: [0, -nice_nano_length]
-  _controller_cover:
+  # Extend the outline to ensure we leave space for the controller
+  _controller_area:
     - what: polygon
       fillet: 0
       expand: 0.5
@@ -206,6 +208,10 @@ outlines:
         - shift: [nice_nano_width + 4, 0]
         - shift: [0, -nice_nano_length - 22]
         - shift: [-nice_nano_width - 4, 4]
+  # so we know where to build the case over the controller
+  _controller_cover:
+    - what: outline
+      name: _controller_area
     - what: polygon
       operation: subtract
       points:
@@ -314,10 +320,9 @@ outlines:
   _debug_rectangle:
     - what: polygon
       points:
-        - shift: [-80, 130]
-        - shift: [250, 0]
-        - shift: [0, -230]
-        - shift: [-250, 0]
+        - shift: [0, 0]
+        - shift: [91, 3.8]
+        - shift: [-10, 10]
   _power_switch:
     # 6.7x2.6mm body and a little 1.3x1.5 actuator
     # body
@@ -417,7 +422,7 @@ outlines:
     - name: _matrix
     - name: _thumbs
     - name: _matrix_thumb_connector
-    - name: _controller_cover
+    - name: _controller_area
     - name: _bottom_left
     - name: _top_left
     - name: _battery_filler
@@ -427,13 +432,13 @@ outlines:
     - name: _matrix
     - name: _thumbs
     - name: _matrix_thumb_connector
-    - name: _controller_cover
     - name: _bottom_left
     - name: _top_left
     - name: _battery
       operation: subtract
     - name: _mounting_holes
       operation: subtract
+    - name: _controller_area
   keywell:
     - name: _matrix
     - name: _thumbs
