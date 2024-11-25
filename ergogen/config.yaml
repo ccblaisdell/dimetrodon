@@ -197,8 +197,7 @@ outlines:
         - shift: [0, -nice_nano_length]
   _controller_cover:
     - what: polygon
-      fillet: 0
-      expand: 0.5
+      fillet: 1
       points:
         - ref: matrix_inner_bottom
           shift: [1kx / 2 , 5 + -1cy / 2 + nice_nano_length]
@@ -410,7 +409,7 @@ outlines:
     - what: circle
       adjust: &bottom_left_hole
         ref: matrix_pinky_bottom
-        shift: [-1cpx + 3, -1cpy - 3]
+        shift: [-1cpx + 3, -1cpy - 3.5]
       radius: mounting_hole_radius
   base:
     - name: _matrix
