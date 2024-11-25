@@ -4,8 +4,6 @@ function base_extrude_1_outline_fn(){
     CAG.circle({"center":[94.3972168,-113.6604839],"radius":1.8})
 .union(
     CAG.circle({"center":[198.6292952,-101.5592457],"radius":1.8})
-).union(
-    CAG.circle({"center":[135.1483667,-91.6842912],"radius":1.8})
 )).extrude({ offset: [0, 0, 1] });
 }
 
