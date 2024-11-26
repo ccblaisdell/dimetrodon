@@ -39,11 +39,11 @@ points:
         pinky:
           rows:
             bottom:
-                column_net: P6
+                column_net: P2
             home:
-                column_net: P5
+                column_net: P14
             top:
-                column_net: P4
+                column_net: P21
         ring:
           key:
             splay: -3
@@ -53,9 +53,9 @@ points:
             bottom:
                 column_net: P3
             home:
-                column_net: P2
+                column_net: P16
             top:
-                column_net: P0
+                column_net: P20
         middle:
           key:
             splay: -3
@@ -63,19 +63,19 @@ points:
             stagger: 3
           rows:
             bottom:
-                column_net: P1
+                column_net: P4
             home:
                 column_net: P10
             top:
-                column_net: P16
+                column_net: P19
         pointer:
           key:
             stagger: -6
           rows:
             bottom:
-                column_net: P14
+                column_net: P5
             home:
-                column_net: P15
+                column_net: P1
             top:
                 column_net: P18
         inner:
@@ -83,11 +83,11 @@ points:
             stagger: -2
           rows:
             bottom:
-                column_net: P19
+                column_net: P6
             home:
-                column_net: P20
+                column_net: P0
             top:
-                column_net: P21
+                column_net: P15
       rows:
         bottom:
         home:
