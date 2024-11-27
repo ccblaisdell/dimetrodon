@@ -35,7 +35,7 @@ points:
       key:
         padding: ky
         spread: kx
-        tags: ["key"]
+        tags: [key]
       columns:
         pinky:
           rows:
@@ -100,7 +100,7 @@ points:
       key:
         padding: 1ky
         spread: 1kx
-        tags: ["key"]
+        tags: [key]
       columns:
         tucky:
           key:
@@ -117,22 +117,33 @@ points:
             column_net: P21
       rows:
         cluster:
-# TODO:
-# Power switch point
-# Reset switch point
-# JST Point
-# Battery point
-# MCU point
-# Screw points
-# Case corner points
+    mcu_nano:
+      key.tags: ["mcu", "display"]
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [1kx / 2 + 4 + nice_nano_width / 2, 5 + -1cy / 2 + nice_nano_length / 2]
+    mcu_xiao:
+    power_switch:
+    reset_switch:
+    jst_connector:
+    battery_sm:
+    battery_lg:
+    screw_tl:
+    screw_tr:
+    screw_bl:
+    screw_bm:
+    screw_br:
+    case_tl:
+    case_tr:
+    case_bl:
 outlines:  
   _keycaps:
     - what: rectangle
-      where: true
+      where: [key]
       size: [kx, ky]
   _switch_holes:
     - what: rectangle
-      where: true
+      where: [key]
       size: [14, 14]
   _matrix:
     - what: rectangle
@@ -190,24 +201,15 @@ outlines:
           shift: [-1cpx - 0, 0]
   # Matches the actual nice nano shape, just for previewing
   _controller:
-    - what: polygon
-      adjust: &controller
-        ref: matrix_inner_bottom
-        # Let's define the center for this outline so
-        # we can reuse it in the PCB
-        shift: [1kx / 2 + 4 + nice_nano_width / 2, 5 + -1cy / 2 + nice_nano_length / 2]
-      points:
-        # start at top left
-        - shift: [-nice_nano_width / 2, -nice_nano_length / 2]
-        - shift: [0, nice_nano_length]
-        - shift: [nice_nano_width, 0]
-        - shift: [0, -nice_nano_length]
+    - what: rectangle
+      where: [mcu]
+      size: [nice_nano_width, nice_nano_length]
   # Extend the outline to ensure we leave space for the controller
   _controller_area:
     - what: polygon
+      where: mcu_nano
       points:
-        - ref: matrix_inner_bottom
-          shift: [1kx / 2 , 5 + -1cy / 2 + nice_nano_length]
+        - shift: [-nice_nano_width / 2 - 4, nice_nano_length / 2]
         - shift: [nice_nano_width + 4, 0]
         - shift: [0, -nice_nano_length - 22]
         - shift: [-nice_nano_width - 4, 4]
@@ -215,6 +217,7 @@ outlines:
   _controller_cover:
     - what: outline
       name: _controller_area
+    # Cut out around the thumb fan
     - what: polygon
       operation: subtract
       points:
@@ -501,6 +504,8 @@ outlines:
       operation: stack
     - name: _controller_cover
       operation: stack
+    - name: _controller
+      operation: stack
 pcbs:
   left:
     # Required, since footprints are KiCad 8 only
@@ -511,7 +516,7 @@ pcbs:
     footprints:
       choc_hotswap:
         what: ceoloide/switch_choc_v1_v2
-        where: true
+        where: [key]
         params:
           choc_v2_support: false
           include_corner_marks: true
@@ -540,7 +545,7 @@ pcbs:
           reversible: true
           mcu_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
           mcu_3dmodel_xyz_offset: [0, 0, 0.5]
-        where: *controller
+        where: mcu_nano
       power_switch:
         what: ceoloide/power_switch_smd_side
         # top left
@@ -640,7 +645,7 @@ cases:
       name: _case_upper
 # CASE
 # TODO: Are the keywells spacious enough? Need an extra 0.5mm?
-# TODO: 
+# TODO: Try a rounded top
 # FANCY STUFF
 # TODO: Try out flatfootfox's cutouts for underside of board
 # TODO: Bottom PCB with cutouts for case bottom!
