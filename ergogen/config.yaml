@@ -156,14 +156,18 @@ points:
         ref: thumbs_tucky_cluster
         shift: [-1cpx - battery_sm_width / 2 - 4, -1cpy + battery_sm_length / 2]
     battery_lg:
+    case_tl:
+      key.tags: [case, tl]
+      anchor:
+        ref: matrix_middle_top
+        shift: [-2.5kx, 1cpy - middle_finger_prominence]
+    case_tr:
+    case_bl:
     screw_tl:
     screw_tr:
     screw_bl:
     screw_bm:
     screw_br:
-    case_tl:
-    case_tr:
-    case_bl:
 outlines:  
   _keycaps:
     - what: rectangle
@@ -398,8 +402,8 @@ outlines:
   _top_left:
     - what: polygon
       points:
-        - ref: matrix_middle_top
-          shift: [-45, 1cpy - middle_finger_prominence]
+        - ref: case_tl
+          shift: [0, 0]
         - shift: [94, 0]
         - shift: [0, -65]
         - ref: matrix_pinky_bottom
