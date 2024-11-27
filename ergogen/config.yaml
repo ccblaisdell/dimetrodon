@@ -35,6 +35,7 @@ points:
       key:
         padding: ky
         spread: kx
+        tags: ["key"]
       columns:
         pinky:
           rows:
@@ -99,6 +100,7 @@ points:
       key:
         padding: 1ky
         spread: 1kx
+        tags: ["key"]
       columns:
         tucky:
           key:
@@ -115,6 +117,14 @@ points:
             column_net: P21
       rows:
         cluster:
+# TODO:
+# Power switch point
+# Reset switch point
+# JST Point
+# Battery point
+# MCU point
+# Screw points
+# Case corner points
 outlines:  
   _keycaps:
     - what: rectangle
@@ -128,14 +138,12 @@ outlines:
     - what: rectangle
       where: /^matrix_/
       size: [2cpx + 0.5, 2cpy + 0.5]
-      fillet: 1
     - what: polygon
       points:
         - ref: matrix_ring_top
-          shift: [0cpx, 1cpy]
+          shift: [0cpx, 1cpy + 0.25]
         - shift: [2cpx, 0]
-        - ref: matrix_middle_bottom
-          shift: [0, -1cpy]
+        - shift: [0, -4cpy]
         - shift: [-2cpx, 0]
     - what: polygon
       points:
@@ -149,7 +157,6 @@ outlines:
     - what: rectangle
       where: /thumbs_/
       size: [2cpx, 2cpy]
-      fillet: 1
 
     - what: polygon
       points:
@@ -176,15 +183,14 @@ outlines:
         - ref: thumbs_tucky_cluster
           shift: [-1cpx - 0, 2cpy]
         - ref: matrix_inner_bottom
-          shift: [1cpx, 1cpy]
+          shift: [1cpx + 0.25, 1cpy]
         - ref: matrix_inner_bottom
-          shift: [1cpx, -3cpy]
+          shift: [1cpx + 0.25, -3cpy]
         - ref: thumbs_tucky_cluster
           shift: [-1cpx - 0, 0]
   # Matches the actual nice nano shape, just for previewing
   _controller:
     - what: polygon
-      fillet: 1
       adjust: &controller
         ref: matrix_inner_bottom
         # Let's define the center for this outline so
@@ -199,7 +205,6 @@ outlines:
   # Extend the outline to ensure we leave space for the controller
   _controller_area:
     - what: polygon
-      fillet: 0
       points:
         - ref: matrix_inner_bottom
           shift: [1kx / 2 , 5 + -1cy / 2 + nice_nano_length]
@@ -230,7 +235,6 @@ outlines:
         ref: thumbs_tucky_cluster
         shift: [-1cpx - 30 - 4, -1cpy + 0]
       expand: 1
-      fillet: 1
       points:
         - shift: [0, 0]
         - shift: [30, 0]
@@ -273,7 +277,6 @@ outlines:
   # Makes a space for the JST connector
   _bottom_left:
     - what: polygon
-      fillet: 1
       points:
         - ref: matrix_pinky_home
           shift: [-1cpx, 0]
@@ -291,7 +294,6 @@ outlines:
   # Currently unused, but I wanted to commit it at least once
   _bottom_left_2:
     - what: polygon
-      fillet: 1
       points:
         - aggregate:
             method: intersect
@@ -382,7 +384,6 @@ outlines:
   # Fills out top area (mostly left) for power switch
   _top_left:
     - what: polygon
-      fillet: 1
       points:
         - ref: matrix_middle_top
           shift: [-45, 1cpy - middle_finger_prominence]
