@@ -278,7 +278,7 @@ outlines:
         - shift: [30, 0]
         - shift: [0, 20]
         - shift: [-30, 0]
-  _jst:
+  _jst_connector:
     # 8 x 4.5 is the actual component, but may need to adjust
     # to match the footprint. Trying my best!
     - what: polygon
@@ -506,7 +506,7 @@ outlines:
     - name: left_board
     - name: _keycaps
       operation: subtract
-    - name: _jst
+    - name: _jst_connector
       operation: subtract
     - name: _battery
       operation: stack
