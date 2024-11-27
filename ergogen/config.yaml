@@ -19,6 +19,8 @@ units:
   # Controller dimensions
   nice_nano_length: 33
   nice_nano_width: 18.3
+  xiao_length: 21
+  xiao_width: 17.5
 
   # Distance between highest finger and top of board
   middle_finger_prominence: 3
@@ -118,11 +120,16 @@ points:
       rows:
         cluster:
     mcu_nano:
-      key.tags: ["mcu", "display"]
+      key.tags: [mcu, nice_nano]
       anchor:
         ref: matrix_inner_bottom
         shift: [1kx / 2 + 4 + nice_nano_width / 2, 5 + -1cy / 2 + nice_nano_length / 2]
     mcu_xiao:
+      key.tags: [mcu, xiao]
+      anchor:
+        ref: matrix_ring_top
+        rotate: -3 - 90
+        shift: [-1.2kx, 0.2kx]
     power_switch:
     reset_switch:
     jst_connector:
@@ -202,8 +209,12 @@ outlines:
   # Matches the actual nice nano shape, just for previewing
   _controller:
     - what: rectangle
-      where: [mcu]
+      where: [nice_nano]
       size: [nice_nano_width, nice_nano_length]
+  _tmp_xiao:
+    - what: rectangle
+      where: [xiao]
+      size: [xiao_width, xiao_length]
   # Extend the outline to ensure we leave space for the controller
   _controller_area:
     - what: polygon
