@@ -136,6 +136,11 @@ points:
         ref: matrix_middle_top
         shift: [-37 + 6.7/2, 1cpy - middle_finger_prominence - 2.6/2 - 0.5]
     reset_switch:
+      key.tags: [component, reset_switch]
+      anchor:
+        # based on 4.7x3.5 body size (also 2.6x1 buttton)
+        ref: matrix_middle_top
+        shift: [33 + 4.7/2, 1cpy - middle_finger_prominence - 3.5/2]
     jst_connector:
     battery_sm:
     battery_lg:
@@ -372,11 +377,7 @@ outlines:
     # 4.7x3.5 body and 2.6x1 button
     # body
     - what: polygon
-      adjust: &reset_switch
-        # Coordinates are all based on the center, so adjust manually
-        # based on 4.7x3.5 body size (also 2.6x1 buttton)
-        ref: matrix_middle_top
-        shift: [33 + 4.7/2, 1cpy - middle_finger_prominence - 3.5/2]
+      where: reset_switch
       points: &reset_switch_points
         - shift: [-4.7/2, 3.5/2]
         - shift: [4.7, 0]
@@ -384,7 +385,7 @@ outlines:
         - shift: [-4.7, 0]
     # button
     - what: polygon
-      adjust: *reset_switch
+      where: reset_switch
       points:
         - shift: [-4.7/2 + 1, 3.5/2 + 1]
         - shift: [2.6, 0]
@@ -393,7 +394,7 @@ outlines:
   _reset_switch_courtyard:
     - what: polygon
       expand: 0.5
-      adjust: *reset_switch
+      where: reset_switch
       points: *reset_switch_points
   # Fills out top area (mostly left) for power switch
   _top_left:
@@ -573,7 +574,7 @@ pcbs:
       reset_switch:
         what: reset_switch_smd_side
         # top right, near the USB port
-        where: *reset_switch 
+        where: reset_switch
         params:
           reversible: true
           switch_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/EVQPU-JA-02K.STEP
