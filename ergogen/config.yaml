@@ -22,6 +22,10 @@ units:
   xiao_length: 21
   xiao_width: 17.5
 
+  # XX2030 battery
+  battery_sm_width: 30
+  battery_sm_length: 20
+
   # Distance between highest finger and top of board
   middle_finger_prominence: 3
 
@@ -147,6 +151,10 @@ points:
         ref: thumbs_tucky_cluster
         shift: [-1cpx - 47, -1cpy + 3.5]
     battery_sm:
+      key.tags: [battery, battery_sm]
+      anchor:
+        ref: thumbs_tucky_cluster
+        shift: [-1cpx - battery_sm_width / 2 - 4, -1cpy + battery_sm_length / 2]
     battery_lg:
     screw_tl:
     screw_tr:
@@ -255,29 +263,17 @@ outlines:
           shift: [1cpx, 1cpy]
         - ref: thumbs_reachy_cluster
         - ref: thumbs_middle_cluster
-  _battery:
+  _battery_hole:
     # 20 x 30, the one totem uses
-    - what: polygon
-      adjust: &battery_outline
-        ref: thumbs_tucky_cluster
-        shift: [-1cpx - 30 - 4, -1cpy + 0]
+    - what: rectangle
+      where: [battery_sm]
+      size: [battery_sm_width, battery_sm_length]
       expand: 1
-      points:
-        - shift: [0, 0]
-        - shift: [30, 0]
-        - shift: [0, 20]
-        - shift: [-30, 0]
   # Useful to build a part that doesn't have a hole for the battery
   _battery_filler:
-    - what: polygon
-      adjust: &battery_outline
-        ref: thumbs_tucky_cluster
-        shift: [-1cpx - 30 - 4, -1cpy + 0]
-      points:
-        - shift: [0, 0]
-        - shift: [30, 0]
-        - shift: [0, 20]
-        - shift: [-30, 0]
+    - what: rectangle
+      where: battery_sm
+      size: [battery_sm_width, battery_sm_length]
   _jst_connector:
     # 8 x 4.5 is the actual component, but may need to adjust
     # to match the footprint. Trying my best!
@@ -450,11 +446,11 @@ outlines:
     - name: _matrix_thumb_connector
     - name: _bottom_left
     - name: _top_left
-    - name: _battery
+    - name: _controller_area
+    - name: _battery_hole
       operation: subtract
     - name: _mounting_holes
       operation: subtract
-    - name: _controller_area
   keywell:
     - name: _matrix
     - name: _thumbs
@@ -465,7 +461,7 @@ outlines:
     - name: _matrix_thumb_connector
     - name: _bottom_left
     - name: _top_left
-    - name: _battery
+    - name: _battery_hole
       operation: subtract
     - name: _switch_holes
       operation: subtract
@@ -508,7 +504,7 @@ outlines:
       operation: subtract
     - name: _jst_connector
       operation: subtract
-    - name: _battery
+    - name: _battery_hole
       operation: stack
     - name: _mounting_holes
       operation: stack
