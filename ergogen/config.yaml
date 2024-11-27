@@ -131,17 +131,21 @@ points:
         rotate: -3 - 90
         shift: [-1.2kx, 0.2kx]
     power_switch:
-      key.tags: [component, power_switch]
+      key.tags: [power_switch]
       anchor:
         ref: matrix_middle_top
         shift: [-37 + 6.7/2, 1cpy - middle_finger_prominence - 2.6/2 - 0.5]
     reset_switch:
-      key.tags: [component, reset_switch]
+      key.tags: [reset_switch]
       anchor:
         # based on 4.7x3.5 body size (also 2.6x1 buttton)
         ref: matrix_middle_top
         shift: [33 + 4.7/2, 1cpy - middle_finger_prominence - 3.5/2]
     jst_connector:
+      key.tags: [jst_connector]
+      anchor:
+        ref: thumbs_tucky_cluster
+        shift: [-1cpx - 47, -1cpy + 3.5]
     battery_sm:
     battery_lg:
     screw_tl:
@@ -278,9 +282,7 @@ outlines:
     # 8 x 4.5 is the actual component, but may need to adjust
     # to match the footprint. Trying my best!
     - what: polygon
-      adjust: &jst_connector
-        ref: thumbs_tucky_cluster
-        shift: [-1cpx - 47, -1cpy + 3.5]
+      where: jst_connector
       points:
         # Manually shift the start point to more closely match the PCB
         - shift: [-2, -3]
@@ -289,7 +291,7 @@ outlines:
         - shift: [-8, 0]
   _jst_courtyard:
     - what: polygon
-      adjust: *jst_connector
+      where: jst_connector
       expand: 0.5
       points:
         - shift: [-2, -4]
@@ -584,8 +586,8 @@ pcbs:
           to: RST
       battery_connector:
         what: battery_connector_jst_ph_2
-        where:
-          <<: *jst_connector
+        where: jst_connector
+        adjust:
           # Spin so the plug faces towards the thumbs
           rotate: 90
         params:
