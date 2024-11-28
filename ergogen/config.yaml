@@ -320,7 +320,7 @@ outlines:
               - ref: mcu_nano
                 shift: [nice_nano_width / 2, nice_nano_length / 2]
               - ref: thumbs_reachy_cluster
-                shift: [-kx, 0]
+                shift: [-kx, 1cpy]
                 rotate: 90
         - aggregate:
             method: intersect
@@ -328,7 +328,7 @@ outlines:
               - ref: mcu_nano
                 shift: [-nice_nano_width / 2 - inner_to_mcu_distance, nice_nano_length / 2]
               - ref: thumbs_middle_cluster
-                shift: [-kx, 0]
+                shift: [-kx, 1cpy]
                 rotate: 90
         - ref: mcu_nano
           shift: [-nice_nano_width / 2 - inner_to_mcu_distance, nice_nano_length / 2]
