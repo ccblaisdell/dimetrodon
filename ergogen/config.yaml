@@ -48,7 +48,7 @@ units:
 
   inner_to_mcu_distance: 4
 
-  fan_outer_radius: 100
+  fan_outer_radius: 5kx
 points:
   zones:
     matrix:
