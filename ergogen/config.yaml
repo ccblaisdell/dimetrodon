@@ -179,6 +179,16 @@ points:
             - ref: matrix_inner_top
               shift: [1cpx, -1cpy]
     case_bl:
+      key.tags: [case, bl]
+      anchor:
+        aggregate:
+          method: intersect
+          parts: 
+            - ref: matrix_pinky_bottom
+              shift: [-1cpx - 0.5, -1cpy]
+            - ref: thumbs_tucky_cluster
+              shift: [0, -1cpy]
+              rotate: -90
     screw_tl:
     screw_tr:
     screw_bl:
@@ -324,14 +334,7 @@ outlines:
         - shift: [70, 0]
         - ref: thumbs_tucky_cluster
           shift: [0cpx, -1cpy]
-        - aggregate:
-            method: intersect
-            parts: 
-              - ref: matrix_pinky_bottom
-                shift: [-1cpx - 0.5, -1cpy]
-              - ref: thumbs_tucky_cluster
-                shift: [0, -1cpy]
-                rotate: -90
+        - case_bl
   # Currently unused, but I wanted to commit it at least once
   _bottom_left_2:
     - what: polygon
