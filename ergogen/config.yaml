@@ -47,6 +47,8 @@ units:
   total_matrix_splay: 6
 
   inner_to_mcu_distance: 4
+
+  fan_outer_radius: 100
 points:
   zones:
     matrix:
@@ -151,7 +153,7 @@ points:
               rotate: -90
             - ref: matrix_pinky_top
               shift: [-1cpx, 0]
-              rotate: -12
+              rotate: -2total_matrix_splay
     case_tr:
       key.tags: [case, tr]
       anchor:
@@ -230,7 +232,7 @@ points:
       key.tags: [screw, br]
       anchor:
         ref: thumbs_reachy_cluster
-        shift: [-3, 1cpy + 4]
+        shift: [-3, 1cpy + 5]
 outlines:  
   _keycaps:
     - what: rectangle
@@ -335,21 +337,12 @@ outlines:
     - what: outline
       name: _controller_area
     # Cut out around the thumb fan
-    - what: polygon
+    - what: circle
+      radius: fan_outer_radius
       operation: subtract
-      points:
-        - ref: thumbs_middle_cluster
-          shift: [-1kx, 1cpy]
-        - ref: thumbs_middle_cluster
-          shift: [0.5kx, 1cpy]
-        - ref: thumbs_reachy_cluster
-          shift: [-0.5kx, 1cpy]
-        - ref: thumbs_reachy_cluster
-          shift: [1kx, 1cpy]
-        - ref: thumbs_reachy_cluster
-          shift: [1kx, -1kx]
-        - ref: thumbs_middle_cluster
-          shift: [-1kx, -1kx]
+      where:
+        ref: thumbs_middle_cluster
+        shift: [0, 1cpy - fan_outer_radius + 2]
   _battery_hole:
     # 20 x 30, the one totem uses
     - what: rectangle

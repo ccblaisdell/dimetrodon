@@ -3,7 +3,7 @@ function base_extrude_1_outline_fn(){
 .subtract(
     CAG.circle({"center":[95.5989109,-112.6842912],"radius":1.1})
 .union(
-    CAG.circle({"center":[198.651347,-103.795205],"radius":1.1})
+    CAG.circle({"center":[199.0897181,-102.8964109],"radius":1.1})
 ).union(
     CAG.circle({"center":[135.1483667,-90.6842912],"radius":1.1})
 ).union(

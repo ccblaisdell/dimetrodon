@@ -4731,7 +4731,7 @@
 
   (footprint "ceoloide:mounting_hole_npth"
     (layer "F.Cu")
-    (at 198.65134700000002 103.795205 -26)
+    (at 199.0897181 102.89641089999999 -26)
     (property "Reference" "MH5"
       (at 0 2.55 -26)
       (layer "F.SilkS")
@@ -4808,7 +4808,7 @@
 (gr_circle (center 93.37968126307315 45.68429119999999) (end 94.47968126307315 45.68429119999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
 (gr_circle (center 177.1483666 42.18429119999999) (end 178.2483666 42.18429119999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
 (gr_circle (center 135.1483667 90.68429119999999) (end 136.2483667 90.68429119999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
-(gr_circle (center 198.65134700000002 103.795205) (end 199.751347 103.795205) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
+(gr_circle (center 199.0897181 102.89641089999999) (end 200.1897181 102.89641089999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
 (gr_circle (center 95.59891093481347 112.68429119999996) (end 96.69891093481347 112.68429119999996) (layer Edge.Cuts) (stroke (width 0.15) (type default)) (fill none))
 
 )
