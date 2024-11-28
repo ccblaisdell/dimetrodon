@@ -159,9 +159,25 @@ points:
     case_tl:
       key.tags: [case, tl]
       anchor:
-        ref: matrix_middle_top
-        shift: [-2.5kx, 1cpy - middle_finger_prominence]
+        aggregate:
+          method: intersect
+          parts:
+            - ref: matrix_middle_top
+              shift: [0, 1cpy - middle_finger_prominence]
+              rotate: -90
+            - ref: matrix_pinky_top
+              shift: [-1cpx, 0]
+              rotate: -12
     case_tr:
+      key.tags: [case, tr]
+      anchor:
+        aggregate:
+          method: intersect
+          parts:
+            - ref: case_tl
+              rotate: 90
+            - ref: matrix_inner_top
+              shift: [1cpx, -1cpy]
     case_bl:
     screw_tl:
     screw_tr:
@@ -403,8 +419,7 @@ outlines:
     - what: polygon
       points:
         - ref: case_tl
-          shift: [0, 0]
-        - shift: [94, 0]
+        - ref: case_tr
         - shift: [0, -65]
         - ref: matrix_pinky_bottom
           shift: [-1cpx, 0]
