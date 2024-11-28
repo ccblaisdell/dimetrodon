@@ -45,6 +45,8 @@ units:
   mounting_hole_radius: 1.1
 
   total_matrix_splay: 6
+
+  inner_to_mcu_distance: 4
 points:
   zones:
     matrix:
@@ -174,8 +176,8 @@ points:
     mcu_nano:
       key.tags: [mcu, nice_nano]
       anchor:
-        ref: matrix_inner_bottom
-        shift: [1kx / 2 + 4 + nice_nano_width / 2, 5 + -1cy / 2 + nice_nano_length / 2]
+        ref: matrix_inner_top
+        shift: [1kx / 2 + inner_to_mcu_distance + nice_nano_width / 2, 5 + -1cy / 2 - nice_nano_length / 2]
     mcu_xiao:
       key.tags: [mcu, xiao]
       anchor:
@@ -227,8 +229,8 @@ points:
     screw_br:
       key.tags: [screw, br]
       anchor:
-        ref: mcu_nano
-        shift: [nice_nano_width / 3, -nice_nano_length / 2 - 13]
+        ref: thumbs_reachy_cluster
+        shift: [-3, 1cpy + 4]
 outlines:  
   _keycaps:
     - what: rectangle
@@ -288,13 +290,13 @@ outlines:
     - what: polygon
       points:
         - ref: thumbs_tucky_cluster
-          shift: [-1cpx - 0, 2cpy]
+          shift: [-1cpx, 2cpy]
         - ref: matrix_inner_bottom
-          shift: [1cpx + 0.25, 1cpy]
+          shift: [1cpx, 1cpy]
         - ref: matrix_inner_bottom
-          shift: [1cpx + 0.25, -3cpy]
+          shift: [1cpx, -3cpy]
         - ref: thumbs_tucky_cluster
-          shift: [-1cpx - 0, 0]
+          shift: [-1cpx, 0]
   # Matches the actual nice nano shape, just for previewing
   _controller:
     - what: rectangle
@@ -307,12 +309,27 @@ outlines:
   # Extend the outline to ensure we leave space for the controller
   _controller_area:
     - what: polygon
-      where: mcu_nano
       points:
-        - shift: [-nice_nano_width / 2 - 4, nice_nano_length / 2]
-        - shift: [nice_nano_width + 4, 0]
-        - shift: [0, -nice_nano_length - 22]
-        - shift: [-nice_nano_width - 4, 4]
+        - ref: mcu_nano
+          shift: [nice_nano_width / 2, nice_nano_length / 2]
+        - aggregate:
+            method: intersect
+            parts:
+              - ref: mcu_nano
+                shift: [nice_nano_width / 2, nice_nano_length / 2]
+              - ref: thumbs_reachy_cluster
+                shift: [-kx, 0]
+                rotate: 90
+        - aggregate:
+            method: intersect
+            parts:
+              - ref: mcu_nano
+                shift: [-nice_nano_width / 2 - inner_to_mcu_distance, nice_nano_length / 2]
+              - ref: thumbs_middle_cluster
+                shift: [-kx, 0]
+                rotate: 90
+        - ref: mcu_nano
+          shift: [-nice_nano_width / 2 - inner_to_mcu_distance, nice_nano_length / 2]
   # so we know where to build the case over the controller
   _controller_cover:
     - what: outline
@@ -322,15 +339,17 @@ outlines:
       operation: subtract
       points:
         - ref: thumbs_middle_cluster
-          shift: [-1cpx, 1cpy + 1]
+          shift: [-1kx, 1cpy]
         - ref: thumbs_middle_cluster
-          shift: [1cpx, 1cpy + 1]
+          shift: [0.5kx, 1cpy]
         - ref: thumbs_reachy_cluster
-          shift: [-1cpx, 1cpy + 1]
+          shift: [-0.5kx, 1cpy]
         - ref: thumbs_reachy_cluster
-          shift: [1cpx, 1cpy + 1]
+          shift: [1kx, 1cpy]
         - ref: thumbs_reachy_cluster
+          shift: [1kx, -1kx]
         - ref: thumbs_middle_cluster
+          shift: [-1kx, -1kx]
   _battery_hole:
     # 20 x 30, the one totem uses
     - what: rectangle
