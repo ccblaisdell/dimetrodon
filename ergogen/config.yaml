@@ -30,8 +30,13 @@ units:
   battery_lg_width: 51
   battery_lg_length: 24.1
 
-  jst_connector_width: 8
-  jst_connector_length: 4.5
+  # includes full courtyard size
+  jst_connector_width: 12.35
+  jst_connector_length: 6.9
+
+  # The footprint's "origin" is not right in the center,
+  # it's just a little ways from the left edge
+  jst_connector_offset: -jst_connector_width / 2 + 1.85
 
   power_switch_width: 6.7
   power_switch_length: 2.6
@@ -200,7 +205,8 @@ points:
       key.tags: [jst_connector]
       anchor:
         ref: case_bl
-        shift: [11, jst_connector_length / 2]
+        rotate: 90
+        shift: [7, jst_connector_length / 2]
     battery_sm:
       key.tags: [battery, battery_sm]
       anchor:
@@ -357,7 +363,10 @@ outlines:
   _jst_connector:
     - what: rectangle
       where: jst_connector
-      size: [jst_connector_width, jst_connector_length]
+      size: [jst_connector_length, jst_connector_width]
+      # The JST connector's footprint is not centered. Make up for that here
+      # so our visual lines up with the final product
+      adjust.shift: [0, jst_connector_offset]
   _jst_hole:
     - what: outline
       name: _jst_connector
@@ -581,12 +590,9 @@ pcbs:
           switch_3dmodel_xyz_rotation: [-90, 0, 180]
           from: GND
           to: RST
-      battery_connector:
+      jst_connector:
         what: battery_connector_jst_ph_2
         where: jst_connector
-        adjust:
-          # Spin so the plug faces towards the thumbs
-          rotate: 90
         params:
           reversible: true
           battery_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/JST-S2B-PH-K-S.STEP
