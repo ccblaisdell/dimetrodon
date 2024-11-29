@@ -1,15 +1,15 @@
 function left_board_extrude_1_6_outline_fn(){
-    return new CSG.Path2D([[86.6068432,-58.6735757],[92.5989109,-115.6842912]]).appendPoint([112.6483666,-115.6842912]).appendPoint([112.6483666,-95.6842912]).appendArc([113.6483666,-94.6842912],{"radius":1,"clockwise":true,"large":false}).appendPoint([143.6483666,-94.6842912]).appendArc([144.6483666,-95.6842912],{"radius":1,"clockwise":true,"large":false}).appendPoint([144.6483666,-115.6842912]).appendPoint([166.1483666,-115.6842912]).appendPoint([184.0527886,-120.0396531]).appendPoint([200.2310815,-127.9303337]).appendPoint([207.683391,-112.6508349]).appendPoint([202.4483666,-110.097543]).appendPoint([202.4483666,-56.6842911]).appendPoint([180.1483666,-56.6842911]).appendPoint([180.1483666,-39.6842912]).appendPoint([144.1483666,-39.6842912]).appendPoint([144.1483667,-36.6842912]).appendPoint([126.1483667,-36.6842912]).appendPoint([126.1483667,-39.6842912]).appendPoint([90.3796813,-39.6842912]).appendPoint([90.5826936,-58.255697]).appendPoint([86.6068432,-58.6735757]).close().innerToCAG()
+    return new CSG.Path2D([[85.5077928,-57.7835822],[91.6985068,-116.6842912]]).appendPoint([112.6483666,-116.6842912]).appendPoint([112.6483666,-96.6842912]).appendArc([113.6483666,-95.6842912],{"radius":1,"clockwise":true,"large":false}).appendPoint([143.6483666,-95.6842912]).appendArc([144.6483666,-96.6842912],{"radius":1,"clockwise":true,"large":false}).appendPoint([144.6483666,-116.6842912]).appendPoint([166.0642377,-116.6842912]).appendPoint([182.8265399,-120.5541736]).appendPoint([200.6915044,-129.2674989]).appendPoint([209.0205562,-112.190412]).appendPoint([203.0483666,-109.2775805]).appendPoint([203.0483666,-56.6842911]).appendPoint([181.1483666,-56.6842911]).appendPoint([181.1483666,-38.6842912]).appendPoint([145.1483667,-38.6842912]).appendPoint([145.1483667,-35.6842912]).appendPoint([125.1483667,-35.6842912]).appendPoint([125.1483667,-38.6842912]).appendPoint([89.50125,-38.6842912]).appendPoint([89.6668997,-57.3464425]).appendPoint([85.5077928,-57.7835822]).close().innerToCAG()
 .subtract(
-    CAG.circle({"center":[95.5989109,-112.6842912],"radius":1.1})
+    CAG.circle({"center":[94.6985068,-113.6842912],"radius":1.1})
 .union(
-    CAG.circle({"center":[199.0897181,-102.8964109],"radius":1.1})
+    CAG.circle({"center":[199.5280893,-101.9976169],"radius":1.1})
 ).union(
-    CAG.circle({"center":[135.1483667,-90.6842912],"radius":1.1})
+    CAG.circle({"center":[135.1483667,-91.6842912],"radius":1.1})
 ).union(
-    CAG.circle({"center":[177.1483666,-42.1842912],"radius":1.1})
+    CAG.circle({"center":[178.1483666,-41.1842912],"radius":1.1})
 ).union(
-    CAG.circle({"center":[93.3796813,-45.6842912],"radius":1.1})
+    CAG.circle({"center":[92.50125,-44.6842912],"radius":1.1})
 )).extrude({ offset: [0, 0, 1.6] });
 }
 

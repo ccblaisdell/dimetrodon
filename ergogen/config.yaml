@@ -13,12 +13,12 @@ units:
   # Switch padding, i.e. distance from center of switch (Point) to 
   # the nearest edge of the PCB. Essentially a 1mm pad. Useful
   # for adjustment operations in relation to a Point.
-  cpx: 0 + kx / 2
-  cpy: 0 + ky / 2
+  cpx: 1 + kx / 2
+  cpy: 1 + ky / 2
 
-  # Controller dimensions
-  nice_nano_length: 33
-  nice_nano_width: 18.3
+  # Controller dimensions, expand by 1mm for padding
+  nice_nano_length: 33 + 1
+  nice_nano_width: 17.9 + 1
   xiao_length: 21
   xiao_width: 17.5
 
@@ -206,12 +206,12 @@ points:
       anchor:
         ref: case_bl
         rotate: 90
-        shift: [7, jst_connector_length / 2]
+        shift: [8, jst_connector_length / 2]
     battery_sm:
       key.tags: [battery, battery_sm]
       anchor:
         ref: thumbs_tucky_cluster
-        shift: [-1cpx - battery_sm_width / 2 - 4.5, -1cpy + battery_sm_length / 2]
+        shift: [-1cpx - battery_sm_width / 2 - 3.5, -1cpy + battery_sm_length / 2]
     battery_lg:
       anchor: battery_sm
     screw_tl:
@@ -251,8 +251,7 @@ outlines:
   _matrix:
     - what: rectangle
       where: /matrix/
-      # size: [2cpx + 0.5, 2cpy + 0.5]
-      size: [kx, ky]
+      size: [2cpx, 2cpy]
     # patch gaps between columns
     - what: polygon
       points:
@@ -376,8 +375,8 @@ outlines:
   _bottom_left:
     - what: polygon
       points:
-        - ref: matrix_pinky_home
-          shift: [-1cpx, 0]
+        - ref: matrix_pinky_top
+          shift: [-1cpx, 1cpy]
         - shift: [70, 0]
         - ref: thumbs_tucky_cluster
           shift: [0cpx, -1cpy]
