@@ -257,13 +257,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -394,13 +394,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -531,13 +531,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -668,13 +668,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -805,13 +805,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -942,13 +942,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -1079,13 +1079,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -1216,13 +1216,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -1353,13 +1353,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -1490,13 +1490,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -1627,13 +1627,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -1764,13 +1764,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -1901,13 +1901,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -2038,13 +2038,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -2175,13 +2175,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -2312,13 +2312,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -2449,13 +2449,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
@@ -2586,13 +2586,13 @@
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.6))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
 	  
     (model ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
       (offset (xyz 0 0 -1.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 180 0))
+      (rotate (xyz 0 180 180))
     )
     
     (model ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
