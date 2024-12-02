@@ -595,24 +595,24 @@ pcbs:
           switch_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Switch_MSK12C02.step
           switch_3dmodel_xyz_rotation: [0, 0, 90]
       reset_switch:
-        what: ceoloide/reset_switch_smd_side
+        what: reset_switch_smd_side
         # top right, near the USB port
         where: reset_switch
         params:
           reversible: true
-          # switch_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/EVQPU-JA-02K.STEP
-          # switch_3dmodel_xyz_offset: [0, 0, 0]
-          # switch_3dmodel_xyz_rotation: [-90, 0, 180]
+          switch_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/EVQPU-JA-02K.STEP
+          switch_3dmodel_xyz_offset: [0, 0, 0]
+          switch_3dmodel_xyz_rotation: [-90, 0, 180]
           from: GND
           to: RST
       jst_connector:
-        what: ceoloide/battery_connector_jst_ph_2
+        what: battery_connector_jst_ph_2
         where: jst_connector
         params:
           reversible: true
-          # battery_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/JST-S2B-PH-K-S.STEP
-          # battery_3dmodel_xyz_offset: [1, 0, 0]
-          # battery_3dmodel_xyz_rotation: [180, 0, 180]
+          battery_connector_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/JST-S2B-PH-K-S.STEP
+          battery_connector_3dmodel_xyz_offset: [1, 0, 0]
+          battery_connector_3dmodel_xyz_rotation: [180, 0, 180]
           BAT_P: Braw
           BAT_N: GND
       battery_text:
