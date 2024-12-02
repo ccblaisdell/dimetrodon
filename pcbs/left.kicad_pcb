@@ -4614,6 +4614,12 @@
             ) 
         )
         
+    (model ${DIMETRODON_KICAD}/3dmodels/JST-S2B-PH-K-S.STEP
+      (offset (xyz 1 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 180 0 180))
+    )
+    
     )
          
     (segment (start 101.49850682877624 114.23429119999996) (end 99.69850682877625 114.23429119999996) (width 0.25) (layer "F.Cu") (net 53))

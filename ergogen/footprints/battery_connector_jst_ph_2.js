@@ -308,7 +308,7 @@ module.exports = {
     (segment (start ${p.eaxy(1, 1.8)}) (end ${p.eaxy(1, 0)}) (width ${p.trace_width}) (layer "B.Cu") (net ${local_nets[1].index}))
         `
 
-    const battery_3dmodel = `
+    const battery_connector_3dmodel = `
     (model ${p.battery_connector_3dmodel_filename}
       (offset (xyz ${p.battery_connector_3dmodel_xyz_offset[0]} ${p.battery_connector_3dmodel_xyz_offset[1]} ${p.battery_connector_3dmodel_xyz_offset[2]}))
       (scale (xyz ${p.battery_connector_3dmodel_xyz_scale[0]} ${p.battery_connector_3dmodel_xyz_scale[1]} ${p.battery_connector_3dmodel_xyz_scale[2]}))
@@ -347,8 +347,8 @@ module.exports = {
     } else if (p.side == "B") {
       final += back_pads;
     }
-    if (p.battery_3dmodel_filename) {
-      final += battery_3dmodel
+    if (p.battery_connector_3dmodel_filename) {
+      final += battery_connector_3dmodel
     }
     final += standard_closing;
     if (p.reversible && p.include_traces) {
