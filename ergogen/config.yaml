@@ -625,6 +625,21 @@ pcbs:
         params:
           reversible: true
           text: "XX2030 Battery"
+      jlcpcb_order_number_text:
+        what: ceoloide/utility_text
+        where: mcu_nano
+        params:
+          text: JLCJLCJLCJLCJLCJLCJLC
+          reversible: true
+        adjust:
+          shift: [0, -nice_nano_length / 2 - 1]
+      ergogen_logo:
+        what: ceoloide/utility_ergogen_logo
+        where: mcu_nano
+        params:
+          reversible: true
+        adjust:
+          shift: [0, -nice_nano_length / 2 - 7]  
       top_left_hole:
         what: ceoloide/mounting_hole_npth
         where: screw_tl
