@@ -560,15 +560,15 @@ pcbs:
           keycap_width: kx
           reversible: true
 
-          hotswap_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Hotswap.3dshapes/Choc_V1.step
+          hotswap_3dmodel_filename: ${EG_INFUSED_KIM_3D_MODELS}/Choc_V1_Hotswap.step
           hotswap_3dmodel_xyz_offset: [0, 0, -1.6]
           hotswap_3dmodel_xyz_rotation: [0, 180, 180]
 
-          keycap_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/infused-kim/Choc_V1_Keycap_MBK_White_1u.step
+          keycap_3dmodel_filename: ${EG_INFUSED_KIM_3D_MODELS}/Choc_V1_Keycap_MBK_White_1u.step
           keycap_3dmodel_xyz_offset: [0, 0, -8]
           keycap_3dmodel_xyz_rotation: [0, 180, 0]
 
-          switch_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Choc.3dshapes/Choc_V1.step
+          switch_3dmodel_filename: ${EG_INFUSED_KIM_3D_MODELS}/Choc_V1_Switch.step
           switch_3dmodel_xyz_offset: [0, 0, -1.5]
           switch_3dmodel_xyz_rotation: [0, 180, 180]
 
@@ -578,8 +578,10 @@ pcbs:
         what: ceoloide/mcu_nice_nano
         params:
           reversible: true
-          mcu_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Nice_Nano_V2.step
-          mcu_3dmodel_xyz_offset: [0, 0, 0.5]
+          mcu_3dmodel_filename: ${EG_INFUSED_KIM_3D_MODELS}/Nice_Nano_V2.step
+          # Z up 1mm for MCU thickness and an additional 1.14 for https://www.advanced.com/products/peel-a-way-removable-carriers/peel-a-way-strips/2-54mm-pitch
+          mcu_3dmodel_xyz_offset: [0, 0, 2.14]
+          mcu_3dmodel_xyz_rotation: [0, 180, 0]
         where: mcu_nano
       power_switch:
         what: ceoloide/power_switch_smd_side
@@ -592,15 +594,15 @@ pcbs:
           reversible: true
           from: Braw
           to: RAW
-          switch_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Switch_MSK12C02.step
-          switch_3dmodel_xyz_rotation: [0, 0, 90]
+          switch_3dmodel_filename: ${EG_INFUSED_KIM_3D_MODELS}/Switch_Power.step
+          switch_3dmodel_xyz_rotation: [-90, 0, -90]
       reset_switch:
         what: ceoloide/reset_switch_smd_side
         # top right, near the USB port
         where: reset_switch
         params:
           reversible: true
-          # switch_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/EVQPU-JA-02K.STEP
+          # switch_3dmodel_filename: ${EG_INFUSED_KIM_3D_MODELS}/Switch_Reset.step
           # switch_3dmodel_xyz_offset: [0, 0, 0]
           # switch_3dmodel_xyz_rotation: [-90, 0, 180]
           from: GND
