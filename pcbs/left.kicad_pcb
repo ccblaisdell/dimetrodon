@@ -11,7 +11,7 @@
   (paper "A3")
   (title_block
     (title "left")
-    (date "2024-11-29")
+    (date "2024-12-02")
     (rev "v1.0.0")
     (company "Unknown")
   )
@@ -4400,12 +4400,6 @@
     (fp_line (start 2.35 -1.5) (end 2.35 -1.75) (stroke (width 0.1) (type solid)) (layer "B.SilkS"))
     (fp_line (start 2.35 1.5) (end 2.35 1.75) (stroke (width 0.1) (type solid)) (layer "B.SilkS"))
     
-    (model ${DIMETRODON_KICAD}/3dmodels/EVQPU-JA-02K.STEP
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz -90 0 180))
-    )
-    
   )
     
 
@@ -4614,12 +4608,6 @@
             ) 
         )
         
-    (model ${DIMETRODON_KICAD}/3dmodels/JST-S2B-PH-K-S.STEP
-      (offset (xyz 1 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 180 0 180))
-    )
-    
     )
          
     (segment (start 101.49850682877624 114.23429119999996) (end 99.69850682877625 114.23429119999996) (width 0.25) (layer "F.Cu") (net 53))

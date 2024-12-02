@@ -595,24 +595,24 @@ pcbs:
           switch_3dmodel_filename: ${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Switch_MSK12C02.step
           switch_3dmodel_xyz_rotation: [0, 0, 90]
       reset_switch:
-        what: reset_switch_smd_side
+        what: ceoloide/reset_switch_smd_side
         # top right, near the USB port
         where: reset_switch
         params:
           reversible: true
-          switch_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/EVQPU-JA-02K.STEP
-          switch_3dmodel_xyz_offset: [0, 0, 0]
-          switch_3dmodel_xyz_rotation: [-90, 0, 180]
+          # switch_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/EVQPU-JA-02K.STEP
+          # switch_3dmodel_xyz_offset: [0, 0, 0]
+          # switch_3dmodel_xyz_rotation: [-90, 0, 180]
           from: GND
           to: RST
       jst_connector:
-        what: battery_connector_jst_ph_2
+        what: ceoloide/battery_connector_jst_ph_2
         where: jst_connector
         params:
           reversible: true
-          battery_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/JST-S2B-PH-K-S.STEP
-          battery_3dmodel_xyz_offset: [1, 0, 0]
-          battery_3dmodel_xyz_rotation: [180, 0, 180]
+          # battery_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/JST-S2B-PH-K-S.STEP
+          # battery_3dmodel_xyz_offset: [1, 0, 0]
+          # battery_3dmodel_xyz_rotation: [180, 0, 180]
           BAT_P: Braw
           BAT_N: GND
       battery_text:
@@ -675,14 +675,3 @@ cases:
       name: _case_skirt
     - what: case
       name: _case_upper
-# CASE
-# TODO: Are the keywells spacious enough? Need an extra 0.5mm?
-# TODO: Try a rounded top
-# FANCY STUFF
-# TODO: Try out flatfootfox's cutouts for underside of board
-# TODO: Bottom PCB with cutouts for case bottom!
-# TODO: Illustrations!
-# TODO: TOP PCB as switch plate? Sandwich in between with foam or something?
-# TODO: Light guides for LEDs (bit of transparent filament)
-# TODO: Little reset pusher tab (I think Forager does this) (It presses a button that's built into the XIAO, so we might not want this)
-# TODO: Peel-away super duper low profile controller sockets like Tern
