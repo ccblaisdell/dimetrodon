@@ -439,6 +439,20 @@ outlines:
     - what: circle
       where: screw_bl
       radius: mounting_hole_radius
+  _thumb_fan_left_edge:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: thumbs_tucky_cluster
+          shift: [-1cpx, -1cpy]
+        - aggregate:
+            method: intersect
+            parts:
+              - ref: thumbs_tucky_cluster
+                shift: [-1cpx, -1cpy]
+              - ref: matrix_pointer_bottom
+                shift: [-1cpx, -0.5cy]
+                rotate: 90
   _base:
     - name: _matrix
     - name: _thumbs
@@ -541,6 +555,8 @@ outlines:
       operation: stack
     - name: _controller
       operation: stack
+    - name: _thumb_fan_left_edge
+      operation: stack
 pcbs:
   left:
     # Required, since footprints are KiCad 8 only
@@ -556,6 +572,7 @@ pcbs:
           choc_v2_support: false
           include_corner_marks: true
           include_keycap: true
+          include_centerhole_net: true
           keycap_height: ky
           keycap_width: kx
           reversible: true
