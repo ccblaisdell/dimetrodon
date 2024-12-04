@@ -16,9 +16,9 @@ units:
   cpx: 1 + kx / 2
   cpy: 1 + ky / 2
 
-  # Controller dimensions, expand by 1mm for padding
-  nice_nano_length: 33 + 1
-  nice_nano_width: 17.9 + 1
+  # Controller dimensions
+  nice_nano_length: 33
+  nice_nano_width: 17.9
   xiao_length: 21
   xiao_width: 17.5
 
@@ -239,6 +239,19 @@ points:
       anchor:
         ref: thumbs_reachy_cluster
         shift: [-3, 1cpy + 5]
+    thumb_edge_bl:
+      anchor:
+        ref: thumbs_tucky_cluster
+        shift: [-1cpx, -1cpy]
+    thumb_edge_tl:
+      anchor:
+        aggregate:
+          method: intersect
+          parts:
+            - thumb_edge_bl
+            - ref: matrix_pointer_bottom
+              shift: [-1cpx, -0.5cy]
+              rotate: 90
 outlines:  
   _keycaps:
     - what: rectangle
@@ -318,12 +331,12 @@ outlines:
     - what: polygon
       points:
         - ref: mcu_nano
-          shift: [nice_nano_width / 2, nice_nano_length / 2]
+          shift: [nice_nano_width / 2 + 1, nice_nano_length / 2 + 1]
         - aggregate:
             method: intersect
             parts:
               - ref: mcu_nano
-                shift: [nice_nano_width / 2, nice_nano_length / 2]
+                shift: [nice_nano_width / 2 + 1, nice_nano_length / 2 + 1]
               - ref: thumbs_reachy_cluster
                 shift: [-kx, 1cpy]
                 rotate: 90
@@ -331,12 +344,12 @@ outlines:
             method: intersect
             parts:
               - ref: mcu_nano
-                shift: [-nice_nano_width / 2 - inner_to_mcu_distance, nice_nano_length / 2]
+                shift: [-nice_nano_width / 2 - inner_to_mcu_distance, nice_nano_length / 2 + 1]
               - ref: thumbs_middle_cluster
                 shift: [-kx, 1cpy]
                 rotate: 90
         - ref: mcu_nano
-          shift: [-nice_nano_width / 2 - inner_to_mcu_distance, nice_nano_length / 2]
+          shift: [-nice_nano_width / 2 - inner_to_mcu_distance, nice_nano_length / 2 + 1]
   # so we know where to build the case over the controller
   _controller_cover:
     - what: outline
@@ -443,16 +456,8 @@ outlines:
     - what: polygon
       operation: stack
       points:
-        - ref: thumbs_tucky_cluster
-          shift: [-1cpx, -1cpy]
-        - aggregate:
-            method: intersect
-            parts:
-              - ref: thumbs_tucky_cluster
-                shift: [-1cpx, -1cpy]
-              - ref: matrix_pointer_bottom
-                shift: [-1cpx, -0.5cy]
-                rotate: 90
+        - thumb_edge_bl
+        - thumb_edge_tl
   _base:
     - name: _matrix
     - name: _thumbs
