@@ -11,7 +11,7 @@
   (paper "A3")
   (title_block
     (title "left")
-    (date "2024-12-06")
+    (date "2024-12-10")
     (rev "v1.0.0")
     (company "Unknown")
   )
@@ -4616,7 +4616,7 @@
     (segment (start 101.49850682877624 112.23429119999996) (end 99.69850682877625 112.23429119999996) (width 0.25) (layer "B.Cu") (net 54))
         
 
-  (gr_text "XX2030 Battery"
+  (gr_text "602030 Battery"
     (at 118.1483666 94.68429119999999 0)
     (layer "F.SilkS" )
     (effects
@@ -4630,7 +4630,7 @@
     )
   )
       
-  (gr_text "XX2030 Battery"
+  (gr_text "602030 Battery"
     (at 118.1483666 94.68429119999999 0)
     (layer "B.SilkS" )
     (effects
