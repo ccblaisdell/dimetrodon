@@ -259,8 +259,7 @@ points:
             - matrix_middle_home
             - matrix_middle_bottom
             - matrix_pointer_bottom
-            - matrix_pointer_bottom
-        rotate: 30
+        rotate: 45
 outlines:  
   _keycaps:
     - what: rectangle

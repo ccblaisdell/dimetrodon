@@ -4866,7 +4866,7 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-  (at 144.14836665 77.93429119999999 30)
+  (at 141.14836666666667 75.51762453333332 45)
 	(property "Reference" "TENTINGPUCK1"
 		(at 0 0 0)
 		(layer "F.Fab")
