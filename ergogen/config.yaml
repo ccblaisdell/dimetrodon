@@ -254,7 +254,11 @@ points:
               rotate: 90
     tenting_puck:
       anchor:
-        ref: matrix_middle_home
+        aggregate:
+          parts:
+            - matrix_middle_home
+            - matrix_middle_bottom
+        rotate: 30
 outlines:  
   _keycaps:
     - what: rectangle
