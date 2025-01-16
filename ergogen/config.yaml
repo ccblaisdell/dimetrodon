@@ -635,9 +635,9 @@ pcbs:
         where: reset_switch
         params:
           reversible: true
-          # switch_3dmodel_filename: ${EG_INFUSED_KIM_3D_MODELS}/Switch_Reset.step
-          # switch_3dmodel_xyz_offset: [0, 0, 0]
-          # switch_3dmodel_xyz_rotation: [-90, 0, 180]
+          reset_switch_3dmodel_filename: ${EG_INFUSED_KIM_3D_MODELS}/Switch_Reset.step
+          reset_switch_3dmodel_xyz_offset: [0, 0, 0]
+          reset_switch_3dmodel_xyz_rotation: [-90, 0, 180]
           from: GND
           to: RST
       jst_connector:
@@ -645,9 +645,9 @@ pcbs:
         where: jst_connector
         params:
           reversible: true
-          # battery_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/JST-S2B-PH-K-S.STEP
-          # battery_3dmodel_xyz_offset: [1, 0, 0]
-          # battery_3dmodel_xyz_rotation: [180, 0, 180]
+          battery_connector_3dmodel_filename: ${DIMETRODON_KICAD}/3dmodels/JST-S2B-PH-K-S.STEP
+          battery_connector_3dmodel_xyz_offset: [1, 0, 0]
+          battery_connector_3dmodel_xyz_rotation: [180, 0, 180]
           BAT_P: Braw
           BAT_N: GND
       battery_text:
