@@ -36,7 +36,7 @@ jobs:
       - name: Run Kibot to generate images, gerbers for the unrouted board
         uses: ./.github/actions/kibot
         with:
-          boards: left
+          boards: left_manually_routed
           config: default
 
       - name: Export DSN file for freerouting
