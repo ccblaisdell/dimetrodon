@@ -602,7 +602,7 @@ pcbs:
           keycap_3dmodel_xyz_rotation: [0, 180, 0]
 
           switch_3dmodel_filename: ${EG_INFUSED_KIM_3D_MODELS}/Choc_V1_Switch.step
-          switch_3dmodel_xyz_offset: [0, 0, -1.5]
+          switch_3dmodel_xyz_offset: [0, 0, -1.2]
           switch_3dmodel_xyz_rotation: [0, 180, 180]
 
           from: "{{column_net}}"
