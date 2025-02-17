@@ -54,6 +54,35 @@ units:
   inner_to_mcu_distance: 4
 
   fan_outer_radius: 5kx
+
+  # hotswap socket placement
+  hotswap_socket_left_offset_x: -5 / 2
+  hotswap_socket_right_offset_x: 5 / 2
+  hotswap_socket_offset_y: 3.8 + (5.9 - 3.8) / 2
+  hotswap_socket_left_offset_y: hotswap_socket_offset_y
+  hotswap_socket_right_offset_y: hotswap_socket_offset_y
+
+  # hotswap socket measurements
+  hotswap_socket_lobe_width: 4.75 # 4.75 is the measurement on the specs
+  hotswap_socket_lobe_height: 4.65 # 4.65 is the measurement on the specs
+  hotswap_socket_connector_width: 2.7 # 2.6 is the measurement on the spec
+  hotswap_socket_connector_height: 2.6 # 2.6 is the measurement on the spec
+  
+  # hotswap socket sub-component placement
+  hotswap_socket_lobe_distance_x: 5 # between lobe centerpoints
+  hotswap_socket_lobe_distance_y: 2.2
+
+  # upper lobe
+  hotswap_socket_upper_lobe_offset_x: hotswap_socket_lobe_distance_x / -2
+  hotswap_socket_upper_lobe_offset_y: hotswap_socket_lobe_distance_y / -2
+  hotswap_socket_upper_connector_offset_x: hotswap_socket_upper_lobe_offset_x - hotswap_socket_lobe_width / 2 - hotswap_socket_connector_width / 2
+  hotswap_socket_upper_connector_offset_y: hotswap_socket_upper_lobe_offset_y
+  
+  # lower lobe
+  hotswap_socket_lower_lobe_offset_x: hotswap_socket_lobe_distance_x / 2
+  hotswap_socket_lower_lobe_offset_y: hotswap_socket_lobe_distance_y / 2
+  hotswap_socket_lower_connector_offset_x: hotswap_socket_lower_lobe_offset_x + hotswap_socket_lobe_width / 2 + hotswap_socket_connector_width / 2
+  hotswap_socket_lower_connector_offset_y: hotswap_socket_lower_lobe_offset_y
 points:
   zones:
     matrix:
@@ -252,6 +281,8 @@ points:
             - ref: matrix_pointer_bottom
               shift: [-1cpx, -0.5cy]
               rotate: 90
+    ref_polygon:
+      anchor:
 outlines:  
   _keycaps:
     - what: rectangle
@@ -382,15 +413,14 @@ outlines:
   _jst_hole:
     - what: outline
       name: _jst_connector
-      expand: 0.5
   _jst_hole_to_battery_gap:
     - what: polygon
-      adjust.shift: [-jst_connector_offset, jst_connector_length / 2 + 0.5]
+      adjust.shift: [-jst_connector_offset, jst_connector_length / 2]
       points:
         - ref: jst_connector
           shift: [0, 0]
         - shift: [0, -10]
-        - shift: [-10, 0]
+        - shift: [-6.9, 0]
         - shift: [0, 10]
   # Fills out bottom corner from pink to thumb cluster.
   # Makes a space for the JST connector
@@ -407,6 +437,8 @@ outlines:
     - what: rectangle
       where: power_switch
       size: [power_switch_width, power_switch_length]
+  _power_switch_preview:
+    - _power_switch
     # actuator
     - what: rectangle
       where: power_switch
@@ -416,7 +448,7 @@ outlines:
   _power_switch_hole:
     - what: outline
       name: _power_switch
-      expand: 1
+      expand: 1.5
       adjust:
         shift: [0, 0.5]
   _reset_switch:
@@ -424,6 +456,8 @@ outlines:
     - what: rectangle
       where: reset_switch
       size: [reset_switch_width, reset_switch_length]
+  _reset_switch_preview:
+    - _reset_switch
     # button
     - what: rectangle
       where: reset_switch
@@ -467,6 +501,123 @@ outlines:
       points:
         - thumb_edge_bl
         - thumb_edge_tl
+  _choc_v1_v2_pin_cutouts:
+    - what: circle # cutout for lofree central pin
+      where: [key]
+      radius: 1.7
+    - what: circle # cutout for choc v1 stab pins
+      where: [key]
+      adjust.shift: [5.5, 0]
+      radius: 0.9
+    - what: circle # cutout for choc v1 stab pins
+      where: [key]
+      adjust.shift: [-5.5, 0]
+      radius: 0.9
+  _choc_v1_v2_upper_pins:
+    - what: circle
+      where: key
+      adjust.shift: [-5, 3.8]
+      radius: 1.5
+    - what: circle
+      where: key
+      adjust.shift: [0, 5.9]
+      radius: 1.5
+    - what: circle
+      where: key
+      adjust.shift: [5, 3.8]
+      radius: 1.5
+  _left_hotswap_cutouts:
+    - what: rectangle # outside lobe
+      where: key
+      adjust.shift:
+        - hotswap_socket_left_offset_x + hotswap_socket_upper_lobe_offset_x
+        - hotswap_socket_left_offset_y + hotswap_socket_upper_lobe_offset_y
+      size: [hotswap_socket_lobe_width, hotswap_socket_lobe_height]
+    - what: rectangle # outside connector
+      where: key
+      adjust.shift:
+        - hotswap_socket_left_offset_x + hotswap_socket_upper_connector_offset_x
+        - hotswap_socket_left_offset_y + hotswap_socket_upper_connector_offset_y
+      size: [hotswap_socket_connector_width, hotswap_socket_connector_height]
+    - what: rectangle # inside lobe
+      where: key
+      adjust.shift: 
+        - hotswap_socket_left_offset_x + hotswap_socket_lower_lobe_offset_x
+        - hotswap_socket_left_offset_y + hotswap_socket_lower_lobe_offset_y
+      size: [hotswap_socket_lobe_width, hotswap_socket_lobe_height]
+    - what: rectangle # inside connector
+      where: key
+      adjust.shift: 
+        - hotswap_socket_left_offset_x + hotswap_socket_lower_connector_offset_x
+        - hotswap_socket_left_offset_y + hotswap_socket_lower_connector_offset_y
+      size: [hotswap_socket_connector_width, hotswap_socket_connector_height]
+    - what: polygon # middle part
+      where: key
+      points:
+        - shift: 
+          - hotswap_socket_left_offset_x + hotswap_socket_upper_lobe_offset_x
+          - hotswap_socket_left_offset_y - hotswap_socket_upper_lobe_offset_y
+        - shift: 
+          - -hotswap_socket_upper_lobe_offset_x + hotswap_socket_lower_lobe_offset_x - hotswap_socket_lobe_width / 2
+          - hotswap_socket_upper_lobe_offset_y + hotswap_socket_lower_lobe_offset_y + hotswap_socket_lobe_height / 2
+        - shift: [hotswap_socket_lobe_width / 2, -hotswap_socket_lobe_height]
+        - shift: 
+          - -hotswap_socket_lower_lobe_offset_x + hotswap_socket_upper_lobe_offset_x + hotswap_socket_lobe_width / 2
+          - hotswap_socket_lobe_height / 2 - hotswap_socket_lower_lobe_offset_y + hotswap_socket_upper_lobe_offset_y + hotswap_socket_lobe_height / -2
+  _right_hotswap_cutouts:
+    - what: rectangle # upper lobe
+      where: key
+      adjust.shift:
+        - hotswap_socket_right_offset_x + hotswap_socket_upper_lobe_offset_x
+        - hotswap_socket_right_offset_y + hotswap_socket_lower_lobe_offset_y
+      size: [hotswap_socket_lobe_width, hotswap_socket_lobe_height]
+    - what: rectangle # upper connector
+      where: key
+      adjust.shift:
+        - hotswap_socket_right_offset_x + hotswap_socket_upper_connector_offset_x
+        - hotswap_socket_right_offset_y + hotswap_socket_lower_connector_offset_y
+      size: [hotswap_socket_connector_width, hotswap_socket_connector_height]
+    - what: rectangle # inner lobe
+      where: key
+      adjust.shift: 
+        - hotswap_socket_right_offset_x + hotswap_socket_lower_lobe_offset_x
+        - hotswap_socket_right_offset_y + hotswap_socket_upper_lobe_offset_y
+      size: [hotswap_socket_lobe_width, hotswap_socket_lobe_height]
+    - what: rectangle # inner connector
+      where: key
+      adjust.shift: 
+        - hotswap_socket_right_offset_x + hotswap_socket_lower_connector_offset_x
+        - hotswap_socket_right_offset_y + hotswap_socket_upper_connector_offset_y
+      size: [hotswap_socket_connector_width, hotswap_socket_connector_height]
+    - what: polygon # middle part
+      where: key
+      points:
+        - shift: 
+          - hotswap_socket_right_offset_x + hotswap_socket_upper_lobe_offset_x + hotswap_socket_lobe_width / 2
+          - hotswap_socket_right_offset_y + hotswap_socket_lower_lobe_offset_y + hotswap_socket_lobe_height / 2
+        - shift: 
+          - -hotswap_socket_lobe_width / 2 + -hotswap_socket_upper_lobe_offset_x + hotswap_socket_lower_lobe_offset_x
+          - hotswap_socket_lower_lobe_offset_y + hotswap_socket_upper_lobe_offset_y - hotswap_socket_lobe_height / 2
+        - shift: [hotswap_socket_lobe_width / -2, -hotswap_socket_lobe_height + 0.1]
+        - shift: 
+          - -hotswap_socket_lower_lobe_offset_x + hotswap_socket_upper_lobe_offset_x + hotswap_socket_lobe_width / 2
+          - hotswap_socket_lobe_height / 2
+  _mcu_cutouts:
+    - what: rectangle
+      where: mcu_nano
+      size: [5, nice_nano_length]
+      adjust.shift: [-nice_nano_width / 2 + 2.5, 0]
+      fillet: 1
+    - what: rectangle
+      where: mcu_nano
+      size: [5, nice_nano_length]
+      adjust.shift: [nice_nano_width / 2 - 2.5, 0]
+      fillet: 1
+  _battery_pad_cutouts:
+    - what: rectangle
+      where: jst_connector
+      size: [4, 2]
+      adjust.shift: [-0.5, -2]
   _base:
     - name: _matrix
     - name: _thumbs
@@ -481,6 +632,20 @@ outlines:
       fillet: 1
     - name: _mounting_holes
       operation: subtract
+  case_base_left:
+    - base
+    - -_choc_v1_v2_pin_cutouts
+    #- ^_choc_v1_v2_upper_pins
+    - -_left_hotswap_cutouts
+    - -_mcu_cutouts
+    - -_battery_pad_cutouts
+  case_base_right:
+    - base
+    - -_choc_v1_v2_pin_cutouts
+    #- ^_choc_v1_v2_upper_pins
+    - -_right_hotswap_cutouts
+    - -_mcu_cutouts
+    - -_battery_pad_cutouts
   _left_board:
     - name: _matrix
     - name: _thumbs
@@ -504,21 +669,23 @@ outlines:
     - what: outline
       name: _keywell
       fillet: 0.5
+  cavities:
+    - name: _controller
+      expand: 0.5
+      joints: 2
+    - _jst_hole
+    - _jst_hole_to_battery_gap
+    - _battery_hole
+    - _power_switch_hole
+    - _reset_switch_hole
   _switch_plate:
     - name: _matrix
     - name: _thumbs
     - name: _matrix_thumb_connector
     - name: _bottom_left
     - name: _top_left
-    - name: _battery_hole
-      operation: subtract
-    - name: _power_switch_hole
-      operation: subtract
-    - name: _reset_switch_hole
-      operation: subtract
-    - name: _jst_hole
-      operation: subtract
-    - name: _jst_hole_to_battery_gap
+    - name: _controller_area
+    - name: cavities
       operation: subtract
   switch_plate:
     - what: outline
@@ -563,15 +730,19 @@ outlines:
       operation: stack
     - name: _mounting_holes
       operation: stack
-    - name: _power_switch
+    - name: _power_switch_preview
       operation: stack
-    - name: _reset_switch
+    - name: _reset_switch_preview
       operation: stack
     - name: _controller_cover
       operation: stack
     - name: _controller
       operation: stack
     - name: _thumb_fan_left_edge
+      operation: stack
+  debug:
+    - name: base
+    - name: cavities
       operation: stack
 pcbs:
   left:
