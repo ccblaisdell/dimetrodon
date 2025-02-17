@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@jscad/cli": "^1.10.0",
+    "dxf": "^5.2.0",
     "ergogen": "^4.1.0",
     "husky": "^9.1.7"
   }
