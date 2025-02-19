@@ -3,6 +3,7 @@
     "build": "npm run build:ergogen build:cases",
     "build:ergogen": "ergogen ./ergogen/ --output ./ --clear",
     "build:case": "npx @jscad/cli",
+    "dxf-to-svg": "dxf-to-svg",
     "prepare": "husky"
   },
   "dependencies": {
