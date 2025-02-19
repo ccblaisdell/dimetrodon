@@ -55,6 +55,14 @@ units:
 
   fan_outer_radius: 5kx
 
+  #########
+  # Cutouts
+  #########
+
+  # Choc stabilizer pin cutouts
+  choc_stabilizer_cutout_offset_x: 5.5
+  choc_stabilizer_cutout_radius: 1 # 0.9 on the spec
+
   # hotswap socket placement
   hotswap_socket_left_offset_x: -5 / 2
   hotswap_socket_right_offset_x: 5 / 2
@@ -63,10 +71,10 @@ units:
   hotswap_socket_right_offset_y: hotswap_socket_offset_y
 
   # hotswap socket measurements
-  hotswap_socket_lobe_width: 4.75 # 4.75 is the measurement on the specs
-  hotswap_socket_lobe_height: 4.65 # 4.65 is the measurement on the specs
+  hotswap_socket_lobe_width: 5.5 # 4.75 is the measurement on the specs
+  hotswap_socket_lobe_height: 5.5 # 4.65 is the measurement on the specs
   hotswap_socket_connector_width: 2.7 # 2.6 is the measurement on the spec
-  hotswap_socket_connector_height: 2.6 # 2.6 is the measurement on the spec
+  hotswap_socket_connector_height: 2.5 # 2.6 is the measurement on the spec
   
   # hotswap socket sub-component placement
   hotswap_socket_lobe_distance_x: 5 # between lobe centerpoints
@@ -504,15 +512,15 @@ outlines:
   _choc_v1_v2_pin_cutouts:
     - what: circle # cutout for lofree central pin
       where: [key]
-      radius: 1.7
+      radius: 1.9 # 1.7 in specs
     - what: circle # cutout for choc v1 stab pins
       where: [key]
-      adjust.shift: [5.5, 0]
-      radius: 0.9
+      adjust.shift: [choc_stabilizer_cutout_offset_x, 0]
+      radius: choc_stabilizer_cutout_radius
     - what: circle # cutout for choc v1 stab pins
       where: [key]
-      adjust.shift: [-5.5, 0]
-      radius: 0.9
+      adjust.shift: [-choc_stabilizer_cutout_offset_x, 0]
+      radius: choc_stabilizer_cutout_radius
   _choc_v1_v2_upper_pins:
     - what: circle
       where: key
@@ -555,15 +563,19 @@ outlines:
       where: key
       points:
         - shift: 
-          - hotswap_socket_left_offset_x + hotswap_socket_upper_lobe_offset_x
+          - hotswap_socket_left_offset_x - 1.5
           - hotswap_socket_left_offset_y - hotswap_socket_upper_lobe_offset_y
         - shift: 
-          - -hotswap_socket_upper_lobe_offset_x + hotswap_socket_lower_lobe_offset_x - hotswap_socket_lobe_width / 2
+          - -hotswap_socket_upper_lobe_offset_x + 1.5 - hotswap_socket_lobe_width / 2
           - hotswap_socket_upper_lobe_offset_y + hotswap_socket_lower_lobe_offset_y + hotswap_socket_lobe_height / 2
-        - shift: [hotswap_socket_lobe_width / 2, -hotswap_socket_lobe_height]
-        - shift: 
-          - -hotswap_socket_lower_lobe_offset_x + hotswap_socket_upper_lobe_offset_x + hotswap_socket_lobe_width / 2
+        - shift: [1.75, -hotswap_socket_lobe_height]
+        - shift:
+          - -1.5 + hotswap_socket_upper_lobe_offset_x + hotswap_socket_lobe_width / 2
           - hotswap_socket_lobe_height / 2 - hotswap_socket_lower_lobe_offset_y + hotswap_socket_upper_lobe_offset_y + hotswap_socket_lobe_height / -2
+    - what: rectangle # connect to stabilizer
+      where: key
+      adjust.shift: [-choc_stabilizer_cutout_offset_x, choc_stabilizer_cutout_radius]
+      size: [choc_stabilizer_cutout_radius * 2, 2]
   _right_hotswap_cutouts:
     - what: rectangle # upper lobe
       where: key
@@ -596,28 +608,32 @@ outlines:
           - hotswap_socket_right_offset_x + hotswap_socket_upper_lobe_offset_x + hotswap_socket_lobe_width / 2
           - hotswap_socket_right_offset_y + hotswap_socket_lower_lobe_offset_y + hotswap_socket_lobe_height / 2
         - shift: 
-          - -hotswap_socket_lobe_width / 2 + -hotswap_socket_upper_lobe_offset_x + hotswap_socket_lower_lobe_offset_x
-          - hotswap_socket_lower_lobe_offset_y + hotswap_socket_upper_lobe_offset_y - hotswap_socket_lobe_height / 2
-        - shift: [hotswap_socket_lobe_width / -2, -hotswap_socket_lobe_height + 0.1]
+          - 1.5
+          - hotswap_socket_lobe_height / -2 + hotswap_socket_upper_lobe_offset_y - hotswap_socket_lower_lobe_offset_y + hotswap_socket_lobe_height / 2
+        - shift: [-2, -hotswap_socket_lobe_height]
         - shift: 
-          - -hotswap_socket_lower_lobe_offset_x + hotswap_socket_upper_lobe_offset_x + hotswap_socket_lobe_width / 2
-          - hotswap_socket_lobe_height / 2
+          - -1.5
+          - hotswap_socket_lobe_height / 2 + hotswap_socket_lower_lobe_offset_y - hotswap_socket_upper_lobe_offset_y + hotswap_socket_lobe_height / -2
+    - what: rectangle # connect to stabilizer
+      where: key
+      adjust.shift: [choc_stabilizer_cutout_offset_x, choc_stabilizer_cutout_radius]
+      size: [choc_stabilizer_cutout_radius * 2, 2]
   _mcu_cutouts:
     - what: rectangle
       where: mcu_nano
-      size: [5, nice_nano_length]
-      adjust.shift: [-nice_nano_width / 2 + 2.5, 0]
+      size: [5, nice_nano_length - 1.5]
+      adjust.shift: [-nice_nano_width / 2 + 2.5, -1.5]
       fillet: 1
     - what: rectangle
       where: mcu_nano
-      size: [5, nice_nano_length]
-      adjust.shift: [nice_nano_width / 2 - 2.5, 0]
+      size: [5, nice_nano_length - 1.5]
+      adjust.shift: [nice_nano_width / 2 - 2.5, -1.5]
       fillet: 1
   _battery_pad_cutouts:
     - what: rectangle
       where: jst_connector
-      size: [4, 2]
-      adjust.shift: [-0.5, -2]
+      size: [4, 5]
+      adjust.shift: [0, -1]
   _base:
     - name: _matrix
     - name: _thumbs
