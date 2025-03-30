@@ -1,2 +1,2 @@
 make ergogen
-git add cases outlines pcbs
+git add dimetrodon/cases dimetrodon/outlines dimetrodon/pcbs

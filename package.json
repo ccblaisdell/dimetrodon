@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "npm run build:ergogen build:cases",
-    "build:ergogen": "ergogen ./ergogen/ --output ./ --clear",
+    "build:ergogen": "ergogen ./dimetrodon/ergogen/ --output ./dimetrodon --clear",
     "build:case": "npx @jscad/cli",
     "dxf-to-svg": "dxf-to-svg",
     "prepare": "husky"

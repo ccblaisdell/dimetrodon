@@ -14,12 +14,12 @@ runs:
       for board in ${{ inputs.boards }};
       do
         echo "Processing $board";
-        if [ -e $GITHUB_WORKSPACE/pcbs/${board}_autorouted.kicad_pcb ]; then
-          echo "Cleaning up $GITHUB_WORKSPACE/pcbs/${board}_autorouted.kicad_pcb";
-          rm -f $GITHUB_WORKSPACE/pcbs/${board}_autorouted.kicad_pcb;
+        if [ -e $GITHUB_WORKSPACE/${board}_autorouted.kicad_pcb ]; then
+          echo "Cleaning up ${board}_autorouted.kicad_pcb";
+          rm -f $GITHUB_WORKSPACE/${board}_autorouted.kicad_pcb;
         fi
-        if [ -e $GITHUB_WORKSPACE/pcbs/${board}.ses ]; then
+        if [ -e $GITHUB_WORKSPACE/${board}.ses ]; then
           echo "Import SES";
-          $GITHUB_WORKSPACE/kibot/import_ses.py -b $GITHUB_WORKSPACE/pcbs/${board}.kicad_pcb -s $GITHUB_WORKSPACE/pcbs/${board}.ses -o $GITHUB_WORKSPACE/pcbs/${board}_autorouted.kicad_pcb
+          $GITHUB_WORKSPACE/kibot/import_ses.py -b $GITHUB_WORKSPACE/${board}.kicad_pcb -s $GITHUB_WORKSPACE/${board}.ses -o $GITHUB_WORKSPACE/${board}_autorouted.kicad_pcb
         fi
       done

@@ -33,31 +33,31 @@ jobs:
       - name: Generate unrouted PCBs with Ergogen (definition in Makefile)
         run: make build
 
-      - name: Run Kibot to generate images, gerbers for the unrouted board
+      - name: Run Kibot to generate images, gerbers for the manually routed board
         uses: ./.github/actions/kibot
         with:
-          boards: left_manually_routed
+          boards: dimetrodon/pcbs/left_manually_routed
           config: default
 
       - name: Export DSN file for freerouting
         uses: ./.github/actions/export-dsn
         with:
-          boards: left
+          boards: dimetrodon/pcbs/left
 
       - name: Autoroute PCB
         uses: ./.github/actions/autoroute
         with:
-          boards: left
+          boards: dimetrodon/pcbs/left
 
       - name: Import SES
         uses: ./.github/actions/import-ses
         with:
-          boards: left
+          boards: dimetrodon/pcbs/left
 
       - name: Run Kibot to generate images, gerbers for the autorouted board
         uses: ./.github/actions/kibot
         with:
-          boards: left
+          boards: dimetrodon/pcbs/left
           config: boards
 
       - name: Publish output
